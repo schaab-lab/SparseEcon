@@ -48,6 +48,6 @@ L_inf norm |V_sg6 - Vfine| = 1.75e-01  with # grid points: 4161
 L_inf norm |V_sg7 - Vfine| = 1.89e-01  with # grid points: 9345
 
 
-Algorithm converged. Run-time of: 29.77 seconds.
+Algorithm converged. Run-time of: 29.17 seconds.
 
 Plotting Figures...

@@ -111,6 +111,6 @@ Nodes coarsened: 3, children added: 0, parents added: 3,
 Net change: 958 -> 958 = << 0 >>, blacklisted: 537. 
 
 
-Algorithm converged. Run-time of: 15.80 seconds.
+Algorithm converged. Run-time of: 15.75 seconds.
 
 Plotting Figures...

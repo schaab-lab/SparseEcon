@@ -608,4 +608,4 @@ Mean level of abs(aH): 0.0848219. Maximum level of grid: 12.
 Nodes coarsened: 4100, children added: 708, parents added: 3056, 
 Net change: 5065 -> 4729 = << -336 >>, blacklisted: 4100. 
  
-Elapsed time is 36.136398 seconds.
+Elapsed time is 37.126134 seconds.
