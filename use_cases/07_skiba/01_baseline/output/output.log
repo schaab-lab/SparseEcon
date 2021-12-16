@@ -1,0 +1,1336 @@
+Running algorithm:
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('reshape')" style="font-weight:bold">reshape</a>
+Size vector must have at least two elements.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ndgrid2', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/ndgrid2.m', 10)" style="font-weight:bold">ndgrid2</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/ndgrid2.m',10,0)">line 10</a>)
+        x = reshape(x, s);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_sparse_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_sparse_grid.m', 41)" style="font-weight:bold">gen_sparse_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_sparse_grid.m',41,0)">line 41</a>)
+levelCombs = ndgrid2([surplusLevels, normalLevels]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_sparse_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_sparse_grid.m', 8)" style="font-weight:bold">gen_sparse_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_sparse_grid.m',8,0)">line 8</a>)
+    [G, lvl] = gen_sparse_grid(2, n, [surplus, 0]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/setup_grid.m', 38)" style="font-weight:bold">setup_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/setup_grid.m',38,0)">line 38</a>)
+[G.grid, G.lvl] = gen_sparse_grid(G.d, n, surplus);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m', 51)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m',51,0)">line 51</a>)
+GDense = setup_grid(0, param.lDense, param.min, param.max, ...
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+{Unrecognized function or variable 'y'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m', 68)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m',68,0)">line 68</a>)
+    G.income = y - param.delta * G.k;
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Evaluating 9 points to refine on ...
+Mean level of abs(aH): 60.414. Maximum level of grid: 4. 
+Nodes coarsened: 0, children added: 8, parents added: 0, 
+Net change: 9 -> 17 = << 8 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+{Arrays have incompatible sizes for this operation.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m', 68)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m',68,0)">line 68</a>)
+    G.income = G.y - param.delta * G.k;
+
+<a href="matlab:helpview('matlab','error_sizeDimensionsMustMatch')" style="font-weight:bold">Related documentation</a>
+} 
+G.y
+
+ans =
+
+    0.0676
+    0.3696
+    0.4652
+    0.5323
+    0.6269
+    0.7464
+    0.8364
+    0.9104
+    0.9739
+
+G.k
+
+ans =
+
+    0.0048
+    0.3968
+    0.7888
+    1.1809
+    1.5729
+    1.9649
+    2.3569
+    2.7489
+    3.1409
+    3.5329
+    3.9249
+    4.3169
+    4.7089
+    5.1009
+    5.4929
+    5.8849
+    6.2770
+
+G.yH
+
+ans =
+
+         0
+         0
+         0
+    0.4256
+    0.6269
+    0.7464
+    0.8364
+    0.9104
+    0.9739
+
+main
+Running algorithm:
+if system_dependent('IsDebugMode')==1, dbcont; end
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Evaluating 9 points to refine on ...
+Mean level of abs(aH): 60.414. Maximum level of grid: 4. 
+Nodes coarsened: 0, children added: 8, parents added: 0, 
+Net change: 9 -> 17 = << 8 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+{Arrays have incompatible sizes for this operation.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m', 68)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m',68,0)">line 68</a>)
+    G.income = G.y - param.delta * G.k;
+
+<a href="matlab:helpview('matlab','error_sizeDimensionsMustMatch')" style="font-weight:bold">Related documentation</a>
+} 
+main
+Running algorithm:
+{Unrecognized function or variable 'production_function'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m', 53)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m',53,0)">line 53</a>)
+G.y = production_function(G, param);
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Evaluating 9 points to refine on ...
+Mean level of abs(aH): 60.414. Maximum level of grid: 4. 
+Nodes coarsened: 0, children added: 8, parents added: 0, 
+Net change: 9 -> 17 = << 8 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Evaluating 17 points to refine on ...
+Mean level of abs(aH): 38.5646. Maximum level of grid: 5. 
+Nodes coarsened: 0, children added: 16, parents added: 0, 
+Net change: 17 -> 33 = << 16 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Evaluating 33 points to refine on ...
+Mean level of abs(aH): 23.1947. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 32, parents added: 0, 
+Net change: 33 -> 65 = << 32 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Evaluating 63 points to refine on ...
+Mean level of abs(aH): 13.4412. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 60, parents added: 0, 
+Net change: 65 -> 125 = << 60 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Evaluating 103 points to refine on ...
+Mean level of abs(aH): 7.84314. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 82, parents added: 0, 
+Net change: 125 -> 207 = << 82 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Evaluating 130 points to refine on ...
+Mean level of abs(aH): 5.24585. Maximum level of grid: 9. 
+Nodes coarsened: 1, children added: 52, parents added: 0, 
+Net change: 207 -> 258 = << 51 >>, blacklisted: 1. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Evaluating 152 points to refine on ...
+Mean level of abs(aH): 4.61388. Maximum level of grid: 10. 
+Nodes coarsened: 2, children added: 44, parents added: 0, 
+Net change: 258 -> 300 = << 42 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Evaluating 171 points to refine on ...
+Mean level of abs(aH): 4.31357. Maximum level of grid: 11. 
+Nodes coarsened: 2, children added: 38, parents added: 0, 
+Net change: 300 -> 336 = << 36 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Evaluating 188 points to refine on ...
+Mean level of abs(aH): 4.15826. Maximum level of grid: 12. 
+Nodes coarsened: 1, children added: 34, parents added: 0, 
+Net change: 336 -> 369 = << 33 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Evaluating 203 points to refine on ...
+Mean level of abs(aH): 4.06466. Maximum level of grid: 13. 
+Nodes coarsened: 1, children added: 30, parents added: 0, 
+Net change: 369 -> 398 = << 29 >>, blacklisted: 7. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Evaluating 215 points to refine on ...
+Mean level of abs(aH): 4.02572. Maximum level of grid: 14. 
+Nodes coarsened: 1, children added: 24, parents added: 0, 
+Net change: 398 -> 421 = << 23 >>, blacklisted: 8. 
+
+
+ -------  GRID ADAPTATION ITERATION 12  ------- 
+
+Evaluating 222 points to refine on ...
+Mean level of abs(aH): 4.04848. Maximum level of grid: 15. 
+Nodes coarsened: 1, children added: 14, parents added: 0, 
+Net change: 421 -> 434 = << 13 >>, blacklisted: 9. 
+
+
+ -------  GRID ADAPTATION ITERATION 13  ------- 
+
+Evaluating 224 points to refine on ...
+Mean level of abs(aH): 4.16233. Maximum level of grid: 16. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 434 -> 437 = << 3 >>, blacklisted: 10. 
+
+
+ -------  GRID ADAPTATION ITERATION 14  ------- 
+
+Evaluating 226 points to refine on ...
+Mean level of abs(aH): 4.36714. Maximum level of grid: 17. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 437 -> 440 = << 3 >>, blacklisted: 11. 
+
+
+ -------  GRID ADAPTATION ITERATION 15  ------- 
+
+Evaluating 228 points to refine on ...
+Mean level of abs(aH): 4.56916. Maximum level of grid: 18. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 440 -> 442 = << 2 >>, blacklisted: 13. 
+
+
+ -------  GRID ADAPTATION ITERATION 16  ------- 
+
+Evaluating 230 points to refine on ...
+Mean level of abs(aH): 4.77923. Maximum level of grid: 19. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 442 -> 444 = << 2 >>, blacklisted: 15. 
+
+
+ -------  GRID ADAPTATION ITERATION 17  ------- 
+
+Evaluating 232 points to refine on ...
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents>find_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 95)" style="font-weight:bold">add_parents>find_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',95,0)">line 95</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 4)" style="font-weight:bold">add_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',4,0)">line 4</a>)
+    [parentMat, fullGridVec, lVec] = find_parents(maxl);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('adapt_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m', 110)" style="font-weight:bold">adapt_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m',110,0)">line 110</a>)
+    [parents, parentLevels] = add_parents(gridNew, lvlNew);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m', 88)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m',88,0)">line 88</a>)
+    [G, BH_adapt, blacklist, stats] = adapt_grid(G, V, blacklist, ...
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Evaluating 9 points to refine on ...
+Mean level of abs(aH): 60.414. Maximum level of grid: 4. 
+Nodes coarsened: 0, children added: 8, parents added: 0, 
+Net change: 9 -> 17 = << 8 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Evaluating 17 points to refine on ...
+Mean level of abs(aH): 38.5646. Maximum level of grid: 5. 
+Nodes coarsened: 0, children added: 16, parents added: 0, 
+Net change: 17 -> 33 = << 16 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Evaluating 29 points to refine on ...
+Mean level of abs(aH): 23.1947. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 24, parents added: 0, 
+Net change: 33 -> 57 = << 24 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Evaluating 40 points to refine on ...
+Mean level of abs(aH): 15.3264. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 22, parents added: 0, 
+Net change: 57 -> 79 = << 22 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Evaluating 48 points to refine on ...
+Mean level of abs(aH): 12.4085. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 18, parents added: 0, 
+Net change: 79 -> 97 = << 18 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Evaluating 54 points to refine on ...
+Mean level of abs(aH): 11.1914. Maximum level of grid: 9. 
+Nodes coarsened: 0, children added: 14, parents added: 0, 
+Net change: 97 -> 111 = << 14 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Evaluating 61 points to refine on ...
+Mean level of abs(aH): 10.7177. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 14, parents added: 0, 
+Net change: 111 -> 125 = << 14 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Evaluating 66 points to refine on ...
+Mean level of abs(aH): 10.3435. Maximum level of grid: 11. 
+Nodes coarsened: 1, children added: 12, parents added: 0, 
+Net change: 125 -> 136 = << 11 >>, blacklisted: 1. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Evaluating 71 points to refine on ...
+Mean level of abs(aH): 10.2616. Maximum level of grid: 12. 
+Nodes coarsened: 1, children added: 10, parents added: 0, 
+Net change: 136 -> 145 = << 9 >>, blacklisted: 2. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Evaluating 75 points to refine on ...
+Mean level of abs(aH): 10.3296. Maximum level of grid: 13. 
+Nodes coarsened: 1, children added: 8, parents added: 0, 
+Net change: 145 -> 152 = << 7 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Evaluating 77 points to refine on ...
+Mean level of abs(aH): 10.5243. Maximum level of grid: 14. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 152 -> 155 = << 3 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 12  ------- 
+
+Evaluating 79 points to refine on ...
+Mean level of abs(aH): 10.9769. Maximum level of grid: 15. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 155 -> 158 = << 3 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 13  ------- 
+
+Evaluating 81 points to refine on ...
+Mean level of abs(aH): 11.4122. Maximum level of grid: 16. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 158 -> 161 = << 3 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 14  ------- 
+
+Evaluating 83 points to refine on ...
+Mean level of abs(aH): 11.8312. Maximum level of grid: 17. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 161 -> 164 = << 3 >>, blacklisted: 7. 
+
+
+ -------  GRID ADAPTATION ITERATION 15  ------- 
+
+Evaluating 85 points to refine on ...
+Mean level of abs(aH): 12.2349. Maximum level of grid: 18. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 164 -> 167 = << 3 >>, blacklisted: 8. 
+
+
+ -------  GRID ADAPTATION ITERATION 16  ------- 
+
+Evaluating 87 points to refine on ...
+Mean level of abs(aH): 12.6241. Maximum level of grid: 19. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 167 -> 170 = << 3 >>, blacklisted: 9. 
+
+
+ -------  GRID ADAPTATION ITERATION 17  ------- 
+
+Evaluating 89 points to refine on ...
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents>find_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 95)" style="font-weight:bold">add_parents>find_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',95,0)">line 95</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 4)" style="font-weight:bold">add_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',4,0)">line 4</a>)
+    [parentMat, fullGridVec, lVec] = find_parents(maxl);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('adapt_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m', 110)" style="font-weight:bold">adapt_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m',110,0)">line 110</a>)
+    [parents, parentLevels] = add_parents(gridNew, lvlNew);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m', 88)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m',88,0)">line 88</a>)
+    [G, BH_adapt, blacklist, stats] = adapt_grid(G, V, blacklist, ...
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Evaluating 9 points to refine on ...
+Mean level of abs(aH): 60.414. Maximum level of grid: 4. 
+Nodes coarsened: 0, children added: 8, parents added: 0, 
+Net change: 9 -> 17 = << 8 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Evaluating 17 points to refine on ...
+Mean level of abs(aH): 38.5646. Maximum level of grid: 5. 
+Nodes coarsened: 0, children added: 16, parents added: 0, 
+Net change: 17 -> 33 = << 16 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Evaluating 33 points to refine on ...
+Mean level of abs(aH): 23.1947. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 32, parents added: 0, 
+Net change: 33 -> 65 = << 32 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Evaluating 63 points to refine on ...
+Mean level of abs(aH): 13.4412. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 60, parents added: 0, 
+Net change: 65 -> 125 = << 60 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Evaluating 103 points to refine on ...
+Mean level of abs(aH): 7.84314. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 82, parents added: 0, 
+Net change: 125 -> 207 = << 82 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Evaluating 130 points to refine on ...
+Mean level of abs(aH): 5.24585. Maximum level of grid: 9. 
+Nodes coarsened: 1, children added: 52, parents added: 0, 
+Net change: 207 -> 258 = << 51 >>, blacklisted: 1. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Evaluating 152 points to refine on ...
+Mean level of abs(aH): 4.61388. Maximum level of grid: 10. 
+Nodes coarsened: 2, children added: 44, parents added: 0, 
+Net change: 258 -> 300 = << 42 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Evaluating 171 points to refine on ...
+Mean level of abs(aH): 4.31357. Maximum level of grid: 11. 
+Nodes coarsened: 2, children added: 38, parents added: 0, 
+Net change: 300 -> 336 = << 36 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Evaluating 188 points to refine on ...
+Mean level of abs(aH): 4.15826. Maximum level of grid: 12. 
+Nodes coarsened: 1, children added: 34, parents added: 0, 
+Net change: 336 -> 369 = << 33 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Evaluating 203 points to refine on ...
+Mean level of abs(aH): 4.06466. Maximum level of grid: 13. 
+Nodes coarsened: 1, children added: 30, parents added: 0, 
+Net change: 369 -> 398 = << 29 >>, blacklisted: 7. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Evaluating 215 points to refine on ...
+Mean level of abs(aH): 4.02572. Maximum level of grid: 14. 
+Nodes coarsened: 1, children added: 24, parents added: 0, 
+Net change: 398 -> 421 = << 23 >>, blacklisted: 8. 
+
+
+ -------  GRID ADAPTATION ITERATION 12  ------- 
+
+Evaluating 222 points to refine on ...
+Mean level of abs(aH): 4.04848. Maximum level of grid: 15. 
+Nodes coarsened: 1, children added: 14, parents added: 0, 
+Net change: 421 -> 434 = << 13 >>, blacklisted: 9. 
+
+
+ -------  GRID ADAPTATION ITERATION 13  ------- 
+
+Evaluating 224 points to refine on ...
+Mean level of abs(aH): 4.16233. Maximum level of grid: 16. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 434 -> 437 = << 3 >>, blacklisted: 10. 
+
+
+ -------  GRID ADAPTATION ITERATION 14  ------- 
+
+Evaluating 226 points to refine on ...
+Mean level of abs(aH): 4.36714. Maximum level of grid: 17. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 437 -> 440 = << 3 >>, blacklisted: 11. 
+
+
+ -------  GRID ADAPTATION ITERATION 15  ------- 
+
+Evaluating 228 points to refine on ...
+Mean level of abs(aH): 4.56916. Maximum level of grid: 18. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 440 -> 442 = << 2 >>, blacklisted: 13. 
+
+
+Algorithm converged. Run-time of: 5.76 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Evaluating 9 points to refine on ...
+Mean level of abs(aH): 25.5041. Maximum level of grid: 4. 
+Nodes coarsened: 0, children added: 8, parents added: 0, 
+Net change: 9 -> 17 = << 8 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Evaluating 17 points to refine on ...
+Mean level of abs(aH): 15.5121. Maximum level of grid: 5. 
+Nodes coarsened: 0, children added: 16, parents added: 0, 
+Net change: 17 -> 33 = << 16 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Evaluating 33 points to refine on ...
+Mean level of abs(aH): 8.97826. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 32, parents added: 0, 
+Net change: 33 -> 65 = << 32 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Evaluating 64 points to refine on ...
+Mean level of abs(aH): 5.04606. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 64, parents added: 0, 
+Net change: 65 -> 129 = << 64 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Evaluating 116 points to refine on ...
+Mean level of abs(aH): 2.78329. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 102, parents added: 0, 
+Net change: 129 -> 231 = << 102 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Evaluating 164 points to refine on ...
+Mean level of abs(aH): 1.6862. Maximum level of grid: 9. 
+Nodes coarsened: 0, children added: 96, parents added: 0, 
+Net change: 231 -> 327 = << 96 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Evaluating 196 points to refine on ...
+Mean level of abs(aH): 1.28297. Maximum level of grid: 10. 
+Nodes coarsened: 1, children added: 64, parents added: 0, 
+Net change: 327 -> 390 = << 63 >>, blacklisted: 1. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Evaluating 224 points to refine on ...
+Mean level of abs(aH): 1.15181. Maximum level of grid: 11. 
+Nodes coarsened: 2, children added: 56, parents added: 0, 
+Net change: 390 -> 444 = << 54 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Evaluating 245 points to refine on ...
+Mean level of abs(aH): 1.07793. Maximum level of grid: 12. 
+Nodes coarsened: 2, children added: 42, parents added: 0, 
+Net change: 444 -> 484 = << 40 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Evaluating 256 points to refine on ...
+Mean level of abs(aH): 1.04919. Maximum level of grid: 13. 
+Nodes coarsened: 1, children added: 22, parents added: 0, 
+Net change: 484 -> 505 = << 21 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Evaluating 257 points to refine on ...
+Mean level of abs(aH): 1.06317. Maximum level of grid: 14. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 505 -> 508 = << 3 >>, blacklisted: 7. 
+
+
+ -------  GRID ADAPTATION ITERATION 12  ------- 
+
+Evaluating 259 points to refine on ...
+Mean level of abs(aH): 1.11409. Maximum level of grid: 15. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 508 -> 511 = << 3 >>, blacklisted: 8. 
+
+
+ -------  GRID ADAPTATION ITERATION 13  ------- 
+
+Evaluating 261 points to refine on ...
+Mean level of abs(aH): 1.16441. Maximum level of grid: 16. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 511 -> 513 = << 2 >>, blacklisted: 10. 
+
+
+ -------  GRID ADAPTATION ITERATION 14  ------- 
+
+Evaluating 263 points to refine on ...
+Mean level of abs(aH): 1.21651. Maximum level of grid: 17. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 513 -> 515 = << 2 >>, blacklisted: 12. 
+
+
+ -------  GRID ADAPTATION ITERATION 15  ------- 
+
+Evaluating 265 points to refine on ...
+Mean level of abs(aH): 1.26821. Maximum level of grid: 18. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 515 -> 517 = << 2 >>, blacklisted: 14. 
+
+
+Algorithm converged. Run-time of: 5.48 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Evaluating 9 points to refine on ...
+Mean level of abs(aH): 25.5041. Maximum level of grid: 4. 
+Nodes coarsened: 0, children added: 8, parents added: 0, 
+Net change: 9 -> 17 = << 8 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Evaluating 17 points to refine on ...
+Mean level of abs(aH): 15.5121. Maximum level of grid: 5. 
+Nodes coarsened: 0, children added: 16, parents added: 0, 
+Net change: 17 -> 33 = << 16 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Evaluating 33 points to refine on ...
+Mean level of abs(aH): 8.97826. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 32, parents added: 0, 
+Net change: 33 -> 65 = << 32 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Evaluating 64 points to refine on ...
+Mean level of abs(aH): 5.04606. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 64, parents added: 0, 
+Net change: 65 -> 129 = << 64 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Evaluating 116 points to refine on ...
+Mean level of abs(aH): 2.78329. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 102, parents added: 0, 
+Net change: 129 -> 231 = << 102 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Evaluating 164 points to refine on ...
+Mean level of abs(aH): 1.6862. Maximum level of grid: 9. 
+Nodes coarsened: 0, children added: 96, parents added: 0, 
+Net change: 231 -> 327 = << 96 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Evaluating 196 points to refine on ...
+Mean level of abs(aH): 1.28297. Maximum level of grid: 10. 
+Nodes coarsened: 1, children added: 64, parents added: 0, 
+Net change: 327 -> 390 = << 63 >>, blacklisted: 1. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Evaluating 224 points to refine on ...
+Mean level of abs(aH): 1.15181. Maximum level of grid: 11. 
+Nodes coarsened: 2, children added: 56, parents added: 0, 
+Net change: 390 -> 444 = << 54 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Evaluating 245 points to refine on ...
+Mean level of abs(aH): 1.07793. Maximum level of grid: 12. 
+Nodes coarsened: 2, children added: 42, parents added: 0, 
+Net change: 444 -> 484 = << 40 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Evaluating 256 points to refine on ...
+Mean level of abs(aH): 1.04919. Maximum level of grid: 13. 
+Nodes coarsened: 1, children added: 22, parents added: 0, 
+Net change: 484 -> 505 = << 21 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Evaluating 257 points to refine on ...
+Mean level of abs(aH): 1.06317. Maximum level of grid: 14. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 505 -> 508 = << 3 >>, blacklisted: 7. 
+
+
+ -------  GRID ADAPTATION ITERATION 12  ------- 
+
+Evaluating 259 points to refine on ...
+Mean level of abs(aH): 1.11409. Maximum level of grid: 15. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 508 -> 511 = << 3 >>, blacklisted: 8. 
+
+
+ -------  GRID ADAPTATION ITERATION 13  ------- 
+
+Evaluating 261 points to refine on ...
+Mean level of abs(aH): 1.16441. Maximum level of grid: 16. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 511 -> 513 = << 2 >>, blacklisted: 10. 
+
+
+ -------  GRID ADAPTATION ITERATION 14  ------- 
+
+Evaluating 263 points to refine on ...
+Mean level of abs(aH): 1.21651. Maximum level of grid: 17. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 513 -> 515 = << 2 >>, blacklisted: 12. 
+
+
+ -------  GRID ADAPTATION ITERATION 15  ------- 
+
+Evaluating 265 points to refine on ...
+Mean level of abs(aH): 1.26821. Maximum level of grid: 18. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 515 -> 517 = << 2 >>, blacklisted: 14. 
+
+
+Algorithm converged. Run-time of: 6.11 seconds.
+
+Plotting Figures...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m', 123)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/05_skiba/01_baseline/main.m',123,0)">line 123</a>)
+    legend([l1,l2,l3],{'V(k)','c(k)','s(k)'},'Position','NorthWest','box','off');
+} 
+[Warning: Error updating Text.
+
+ String scalar or character vector must have valid interpreter syntax:
+$$
+] 
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    ylabel('$$','Interpreter','Latex');
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'Position','NorthWest','box','off','Interpreter','Latex');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+} 
+[Warning: Error updating Text.
+
+ String scalar or character vector must have valid interpreter syntax:
+$$
+] 
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    ylabel('$$','Interpreter','Latex');
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'box','off','Interpreter','Latex');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+} 
+[Warning: Error updating Text.
+
+ String scalar or character vector must have valid interpreter syntax:
+$$
+] 
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    ylabel('$$','Interpreter','Latex');
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'Interpreter','Latex');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+} 
+[Warning: Error updating Text.
+
+ String scalar or character vector must have valid interpreter syntax:
+$$
+] 
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'Position','NorthWest','box','off','Interpreter','Latex');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+} 
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    %legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'Position','NorthWest','box','off','Interpreter','Latex');
+    
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Error using exportgraphics
+The value of 'destination' is invalid. Cannot create output file './output/grid_adaptation0.eps'.
+} 
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'box','off','Interpreter','Latex','Position','NorthWest');
+    
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+} 
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'});
+    
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+} 
+help legend
+  <strong>legend</strong> Create legend
+  
+  <strong>legend</strong> creates a legend with descriptive labels for each plotted data
+  series. For the labels, the legend uses the text from the DisplayName
+  properties of the data series. If the DisplayName property is empty, then
+  the legend uses a label of the form 'dataN'. The legend automatically
+  updates when you add or delete data series from the axes. This command
+  creates a legend for the current axes or chart returned by gca. If the
+  current axes is empty, then the legend is empty. If axes do not exist,
+  then this command creates one.
+ 
+  <strong>legend</strong>(label1,...,labelN) sets the labels. Specify the labels as a
+  list of character vectors, such as legend('Jan','Feb','Mar').
+ 
+  <strong>legend</strong>(labels) sets the labels using a cell array of character vectors or
+  a character matrix, such as legend({'Jan','Feb','Mar'}).
+ 
+  <strong>legend</strong>(subset,__) only includes items in the legend for the data series
+  listed in subset. Specify subset as a vector of graphics objects.
+ 
+  <strong>legend</strong>(target,__) uses the axes, polar axes, or chart specified by target
+  instead of the current axes or chart. Specify the target as the first
+  input argument. 
+ 
+  <strong>legend</strong>(__,'Location',lcn) sets the legend location. For example,
+  'Location','northeast' positions the legend in the upper right corner of
+  the axes. Specify the location after other input arguments.
+ 
+  <strong>legend</strong>(__,'Orientation',ornt), where ornt is 'horizontal', displays the
+  legend items side-by-side. The default for ornt is 'vertical', which
+  stacks the items vertically. 
+ 
+  <strong>legend</strong>(__,Name,Value) sets legend properties using one or more name-value
+  pair arguments. When setting properties, include the labels in a cell
+  array, such as legend({'A','B'},'FontSize',12). If you do not want to
+  specify labels, then include an empty cell array, such as
+  legend({},'FontSize',12). Reissuing the legend command retains
+  modifications that you previously specified.
+ 
+  <strong>legend</strong>(bkgd), where bkgd is 'boxoff', removes the legend background and
+  outline. The default for bkgd is 'boxon', which displays the legend
+  background and outline. 
+ 
+  lgd = <strong>legend</strong>(__) returns the Legend object. Use lgd to query and set
+  properties of the legend after it is created. For a list of properties,
+  see Legend. 
+ 
+  <strong>legend</strong>(vsbl) controls the visibility of the legend, where vsbl is 'hide',
+  'show', or 'toggle'. 
+ 
+  <strong>legend</strong>('off') deletes the legend.
+ 
+   
+      Examples:
+          x = 0:.2:12;
+          Y = [besselj(1,x); besselj(2,x); besselj(3,x)];
+          plot(x,Y);
+          legend('First','Second','Third','Location','NorthEastOutside')
+   
+          b = bar(rand(10,5),'stacked'); 
+          hold on
+          ln = plot(1:10,5*rand(10,1),'-o'); 
+          hold off
+          legend([b,ln],'Carrots','Peas','Peppers','Green Beans',...
+                    'Cucumbers','Eggplant')
+
+    <a href="matlab:doc legend">Documentation for legend</a>
+
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');
+    
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+} 
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'Interpreter','Latex','Location','NorthWest');
+    
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+} 
+{'$V(k)$','$c(k)$','$s(k)$'}
+
+ans =
+
+  1×3 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {'$V(k)$'}    {'$c(k)$'}    {'$s(k)$'}
+
+[l1,l2,l3]
+
+ans = 
+
+  1×3 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Scatter" style="font-weight:bold">Scatter</a> array:
+
+    Scatter    Scatter    Scatter
+
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2,l3]);%,{'$V(k)$','$c(k)$','$s(k)$'},'Interpreter','Latex','Location','NorthWest');
+    
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+} 
+l1
+
+l1 = 
+
+  handle to <a href="matlab: helpview ([docroot '/matlab/matlab_oop/matlab_oop.map'],'deleted_handle_objects')">deleted</a> <a href="matlab:helpPopup matlab.graphics.chart.primitive.Scatter" style="font-weight:bold">Scatter</a>
+
+n
+
+n =
+
+     1
+
+figure('visible', 'off');
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+
+    xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'Interpreter','Latex','Location','NorthWest');
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m', 259)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/scribe/legend.m',259,0)">line 259</a>)
+Invalid argument. Type 'help legend' for more information.
+} 
+l1
+
+l1 = 
+
+  handle to <a href="matlab: helpview ([docroot '/matlab/matlab_oop/matlab_oop.map'],'deleted_handle_objects')">deleted</a> <a href="matlab:helpPopup matlab.graphics.chart.primitive.Scatter" style="font-weight:bold">Scatter</a>
+
+for n = 1:adaptIter
+    
+    figure('visible', 'off'); hold on;
+    l1 = scatter(G_adapt{n}.k, V_adapt{n});
+    l2 = scatter(G_adapt{n}.k, c_adapt{n});
+    l3 = scatter(G_adapt{n}.k, s_adapt{n});
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'Interpreter','Latex','Location','NorthWest');    
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+figure('visible', 'off'); hold on;
+    l1 = scatter(G_adapt{n}.k, V_adapt{n}); yyaxis left;
+    l2 = scatter(G_adapt{n}.k, c_adapt{n}); yyaxis right;
+    l3 = scatter(G_adapt{n}.k, s_adapt{n}); yyaxis right;
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    
+    legend([l1,l2,l3],{'$V(k)$','$c(k)$','$s(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');    
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+for n = 1:adaptIter
+    
+    figure('visible', 'off'); 
+    
+    subplot(1,2,1); hold on;
+    l1 = scatter(G_adapt{n}.k, V_adapt{n}); yyaxis left;
+    l2 = scatter(G_adapt{n}.k, s_adapt{n}); yyaxis right;
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2],{'$V(k)$','$s(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');    
+    
+    subplot(1,2,2); hold on;
+    l1 = scatter(G_adapt{n}.k, c_adapt{n});
+    l2 = scatter(G_adapt{n}.k, G_adapt{n}.y);
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2],{'$c(k)$','$f(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');    
+
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+subplot(1,2,1); hold on;
+    l1 = scatter(G_adapt{n}.k, V_adapt{n}); yyaxis left;
+    l2 = scatter(G_adapt{n}.k, s_adapt{n}); yyaxis right;
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2],{'$V(k)$','$s(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');
+figure; subplot(1,2,1); hold on;
+    l1 = scatter(G_adapt{n}.k, V_adapt{n}); yyaxis left;
+    l2 = scatter(G_adapt{n}.k, s_adapt{n}); yyaxis right;
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2],{'$V(k)$','$s(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');
+figure; subplot(1,2,1); hold on;
+    l1 = scatter(G_adapt{n}.k, V_adapt{n}); yyaxis left;
+    l2 = scatter(G_adapt{n}.k, s_adapt{n}); yyaxis right;
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2],{'$V(k)$','$s(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');
+figure; subplot(1,2,1); hold on;
+    yyaxis left;  l1 = scatter(G_adapt{n}.k, V_adapt{n}); 
+    yyaxis right; l2 = scatter(G_adapt{n}.k, s_adapt{n});
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2],{'$V(k)$','$s(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');
+for n = 1:adaptIter
+    
+    figure('visible', 'off'); 
+    
+    figure; subplot(1,2,1); hold on;
+    yyaxis left;  l1 = scatter(G_adapt{n}.k, V_adapt{n}); 
+    yyaxis right; l2 = scatter(G_adapt{n}.k, s_adapt{n});
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2],{'$V(k)$','$s(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');    
+    
+    subplot(1,2,2); hold on;
+    l1 = scatter(G_adapt{n}.k, c_adapt{n});
+    l2 = scatter(G_adapt{n}.k, G_adapt{n}.y);
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2],{'$c(k)$','$f(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');    
+
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+close all
+for n = 1:adaptIter
+    
+    figure('visible', 'off'); 
+    
+    subplot(1,2,1); hold on;
+    yyaxis left;  l1 = scatter(G_adapt{n}.k, V_adapt{n}); 
+    yyaxis right; l2 = scatter(G_adapt{n}.k, s_adapt{n});
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2],{'$V(k)$','$s(k)$'},'box','off','Interpreter','Latex','Location','NorthWest');    
+    
+    subplot(1,2,2); hold on;
+    l1 = scatter(G_adapt{n}.k, c_adapt{n});
+    l2 = scatter(G_adapt{n}.k, G_adapt{n}.y - param.delta * G_adapt{n}.k);
+    hold off; xlabel('Capital: $k$','Interpreter','Latex');
+    legend([l1,l2],{'$c(k)$','$f(k) - \delta k$'},'box','off','Interpreter','Latex','Location','NorthWest');    
+
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Evaluating 9 points to refine on ...
+Mean level of abs(aH): 25.5041. Maximum level of grid: 4. 
+Nodes coarsened: 0, children added: 8, parents added: 0, 
+Net change: 9 -> 17 = << 8 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Evaluating 17 points to refine on ...
+Mean level of abs(aH): 15.5121. Maximum level of grid: 5. 
+Nodes coarsened: 0, children added: 16, parents added: 0, 
+Net change: 17 -> 33 = << 16 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Evaluating 33 points to refine on ...
+Mean level of abs(aH): 8.97826. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 32, parents added: 0, 
+Net change: 33 -> 65 = << 32 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Evaluating 64 points to refine on ...
+Mean level of abs(aH): 5.04606. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 64, parents added: 0, 
+Net change: 65 -> 129 = << 64 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Evaluating 116 points to refine on ...
+Mean level of abs(aH): 2.78329. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 102, parents added: 0, 
+Net change: 129 -> 231 = << 102 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Evaluating 164 points to refine on ...
+Mean level of abs(aH): 1.6862. Maximum level of grid: 9. 
+Nodes coarsened: 0, children added: 96, parents added: 0, 
+Net change: 231 -> 327 = << 96 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Evaluating 196 points to refine on ...
+Mean level of abs(aH): 1.28297. Maximum level of grid: 10. 
+Nodes coarsened: 1, children added: 64, parents added: 0, 
+Net change: 327 -> 390 = << 63 >>, blacklisted: 1. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Evaluating 224 points to refine on ...
+Mean level of abs(aH): 1.15181. Maximum level of grid: 11. 
+Nodes coarsened: 2, children added: 56, parents added: 0, 
+Net change: 390 -> 444 = << 54 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Evaluating 245 points to refine on ...
+Mean level of abs(aH): 1.07793. Maximum level of grid: 12. 
+Nodes coarsened: 2, children added: 42, parents added: 0, 
+Net change: 444 -> 484 = << 40 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Evaluating 256 points to refine on ...
+Mean level of abs(aH): 1.04919. Maximum level of grid: 13. 
+Nodes coarsened: 1, children added: 22, parents added: 0, 
+Net change: 484 -> 505 = << 21 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Evaluating 257 points to refine on ...
+Mean level of abs(aH): 1.06317. Maximum level of grid: 14. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 505 -> 508 = << 3 >>, blacklisted: 7. 
+
+
+ -------  GRID ADAPTATION ITERATION 12  ------- 
+
+Evaluating 259 points to refine on ...
+Mean level of abs(aH): 1.11409. Maximum level of grid: 15. 
+Nodes coarsened: 1, children added: 4, parents added: 0, 
+Net change: 508 -> 511 = << 3 >>, blacklisted: 8. 
+
+
+ -------  GRID ADAPTATION ITERATION 13  ------- 
+
+Evaluating 261 points to refine on ...
+Mean level of abs(aH): 1.16441. Maximum level of grid: 16. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 511 -> 513 = << 2 >>, blacklisted: 10. 
+
+
+ -------  GRID ADAPTATION ITERATION 14  ------- 
+
+Evaluating 263 points to refine on ...
+Mean level of abs(aH): 1.21651. Maximum level of grid: 17. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 513 -> 515 = << 2 >>, blacklisted: 12. 
+
+
+ -------  GRID ADAPTATION ITERATION 15  ------- 
+
+Evaluating 265 points to refine on ...
+Mean level of abs(aH): 1.26821. Maximum level of grid: 18. 
+Nodes coarsened: 2, children added: 4, parents added: 0, 
+Net change: 515 -> 517 = << 2 >>, blacklisted: 14. 
+
+
+Algorithm converged. Run-time of: 4.20 seconds.
+
+Plotting Figures...

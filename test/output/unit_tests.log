@@ -1,0 +1,611 @@
+===== Log output for test_setup_grid =====
+                  d: 1
+                min: 0
+                max: 10
+              range: 10
+               grid: [17x1 double]
+                lvl: [17x1 double]
+           dxx_dims: []
+           dxy_dims: []
+                  h: [17x1 double]
+                  J: 17
+             H_comp: [17x17 double]
+      grid_to_value: @(x)x.*G.range+G.min
+              value: [17x1 double]
+             sparse: 0
+    bound_grid_cell: [1x1 struct]
+        DS_interior: [1x1 struct]
+
+         0    1.0000         0
+    0.0625    4.0000    0.6250
+    0.1250    3.0000    1.2500
+    0.1875    4.0000    1.8750
+    0.2500    2.0000    2.5000
+    0.3125    4.0000    3.1250
+    0.3750    3.0000    3.7500
+    0.4375    4.0000    4.3750
+    0.5000         0    5.0000
+    0.5625    4.0000    5.6250
+    0.6250    3.0000    6.2500
+    0.6875    4.0000    6.8750
+    0.7500    2.0000    7.5000
+    0.8125    4.0000    8.1250
+    0.8750    3.0000    8.7500
+    0.9375    4.0000    9.3750
+    1.0000    1.0000   10.0000
+
+                  d: 2
+                min: [0 10]
+                max: [10 100]
+              range: [10 90]
+               grid: [241x2 double]
+                lvl: [241x2 double]
+              names: {'x'  'y'}
+         named_dims: {[1]  [2]}
+           dxx_dims: []
+           dxy_dims: []
+                  h: [241x2 double]
+                  J: 241
+             H_comp: [241x241 double]
+      grid_to_value: @(x)x.*G.range+G.min
+              value: [241x2 double]
+             sparse: 1
+                  x: [241x1 double]
+                 dx: 0.1562
+                  y: [241x1 double]
+                 dy: 5.6250
+    bound_grid_cell: [1x1 struct]
+        DS_interior: [1x1 struct]
+
+         0         0    1.0000    1.0000         0   10.0000
+    0.0312         0    5.0000    1.0000    0.3125   10.0000
+    0.0625         0    4.0000    1.0000    0.6250   10.0000
+    0.0938         0    5.0000    1.0000    0.9375   10.0000
+    0.1250         0    3.0000    1.0000    1.2500   10.0000
+    0.1562         0    5.0000    1.0000    1.5625   10.0000
+    0.1875         0    4.0000    1.0000    1.8750   10.0000
+    0.2188         0    5.0000    1.0000    2.1875   10.0000
+    0.2500         0    2.0000    1.0000    2.5000   10.0000
+    0.2812         0    5.0000    1.0000    2.8125   10.0000
+    0.3125         0    4.0000    1.0000    3.1250   10.0000
+    0.3438         0    5.0000    1.0000    3.4375   10.0000
+    0.3750         0    3.0000    1.0000    3.7500   10.0000
+    0.4062         0    5.0000    1.0000    4.0625   10.0000
+    0.4375         0    4.0000    1.0000    4.3750   10.0000
+    0.4688         0    5.0000    1.0000    4.6875   10.0000
+    0.5000         0         0    1.0000    5.0000   10.0000
+    0.5312         0    5.0000    1.0000    5.3125   10.0000
+    0.5625         0    4.0000    1.0000    5.6250   10.0000
+    0.5938         0    5.0000    1.0000    5.9375   10.0000
+    0.6250         0    3.0000    1.0000    6.2500   10.0000
+    0.6562         0    5.0000    1.0000    6.5625   10.0000
+    0.6875         0    4.0000    1.0000    6.8750   10.0000
+    0.7188         0    5.0000    1.0000    7.1875   10.0000
+    0.7500         0    2.0000    1.0000    7.5000   10.0000
+    0.7812         0    5.0000    1.0000    7.8125   10.0000
+    0.8125         0    4.0000    1.0000    8.1250   10.0000
+    0.8438         0    5.0000    1.0000    8.4375   10.0000
+    0.8750         0    3.0000    1.0000    8.7500   10.0000
+    0.9062         0    5.0000    1.0000    9.0625   10.0000
+    0.9375         0    4.0000    1.0000    9.3750   10.0000
+    0.9688         0    5.0000    1.0000    9.6875   10.0000
+    1.0000         0    1.0000    1.0000   10.0000   10.0000
+         0    0.0625    1.0000    4.0000         0   15.6250
+    0.2500    0.0625    2.0000    4.0000    2.5000   15.6250
+    0.5000    0.0625         0    4.0000    5.0000   15.6250
+    0.7500    0.0625    2.0000    4.0000    7.5000   15.6250
+    1.0000    0.0625    1.0000    4.0000   10.0000   15.6250
+         0    0.1250    1.0000    3.0000         0   21.2500
+    0.1250    0.1250    3.0000    3.0000    1.2500   21.2500
+    0.2500    0.1250    2.0000    3.0000    2.5000   21.2500
+    0.3750    0.1250    3.0000    3.0000    3.7500   21.2500
+    0.5000    0.1250         0    3.0000    5.0000   21.2500
+    0.6250    0.1250    3.0000    3.0000    6.2500   21.2500
+    0.7500    0.1250    2.0000    3.0000    7.5000   21.2500
+    0.8750    0.1250    3.0000    3.0000    8.7500   21.2500
+    1.0000    0.1250    1.0000    3.0000   10.0000   21.2500
+         0    0.1875    1.0000    4.0000         0   26.8750
+    0.2500    0.1875    2.0000    4.0000    2.5000   26.8750
+    0.5000    0.1875         0    4.0000    5.0000   26.8750
+    0.7500    0.1875    2.0000    4.0000    7.5000   26.8750
+    1.0000    0.1875    1.0000    4.0000   10.0000   26.8750
+         0    0.2500    1.0000    2.0000         0   32.5000
+    0.0625    0.2500    4.0000    2.0000    0.6250   32.5000
+    0.1250    0.2500    3.0000    2.0000    1.2500   32.5000
+    0.1875    0.2500    4.0000    2.0000    1.8750   32.5000
+    0.2500    0.2500    2.0000    2.0000    2.5000   32.5000
+    0.3125    0.2500    4.0000    2.0000    3.1250   32.5000
+    0.3750    0.2500    3.0000    2.0000    3.7500   32.5000
+    0.4375    0.2500    4.0000    2.0000    4.3750   32.5000
+    0.5000    0.2500         0    2.0000    5.0000   32.5000
+    0.5625    0.2500    4.0000    2.0000    5.6250   32.5000
+    0.6250    0.2500    3.0000    2.0000    6.2500   32.5000
+    0.6875    0.2500    4.0000    2.0000    6.8750   32.5000
+    0.7500    0.2500    2.0000    2.0000    7.5000   32.5000
+    0.8125    0.2500    4.0000    2.0000    8.1250   32.5000
+    0.8750    0.2500    3.0000    2.0000    8.7500   32.5000
+    0.9375    0.2500    4.0000    2.0000    9.3750   32.5000
+    1.0000    0.2500    1.0000    2.0000   10.0000   32.5000
+         0    0.3125    1.0000    4.0000         0   38.1250
+    0.2500    0.3125    2.0000    4.0000    2.5000   38.1250
+    0.5000    0.3125         0    4.0000    5.0000   38.1250
+    0.7500    0.3125    2.0000    4.0000    7.5000   38.1250
+    1.0000    0.3125    1.0000    4.0000   10.0000   38.1250
+         0    0.3750    1.0000    3.0000         0   43.7500
+    0.1250    0.3750    3.0000    3.0000    1.2500   43.7500
+    0.2500    0.3750    2.0000    3.0000    2.5000   43.7500
+    0.3750    0.3750    3.0000    3.0000    3.7500   43.7500
+    0.5000    0.3750         0    3.0000    5.0000   43.7500
+    0.6250    0.3750    3.0000    3.0000    6.2500   43.7500
+    0.7500    0.3750    2.0000    3.0000    7.5000   43.7500
+    0.8750    0.3750    3.0000    3.0000    8.7500   43.7500
+    1.0000    0.3750    1.0000    3.0000   10.0000   43.7500
+         0    0.4375    1.0000    4.0000         0   49.3750
+    0.2500    0.4375    2.0000    4.0000    2.5000   49.3750
+    0.5000    0.4375         0    4.0000    5.0000   49.3750
+    0.7500    0.4375    2.0000    4.0000    7.5000   49.3750
+    1.0000    0.4375    1.0000    4.0000   10.0000   49.3750
+         0    0.5000    1.0000         0         0   55.0000
+    0.0156    0.5000    6.0000         0    0.1562   55.0000
+    0.0312    0.5000    5.0000         0    0.3125   55.0000
+    0.0469    0.5000    6.0000         0    0.4688   55.0000
+    0.0625    0.5000    4.0000         0    0.6250   55.0000
+    0.0781    0.5000    6.0000         0    0.7812   55.0000
+    0.0938    0.5000    5.0000         0    0.9375   55.0000
+    0.1094    0.5000    6.0000         0    1.0938   55.0000
+    0.1250    0.5000    3.0000         0    1.2500   55.0000
+    0.1406    0.5000    6.0000         0    1.4062   55.0000
+    0.1562    0.5000    5.0000         0    1.5625   55.0000
+    0.1719    0.5000    6.0000         0    1.7188   55.0000
+    0.1875    0.5000    4.0000         0    1.8750   55.0000
+    0.2031    0.5000    6.0000         0    2.0312   55.0000
+    0.2188    0.5000    5.0000         0    2.1875   55.0000
+    0.2344    0.5000    6.0000         0    2.3438   55.0000
+    0.2500    0.5000    2.0000         0    2.5000   55.0000
+    0.2656    0.5000    6.0000         0    2.6562   55.0000
+    0.2812    0.5000    5.0000         0    2.8125   55.0000
+    0.2969    0.5000    6.0000         0    2.9688   55.0000
+    0.3125    0.5000    4.0000         0    3.1250   55.0000
+    0.3281    0.5000    6.0000         0    3.2812   55.0000
+    0.3438    0.5000    5.0000         0    3.4375   55.0000
+    0.3594    0.5000    6.0000         0    3.5938   55.0000
+    0.3750    0.5000    3.0000         0    3.7500   55.0000
+    0.3906    0.5000    6.0000         0    3.9062   55.0000
+    0.4062    0.5000    5.0000         0    4.0625   55.0000
+    0.4219    0.5000    6.0000         0    4.2188   55.0000
+    0.4375    0.5000    4.0000         0    4.3750   55.0000
+    0.4531    0.5000    6.0000         0    4.5312   55.0000
+    0.4688    0.5000    5.0000         0    4.6875   55.0000
+    0.4844    0.5000    6.0000         0    4.8438   55.0000
+    0.5000    0.5000         0         0    5.0000   55.0000
+    0.5156    0.5000    6.0000         0    5.1562   55.0000
+    0.5312    0.5000    5.0000         0    5.3125   55.0000
+    0.5469    0.5000    6.0000         0    5.4688   55.0000
+    0.5625    0.5000    4.0000         0    5.6250   55.0000
+    0.5781    0.5000    6.0000         0    5.7812   55.0000
+    0.5938    0.5000    5.0000         0    5.9375   55.0000
+    0.6094    0.5000    6.0000         0    6.0938   55.0000
+    0.6250    0.5000    3.0000         0    6.2500   55.0000
+    0.6406    0.5000    6.0000         0    6.4062   55.0000
+    0.6562    0.5000    5.0000         0    6.5625   55.0000
+    0.6719    0.5000    6.0000         0    6.7188   55.0000
+    0.6875    0.5000    4.0000         0    6.8750   55.0000
+    0.7031    0.5000    6.0000         0    7.0312   55.0000
+    0.7188    0.5000    5.0000         0    7.1875   55.0000
+    0.7344    0.5000    6.0000         0    7.3438   55.0000
+    0.7500    0.5000    2.0000         0    7.5000   55.0000
+    0.7656    0.5000    6.0000         0    7.6562   55.0000
+    0.7812    0.5000    5.0000         0    7.8125   55.0000
+    0.7969    0.5000    6.0000         0    7.9688   55.0000
+    0.8125    0.5000    4.0000         0    8.1250   55.0000
+    0.8281    0.5000    6.0000         0    8.2812   55.0000
+    0.8438    0.5000    5.0000         0    8.4375   55.0000
+    0.8594    0.5000    6.0000         0    8.5938   55.0000
+    0.8750    0.5000    3.0000         0    8.7500   55.0000
+    0.8906    0.5000    6.0000         0    8.9062   55.0000
+    0.9062    0.5000    5.0000         0    9.0625   55.0000
+    0.9219    0.5000    6.0000         0    9.2188   55.0000
+    0.9375    0.5000    4.0000         0    9.3750   55.0000
+    0.9531    0.5000    6.0000         0    9.5312   55.0000
+    0.9688    0.5000    5.0000         0    9.6875   55.0000
+    0.9844    0.5000    6.0000         0    9.8438   55.0000
+    1.0000    0.5000    1.0000         0   10.0000   55.0000
+         0    0.5625    1.0000    4.0000         0   60.6250
+    0.2500    0.5625    2.0000    4.0000    2.5000   60.6250
+    0.5000    0.5625         0    4.0000    5.0000   60.6250
+    0.7500    0.5625    2.0000    4.0000    7.5000   60.6250
+    1.0000    0.5625    1.0000    4.0000   10.0000   60.6250
+         0    0.6250    1.0000    3.0000         0   66.2500
+    0.1250    0.6250    3.0000    3.0000    1.2500   66.2500
+    0.2500    0.6250    2.0000    3.0000    2.5000   66.2500
+    0.3750    0.6250    3.0000    3.0000    3.7500   66.2500
+    0.5000    0.6250         0    3.0000    5.0000   66.2500
+    0.6250    0.6250    3.0000    3.0000    6.2500   66.2500
+    0.7500    0.6250    2.0000    3.0000    7.5000   66.2500
+    0.8750    0.6250    3.0000    3.0000    8.7500   66.2500
+    1.0000    0.6250    1.0000    3.0000   10.0000   66.2500
+         0    0.6875    1.0000    4.0000         0   71.8750
+    0.2500    0.6875    2.0000    4.0000    2.5000   71.8750
+    0.5000    0.6875         0    4.0000    5.0000   71.8750
+    0.7500    0.6875    2.0000    4.0000    7.5000   71.8750
+    1.0000    0.6875    1.0000    4.0000   10.0000   71.8750
+         0    0.7500    1.0000    2.0000         0   77.5000
+    0.0625    0.7500    4.0000    2.0000    0.6250   77.5000
+    0.1250    0.7500    3.0000    2.0000    1.2500   77.5000
+    0.1875    0.7500    4.0000    2.0000    1.8750   77.5000
+    0.2500    0.7500    2.0000    2.0000    2.5000   77.5000
+    0.3125    0.7500    4.0000    2.0000    3.1250   77.5000
+    0.3750    0.7500    3.0000    2.0000    3.7500   77.5000
+    0.4375    0.7500    4.0000    2.0000    4.3750   77.5000
+    0.5000    0.7500         0    2.0000    5.0000   77.5000
+    0.5625    0.7500    4.0000    2.0000    5.6250   77.5000
+    0.6250    0.7500    3.0000    2.0000    6.2500   77.5000
+    0.6875    0.7500    4.0000    2.0000    6.8750   77.5000
+    0.7500    0.7500    2.0000    2.0000    7.5000   77.5000
+    0.8125    0.7500    4.0000    2.0000    8.1250   77.5000
+    0.8750    0.7500    3.0000    2.0000    8.7500   77.5000
+    0.9375    0.7500    4.0000    2.0000    9.3750   77.5000
+    1.0000    0.7500    1.0000    2.0000   10.0000   77.5000
+         0    0.8125    1.0000    4.0000         0   83.1250
+    0.2500    0.8125    2.0000    4.0000    2.5000   83.1250
+    0.5000    0.8125         0    4.0000    5.0000   83.1250
+    0.7500    0.8125    2.0000    4.0000    7.5000   83.1250
+    1.0000    0.8125    1.0000    4.0000   10.0000   83.1250
+         0    0.8750    1.0000    3.0000         0   88.7500
+    0.1250    0.8750    3.0000    3.0000    1.2500   88.7500
+    0.2500    0.8750    2.0000    3.0000    2.5000   88.7500
+    0.3750    0.8750    3.0000    3.0000    3.7500   88.7500
+    0.5000    0.8750         0    3.0000    5.0000   88.7500
+    0.6250    0.8750    3.0000    3.0000    6.2500   88.7500
+    0.7500    0.8750    2.0000    3.0000    7.5000   88.7500
+    0.8750    0.8750    3.0000    3.0000    8.7500   88.7500
+    1.0000    0.8750    1.0000    3.0000   10.0000   88.7500
+         0    0.9375    1.0000    4.0000         0   94.3750
+    0.2500    0.9375    2.0000    4.0000    2.5000   94.3750
+    0.5000    0.9375         0    4.0000    5.0000   94.3750
+    0.7500    0.9375    2.0000    4.0000    7.5000   94.3750
+    1.0000    0.9375    1.0000    4.0000   10.0000   94.3750
+         0    1.0000    1.0000    1.0000         0  100.0000
+    0.0312    1.0000    5.0000    1.0000    0.3125  100.0000
+    0.0625    1.0000    4.0000    1.0000    0.6250  100.0000
+    0.0938    1.0000    5.0000    1.0000    0.9375  100.0000
+    0.1250    1.0000    3.0000    1.0000    1.2500  100.0000
+    0.1562    1.0000    5.0000    1.0000    1.5625  100.0000
+    0.1875    1.0000    4.0000    1.0000    1.8750  100.0000
+    0.2188    1.0000    5.0000    1.0000    2.1875  100.0000
+    0.2500    1.0000    2.0000    1.0000    2.5000  100.0000
+    0.2812    1.0000    5.0000    1.0000    2.8125  100.0000
+    0.3125    1.0000    4.0000    1.0000    3.1250  100.0000
+    0.3438    1.0000    5.0000    1.0000    3.4375  100.0000
+    0.3750    1.0000    3.0000    1.0000    3.7500  100.0000
+    0.4062    1.0000    5.0000    1.0000    4.0625  100.0000
+    0.4375    1.0000    4.0000    1.0000    4.3750  100.0000
+    0.4688    1.0000    5.0000    1.0000    4.6875  100.0000
+    0.5000    1.0000         0    1.0000    5.0000  100.0000
+    0.5312    1.0000    5.0000    1.0000    5.3125  100.0000
+    0.5625    1.0000    4.0000    1.0000    5.6250  100.0000
+    0.5938    1.0000    5.0000    1.0000    5.9375  100.0000
+    0.6250    1.0000    3.0000    1.0000    6.2500  100.0000
+    0.6562    1.0000    5.0000    1.0000    6.5625  100.0000
+    0.6875    1.0000    4.0000    1.0000    6.8750  100.0000
+    0.7188    1.0000    5.0000    1.0000    7.1875  100.0000
+    0.7500    1.0000    2.0000    1.0000    7.5000  100.0000
+    0.7812    1.0000    5.0000    1.0000    7.8125  100.0000
+    0.8125    1.0000    4.0000    1.0000    8.1250  100.0000
+    0.8438    1.0000    5.0000    1.0000    8.4375  100.0000
+    0.8750    1.0000    3.0000    1.0000    8.7500  100.0000
+    0.9062    1.0000    5.0000    1.0000    9.0625  100.0000
+    0.9375    1.0000    4.0000    1.0000    9.3750  100.0000
+    0.9688    1.0000    5.0000    1.0000    9.6875  100.0000
+    1.0000    1.0000    1.0000    1.0000   10.0000  100.0000
+
+===== Log output for test_gen_H =====
+test_H1 hash: D60F49BE167218CE01A282A2F8C1CE9239D4C853
+test_H2 hash: 46388BD77668A28E9E070929271B2EE7BBB9C97E
+ 
+===== Log output for test_gen_BH =====
+test_BH1 hash: 702B87E2E6F280D38F4093AE1D45FCCFEC372318
+test_BH2 hash: E3D63C66A2BAC37D138771E3941919212FF4CFF7
+ 
+===== Log output for test_parents =====
+Starting tests with grid of depth 8, of size 1537.
+
+Test case 1a: Drop 5 percent of random points from the grid.
+Test case 1a completed. Grid size is 1461. Interpolation errors: 507. Average error: 0.032827.
+Test case 1b: Add parents for remaining points after test 1.
+Test case 1b completed. Grid size is 1494. Interpolation errors: 0. Average error:  NaN.
+
+Test case 2a: Drop 50 percent of random points from the grid.
+Test case 2a completed. Grid size is 769. Interpolation errors: 758. Average error: 0.099553.
+Test case 2b: Add parents for remaining points after test 1.
+Test case 2b completed. Grid size is 1121. Interpolation errors: 0. Average error:  NaN.
+ 
+===== Log output for test_gen_FD =====
+test bound_grid hash: 12EEC55FE152EE9BE638FF98674F476E740F77BB
+test DS hash: D541413CA2B1B71E54A5BDDD37D19BADB70615FD
+test const hash: 8DB40445362AF395C58B10F02FB3A1C46151BB32
+ 
+===== Log output for test_keep_dims =====
+                  d: 2
+                min: [0 0]
+                max: [1 1]
+              range: [1 1]
+               grid: [65x2 double]
+                lvl: [65x2 double]
+         named_dims: {[1 2]}
+              names: {'y'}
+           dxx_dims: [1x0 double]
+           dxy_dims: [1 2]
+                  h: [65x2 double]
+                  J: 65
+             H_comp: [65x65 double]
+      grid_to_value: @(x)x.*G.range+G.min
+              value: [65x2 double]
+             sparse: 0
+                  y: [65x2 double]
+                 dy: [0.0625 0.0625]
+    bound_grid_cell: [1x1 struct]
+        DS_interior: [1x1 struct]
+
+         0         0    1.0000    1.0000         0         0
+         0    0.1250    1.0000    3.0000         0    0.1250
+         0    0.2500    1.0000    2.0000         0    0.2500
+         0    0.3750    1.0000    3.0000         0    0.3750
+         0    0.5000    1.0000         0         0    0.5000
+         0    0.6250    1.0000    3.0000         0    0.6250
+         0    0.7500    1.0000    2.0000         0    0.7500
+         0    0.8750    1.0000    3.0000         0    0.8750
+         0    1.0000    1.0000    1.0000         0    1.0000
+    0.0625    0.5000    4.0000         0    0.0625    0.5000
+    0.1250         0    3.0000    1.0000    0.1250         0
+    0.1250    0.5000    3.0000         0    0.1250    0.5000
+    0.1250    1.0000    3.0000    1.0000    0.1250    1.0000
+    0.1875    0.5000    4.0000         0    0.1875    0.5000
+    0.2500         0    2.0000    1.0000    0.2500         0
+    0.2500    0.2500    2.0000    2.0000    0.2500    0.2500
+    0.2500    0.5000    2.0000         0    0.2500    0.5000
+    0.2500    0.7500    2.0000    2.0000    0.2500    0.7500
+    0.2500    1.0000    2.0000    1.0000    0.2500    1.0000
+    0.3125    0.5000    4.0000         0    0.3125    0.5000
+    0.3750         0    3.0000    1.0000    0.3750         0
+    0.3750    0.5000    3.0000         0    0.3750    0.5000
+    0.3750    1.0000    3.0000    1.0000    0.3750    1.0000
+    0.4375    0.5000    4.0000         0    0.4375    0.5000
+    0.5000         0         0    1.0000    0.5000         0
+    0.5000    0.0625         0    4.0000    0.5000    0.0625
+    0.5000    0.1250         0    3.0000    0.5000    0.1250
+    0.5000    0.1875         0    4.0000    0.5000    0.1875
+    0.5000    0.2500         0    2.0000    0.5000    0.2500
+    0.5000    0.3125         0    4.0000    0.5000    0.3125
+    0.5000    0.3750         0    3.0000    0.5000    0.3750
+    0.5000    0.4375         0    4.0000    0.5000    0.4375
+    0.5000    0.5000         0         0    0.5000    0.5000
+    0.5000    0.5625         0    4.0000    0.5000    0.5625
+    0.5000    0.6250         0    3.0000    0.5000    0.6250
+    0.5000    0.6875         0    4.0000    0.5000    0.6875
+    0.5000    0.7500         0    2.0000    0.5000    0.7500
+    0.5000    0.8125         0    4.0000    0.5000    0.8125
+    0.5000    0.8750         0    3.0000    0.5000    0.8750
+    0.5000    0.9375         0    4.0000    0.5000    0.9375
+    0.5000    1.0000         0    1.0000    0.5000    1.0000
+    0.5625    0.5000    4.0000         0    0.5625    0.5000
+    0.6250         0    3.0000    1.0000    0.6250         0
+    0.6250    0.5000    3.0000         0    0.6250    0.5000
+    0.6250    1.0000    3.0000    1.0000    0.6250    1.0000
+    0.6875    0.5000    4.0000         0    0.6875    0.5000
+    0.7500         0    2.0000    1.0000    0.7500         0
+    0.7500    0.2500    2.0000    2.0000    0.7500    0.2500
+    0.7500    0.5000    2.0000         0    0.7500    0.5000
+    0.7500    0.7500    2.0000    2.0000    0.7500    0.7500
+    0.7500    1.0000    2.0000    1.0000    0.7500    1.0000
+    0.8125    0.5000    4.0000         0    0.8125    0.5000
+    0.8750         0    3.0000    1.0000    0.8750         0
+    0.8750    0.5000    3.0000         0    0.8750    0.5000
+    0.8750    1.0000    3.0000    1.0000    0.8750    1.0000
+    0.9375    0.5000    4.0000         0    0.9375    0.5000
+    1.0000         0    1.0000    1.0000    1.0000         0
+    1.0000    0.1250    1.0000    3.0000    1.0000    0.1250
+    1.0000    0.2500    1.0000    2.0000    1.0000    0.2500
+    1.0000    0.3750    1.0000    3.0000    1.0000    0.3750
+    1.0000    0.5000    1.0000         0    1.0000    0.5000
+    1.0000    0.6250    1.0000    3.0000    1.0000    0.6250
+    1.0000    0.7500    1.0000    2.0000    1.0000    0.7500
+    1.0000    0.8750    1.0000    3.0000    1.0000    0.8750
+    1.0000    1.0000    1.0000    1.0000    1.0000    1.0000
+
+===== Log output for test_adapt_grid =====
+Adaptation with the "tol" rule:
+Evaluating 36 points to refine on ...
+Mean level of abs(aH): 0.671416. Maximum level of grid: 5. 
+Nodes coarsened: 0, children added: 40, parents added: 0, 
+Net change: 65 -> 105 = << 40 >>, blacklisted: 0. 
+Evaluating 60 points to refine on ...
+Mean level of abs(aH): 0.786004. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 58, parents added: 4, 
+Net change: 105 -> 167 = << 62 >>, blacklisted: 0. 
+Evaluating 90 points to refine on ...
+Mean level of abs(aH): 0.739339. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 78, parents added: 8, 
+Net change: 167 -> 253 = << 86 >>, blacklisted: 0. 
+Evaluating 128 points to refine on ...
+Mean level of abs(aH): 0.614309. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 100, parents added: 28, 
+Net change: 253 -> 381 = << 128 >>, blacklisted: 0. 
+Evaluating 157 points to refine on ...
+Mean level of abs(aH): 0.473341. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 86, parents added: 20, 
+Net change: 381 -> 487 = << 106 >>, blacklisted: 0. 
+Evaluating 181 points to refine on ...
+Mean level of abs(aH): 0.432274. Maximum level of grid: 9. 
+Nodes coarsened: 0, children added: 74, parents added: 56, 
+Net change: 487 -> 617 = << 130 >>, blacklisted: 0. 
+Evaluating 214 points to refine on ...
+Mean level of abs(aH): 0.391071. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 98, parents added: 104, 
+Net change: 617 -> 819 = << 202 >>, blacklisted: 0. 
+Evaluating 246 points to refine on ...
+Mean level of abs(aH): 0.326444. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 112, parents added: 120, 
+Net change: 819 -> 1051 = << 232 >>, blacklisted: 0. 
+Evaluating 295 points to refine on ...
+Mean level of abs(aH): 0.277581. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 156, parents added: 212, 
+Net change: 1051 -> 1419 = << 368 >>, blacklisted: 0. 
+Evaluating 341 points to refine on ...
+Mean level of abs(aH): 0.223206. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 156, parents added: 240, 
+Net change: 1419 -> 1815 = << 396 >>, blacklisted: 0. 
+Evaluating 382 points to refine on ...
+Mean level of abs(aH): 0.18476. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 140, parents added: 254, 
+Net change: 1815 -> 2209 = << 394 >>, blacklisted: 0. 
+Evaluating 424 points to refine on ...
+Mean level of abs(aH): 0.159409. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 146, parents added: 250, 
+Net change: 2209 -> 2605 = << 396 >>, blacklisted: 0. 
+Evaluating 458 points to refine on ...
+Mean level of abs(aH): 0.14138. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 118, parents added: 214, 
+Net change: 2605 -> 2937 = << 332 >>, blacklisted: 0. 
+Evaluating 468 points to refine on ...
+Mean level of abs(aH): 0.128124. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 32, parents added: 132, 
+Net change: 2937 -> 3101 = << 164 >>, blacklisted: 0. 
+Evaluating 474 points to refine on ...
+Mean level of abs(aH): 0.122408. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 22, parents added: 88, 
+Net change: 3101 -> 3211 = << 110 >>, blacklisted: 0. 
+Evaluating 476 points to refine on ...
+Mean level of abs(aH): 0.118743. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 8, parents added: 28, 
+Net change: 3211 -> 3247 = << 36 >>, blacklisted: 0. 
+Evaluating 476 points to refine on ...
+Mean level of abs(aH): 0.117545. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 3247 -> 3247 = << 0 >>, blacklisted: 0. 
+
+Adaptation with the "pct" rule:
+Evaluating 39 points to refine on ...
+Mean level of abs(aH): 0.671416. Maximum level of grid: 5. 
+Nodes coarsened: 26, children added: 40, parents added: 10, 
+Net change: 65 -> 89 = << 24 >>, blacklisted: 26. 
+Evaluating 69 points to refine on ...
+Mean level of abs(aH): 0.925037. Maximum level of grid: 6. 
+Nodes coarsened: 20, children added: 75, parents added: 28, 
+Net change: 89 -> 172 = << 83 >>, blacklisted: 20. 
+Evaluating 111 points to refine on ...
+Mean level of abs(aH): 0.72051. Maximum level of grid: 7. 
+Nodes coarsened: 61, children added: 102, parents added: 62, 
+Net change: 172 -> 275 = << 103 >>, blacklisted: 61. 
+Evaluating 157 points to refine on ...
+Mean level of abs(aH): 0.567906. Maximum level of grid: 8. 
+Nodes coarsened: 118, children added: 132, parents added: 102, 
+Net change: 275 -> 391 = << 116 >>, blacklisted: 118. 
+Evaluating 212 points to refine on ...
+Mean level of abs(aH): 0.460539. Maximum level of grid: 8. 
+Nodes coarsened: 179, children added: 182, parents added: 199, 
+Net change: 391 -> 593 = << 202 >>, blacklisted: 179. 
+Evaluating 252 points to refine on ...
+Mean level of abs(aH): 0.359466. Maximum level of grid: 9. 
+Nodes coarsened: 341, children added: 158, parents added: 244, 
+Net change: 593 -> 654 = << 61 >>, blacklisted: 341. 
+Evaluating 299 points to refine on ...
+Mean level of abs(aH): 0.369894. Maximum level of grid: 10. 
+Nodes coarsened: 355, children added: 261, parents added: 366, 
+Net change: 654 -> 926 = << 272 >>, blacklisted: 355. 
+Evaluating 351 points to refine on ...
+Mean level of abs(aH): 0.292858. Maximum level of grid: 11. 
+Nodes coarsened: 575, children added: 235, parents added: 500, 
+Net change: 926 -> 1086 = << 160 >>, blacklisted: 575. 
+Evaluating 420 points to refine on ...
+Mean level of abs(aH): 0.270687. Maximum level of grid: 11. 
+Nodes coarsened: 666, children added: 375, parents added: 851, 
+Net change: 1086 -> 1646 = << 560 >>, blacklisted: 666. 
+Evaluating 510 points to refine on ...
+Mean level of abs(aH): 0.200994. Maximum level of grid: 11. 
+Nodes coarsened: 1136, children added: 375, parents added: 1261, 
+Net change: 1646 -> 2146 = << 500 >>, blacklisted: 1136. 
+Evaluating 613 points to refine on ...
+Mean level of abs(aH): 0.165444. Maximum level of grid: 11. 
+Nodes coarsened: 1533, children added: 509, parents added: 1761, 
+Net change: 2146 -> 2883 = << 737 >>, blacklisted: 1533. 
+Evaluating 729 points to refine on ...
+Mean level of abs(aH): 0.132106. Maximum level of grid: 11. 
+Nodes coarsened: 2154, children added: 564, parents added: 2404, 
+Net change: 2883 -> 3697 = << 814 >>, blacklisted: 2154. 
+Evaluating 845 points to refine on ...
+Mean level of abs(aH): 0.110295. Maximum level of grid: 12. 
+Nodes coarsened: 2852, children added: 686, parents added: 3122, 
+Net change: 3697 -> 4653 = << 956 >>, blacklisted: 2852. 
+Evaluating 931 points to refine on ...
+Mean level of abs(aH): 0.0909968. Maximum level of grid: 12. 
+Nodes coarsened: 3722, children added: 662, parents added: 3472, 
+Net change: 4653 -> 5065 = << 412 >>, blacklisted: 3722. 
+Evaluating 965 points to refine on ...
+Mean level of abs(aH): 0.0848219. Maximum level of grid: 12. 
+Nodes coarsened: 4100, children added: 708, parents added: 3056, 
+Net change: 5065 -> 4729 = << -336 >>, blacklisted: 4100. 
+
+Adaptation with the "num" rule:
+Evaluating 39 points to refine on ...
+Mean level of abs(aH): 0.671416. Maximum level of grid: 5. 
+Nodes coarsened: 26, children added: 40, parents added: 10, 
+Net change: 65 -> 89 = << 24 >>, blacklisted: 26. 
+Evaluating 69 points to refine on ...
+Mean level of abs(aH): 0.925037. Maximum level of grid: 6. 
+Nodes coarsened: 20, children added: 75, parents added: 28, 
+Net change: 89 -> 172 = << 83 >>, blacklisted: 20. 
+Evaluating 111 points to refine on ...
+Mean level of abs(aH): 0.72051. Maximum level of grid: 7. 
+Nodes coarsened: 61, children added: 102, parents added: 62, 
+Net change: 172 -> 275 = << 103 >>, blacklisted: 61. 
+Evaluating 157 points to refine on ...
+Mean level of abs(aH): 0.567906. Maximum level of grid: 8. 
+Nodes coarsened: 118, children added: 132, parents added: 102, 
+Net change: 275 -> 391 = << 116 >>, blacklisted: 118. 
+Evaluating 212 points to refine on ...
+Mean level of abs(aH): 0.460539. Maximum level of grid: 8. 
+Nodes coarsened: 179, children added: 182, parents added: 199, 
+Net change: 391 -> 593 = << 202 >>, blacklisted: 179. 
+Evaluating 252 points to refine on ...
+Mean level of abs(aH): 0.359466. Maximum level of grid: 9. 
+Nodes coarsened: 341, children added: 158, parents added: 244, 
+Net change: 593 -> 654 = << 61 >>, blacklisted: 341. 
+Evaluating 299 points to refine on ...
+Mean level of abs(aH): 0.369894. Maximum level of grid: 10. 
+Nodes coarsened: 355, children added: 261, parents added: 366, 
+Net change: 654 -> 926 = << 272 >>, blacklisted: 355. 
+Evaluating 351 points to refine on ...
+Mean level of abs(aH): 0.292858. Maximum level of grid: 11. 
+Nodes coarsened: 575, children added: 235, parents added: 500, 
+Net change: 926 -> 1086 = << 160 >>, blacklisted: 575. 
+Evaluating 420 points to refine on ...
+Mean level of abs(aH): 0.270687. Maximum level of grid: 11. 
+Nodes coarsened: 666, children added: 375, parents added: 851, 
+Net change: 1086 -> 1646 = << 560 >>, blacklisted: 666. 
+Evaluating 510 points to refine on ...
+Mean level of abs(aH): 0.200994. Maximum level of grid: 11. 
+Nodes coarsened: 1136, children added: 375, parents added: 1261, 
+Net change: 1646 -> 2146 = << 500 >>, blacklisted: 1136. 
+Evaluating 613 points to refine on ...
+Mean level of abs(aH): 0.165444. Maximum level of grid: 11. 
+Nodes coarsened: 1533, children added: 509, parents added: 1761, 
+Net change: 2146 -> 2883 = << 737 >>, blacklisted: 1533. 
+Evaluating 729 points to refine on ...
+Mean level of abs(aH): 0.132106. Maximum level of grid: 11. 
+Nodes coarsened: 2154, children added: 564, parents added: 2404, 
+Net change: 2883 -> 3697 = << 814 >>, blacklisted: 2154. 
+Evaluating 845 points to refine on ...
+Mean level of abs(aH): 0.110295. Maximum level of grid: 12. 
+Nodes coarsened: 2852, children added: 686, parents added: 3122, 
+Net change: 3697 -> 4653 = << 956 >>, blacklisted: 2852. 
+Evaluating 931 points to refine on ...
+Mean level of abs(aH): 0.0909968. Maximum level of grid: 12. 
+Nodes coarsened: 3722, children added: 662, parents added: 3472, 
+Net change: 4653 -> 5065 = << 412 >>, blacklisted: 3722. 
+Evaluating 965 points to refine on ...
+Mean level of abs(aH): 0.0848219. Maximum level of grid: 12. 
+Nodes coarsened: 4100, children added: 708, parents added: 3056, 
+Net change: 5065 -> 4729 = << -336 >>, blacklisted: 4100. 
+ 
+Elapsed time is 36.136398 seconds.

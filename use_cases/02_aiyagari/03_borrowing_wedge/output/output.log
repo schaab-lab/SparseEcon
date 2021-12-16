@@ -1,0 +1,2383 @@
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.681043e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Stationary Equilibrium: (r = 0.0481, K = 5.50),  markets(S = 1.52e-19,  Y-C-I = 1.33e-03, Kgap = 4.12e-12) 
+
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',78,1)">78  </a>    V_adapt{adaptIter} = ss.V; G_adapt{adaptIter} = G;
+if system_dependent('IsDebugMode')==1, dbcont; end
+Evaluating 84 points to refine on ...
+Mean level of abs(aH): 0.606436. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 114, parents added: 0, 
+Net change: 85 -> 199 = << 114 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+{Unrecognized field name "tau".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 61)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',61,0)">line 61</a>)
+    K0 = 10; tau0 = 0; if exist('ss','var'), K0 = ss.K; tau0 = ss.tau; end; X0 = [K0,tau0]; J0 = [];
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.681043e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Stationary Equilibrium: (r = 0.0481, K = 5.50),  markets(S = 1.52e-19,  Y-C-I = 1.33e-03, Kgap = 4.12e-12) 
+
+Evaluating 84 points to refine on ...
+Mean level of abs(aH): 0.606436. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 114, parents added: 0, 
+Net change: 85 -> 199 = << 114 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0487, K = 5.45),  markets(S = -1.41e-18,  Y-C-I = 2.92e-04, Kgap = 1.20e-11) 
+
+Evaluating 185 points to refine on ...
+Mean level of abs(aH): 0.265566. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 242, parents added: 0, 
+Net change: 199 -> 441 = << 242 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.775558e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Stationary Equilibrium: (r = 0.0493, K = 5.40),  markets(S = -1.25e-18,  Y-C-I = 2.40e-04, Kgap = -1.44e-09) 
+
+Evaluating 346 points to refine on ...
+Mean level of abs(aH): 0.122315. Maximum level of grid: 8. 
+Nodes coarsened: 13, children added: 401, parents added: 4, 
+Net change: 441 -> 833 = << 392 >>, blacklisted: 13. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  5.551115e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Stationary Equilibrium: (r = 0.0496, K = 5.38),  markets(S = -2.59e-18,  Y-C-I = 3.00e-04, Kgap = 5.89e-11) 
+
+Evaluating 527 points to refine on ...
+Mean level of abs(aH): 0.0653824. Maximum level of grid: 9. 
+Nodes coarsened: 30, children added: 479, parents added: 36, 
+Net change: 833 -> 1318 = << 485 >>, blacklisted: 41. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.65e-18,  Y-C-I = 2.50e-04, Kgap = -1.72e-10) 
+
+Evaluating 703 points to refine on ...
+Mean level of abs(aH): 0.0415934. Maximum level of grid: 10. 
+Nodes coarsened: 49, children added: 466, parents added: 76, 
+Net change: 1318 -> 1811 = << 493 >>, blacklisted: 89. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.42e-18,  Y-C-I = 2.04e-04, Kgap = 3.49e-10) 
+
+Evaluating 893 points to refine on ...
+Mean level of abs(aH): 0.0304057. Maximum level of grid: 11. 
+Nodes coarsened: 133, children added: 503, parents added: 155, 
+Net change: 1811 -> 2336 = << 525 >>, blacklisted: 216. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -4.21e-19,  Y-C-I = 1.69e-04, Kgap = 1.34e-09) 
+
+Evaluating 1097 points to refine on ...
+Mean level of abs(aH): 0.0236609. Maximum level of grid: 12. 
+Nodes coarsened: 220, children added: 522, parents added: 226, 
+Net change: 2336 -> 2864 = << 528 >>, blacklisted: 348. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.00e-18,  Y-C-I = 1.60e-04, Kgap = -1.24e-11) 
+
+Evaluating 1265 points to refine on ...
+Mean level of abs(aH): 0.0193409. Maximum level of grid: 12. 
+Nodes coarsened: 281, children added: 442, parents added: 266, 
+Net change: 2864 -> 3291 = << 427 >>, blacklisted: 484. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.71e-18,  Y-C-I = 1.55e-04, Kgap = -3.44e-10) 
+
+Evaluating 1382 points to refine on ...
+Mean level of abs(aH): 0.0168443. Maximum level of grid: 13. 
+Nodes coarsened: 318, children added: 373, parents added: 310, 
+Net change: 3291 -> 3656 = << 365 >>, blacklisted: 612. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Stationary Equilibrium: (r = 0.0497, K = 5.37),  markets(S = -1.37e-18,  Y-C-I = 1.53e-04, Kgap = -1.14e-09) 
+
+Evaluating 1462 points to refine on ...
+Mean level of abs(aH): 0.0151578. Maximum level of grid: 14. 
+Nodes coarsened: 358, children added: 262, parents added: 339, 
+Net change: 3656 -> 3899 = << 243 >>, blacklisted: 728. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Complex values in VFI: terminating process.[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 260)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',260,0)">line 260</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 300)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',300,0)">line 300</a>)
+Objective function is returning undefined values at initial point. FSOLVE cannot continue.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+    X = fsolve(@(x) stationary(x, G, GDense, param), X0, options);
+} 
+runTime = toc(runTime); fprintf('\n\nAlgorithm converged. Run-time of: %.2f seconds.\n',runTime);
+
+
+Algorithm converged. Run-time of: 37.48 seconds.
+
+fprintf('\nPlotting Figures...\n');
+
+Plotting Figures...
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1=scatter3(G_adapt{n}.k, G_adapt{n}.z, V_adapt{n});
+    xlabel('Capital: $k$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$V(k,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');        
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Unrecognized field name "k".
+} 
+fprintf('\nPlotting Figures...\n');
+
+Plotting Figures...
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, V_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$V(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');        
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+{Dot indexing is not supported for variables of this type.
+} 
+figure; scatter3(G_adapt{n-1}.a, G_adapt{n-1}.z, ss.c);
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.681043e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Stationary Equilibrium: (r = 0.0481, K = 5.50),  markets(S = 1.52e-19,  Y-C-I = 1.33e-03, Kgap = 4.12e-12) 
+
+[~,G,GDense,ss] = stationary(X, G, GDense, param);
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',65,1)">65  </a>end
+max(abs( ss.s ))
+
+ans =
+
+    0.6405
+
+max(abs( ss.s - (G.income + ss.c) ))
+
+ans =
+
+    8.4623
+
+max(abs( ss.s - (G.income - ss.c) ))
+
+ans =
+
+     0
+
+max(abs( ss.s - ((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + w * G.z + tau - ss.c) ))
+
+ans =
+
+     0
+
+max(abs( sum(ss.s.*g)*GDense.dx - sum((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + w * G.z + tau - ss.c).*g)*GDense.dx ))
+ max(abs( sum(ss.s.*g)*GDense.dx - sum((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + w * G.z + tau - ss.c).*g)*GDense.dx ))
+                                                                                                                        ↑
+{Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+max(abs( sum(ss.s.*g)*GDense.dx - sum(((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + w * G.z + tau - ss.c).*g)*GDense.dx ))
+{Arrays have incompatible sizes for this operation.
+
+<a href="matlab:helpview('matlab','error_sizeDimensionsMustMatch')" style="font-weight:bold">Related documentation</a>
+} 
+sum(ss.s.*g)*GDense.dx
+{Arrays have incompatible sizes for this operation.
+
+<a href="matlab:helpview('matlab','error_sizeDimensionsMustMatch')" style="font-weight:bold">Related documentation</a>
+} 
+max(abs( sum((G.BHDense * hjb.s).*g)*GDense.dx ...
+    - sum((G.BHDense * ((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + w * G.z + tau - ss.c).*g)*GDense.dx ))
+     - sum((G.BHDense * ((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + w * G.z + tau - ss.c).*g)*GDense.dx ))
+                                                                                                           ↑
+{Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+max(abs( sum((G.BHDense * hjb.s).*g)*GDense.dx ...
+    - sum( (G.BHDense * ((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + w * G.z + tau - ss.c)).*g)*GDense.dx ))
+
+ans =
+
+     0
+
+S - max(abs( sum( (G.BHDense * ((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + w * G.z + tau - ss.c)).*g)*GDense.dx ))
+
+ans =
+
+  -3.3087e-18
+
+S - sum( (G.BHDense * ((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + w * G.z + tau - ss.c)).*g)*GDense.dx
+
+ans =
+
+   1.1033e-19
+
+S + C - sum( (G.BHDense * ((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + w * G.z + tau)).*g)*GDense.dx
+
+ans =
+
+     0
+
+S + C + w*param.L - sum( (G.BHDense * ((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + tau)).*g)*GDense.dx
+
+ans =
+
+    2.1920
+
+S + C - w*param.L - sum( (G.BHDense * ((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0) + tau)).*g)*GDense.dx
+
+ans =
+
+   1.6653e-16
+
+S + C - w*param.L - tau - sum( (G.BHDense * ((r * G.a).*(G.a>=0) + (rb * G.a).*(G.a<0))).*g)*GDense.dx
+
+ans =
+
+   2.7756e-16
+
+S + C - w*param.L - tau - ...
+    sum( (G.BHDense * (((rk - param.delta) * G.a).*(G.a>=0) + ((rk - param.delta+param.wedge) * G.a).*(G.a<0))).*g)*GDense.dx
+
+ans =
+
+   2.7756e-16
+
+S + C - w*param.L - tau - (rk-param.delta)*AH - param.wedge * sum( (G.BHDense * G.a).*(G.a<0))).*g)*GDense.dx
+ S + C - w*param.L - tau - (rk-param.delta)*AH - param.wedge * sum( (G.BHDense * G.a).*(G.a<0))).*g)*GDense.dx
+                                                                                               ↑
+{Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+S + C - w*param.L - tau - (rk-param.delta)*AH - param.wedge * sum( ((G.BHDense * (G.a.*(G.a<0))) .*g)*GDense.dx
+ S + C - w*param.L - tau - (rk-param.delta)*AH - param.wedge * sum( ((G.BHDense * (G.a.*(G.a<0))) .*g)*GDense.dx
+                                                                                                                ↑
+{Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+S + C - w*param.L - tau - (rk-param.delta)*AH - param.wedge * sum( ((G.BHDense * (G.a.*(G.a<0))) .*g))*GDense.dx
+
+ans =
+
+   3.9172e-16
+
+S + C - w*param.L - tau - (rk-param.delta)*AH - param.wedge * sum( ((G.BHDense * (G.a.*(G.a<0))) .*g))*GDense.dx
+
+ans =
+
+   3.9172e-16
+
+S + C - w*param.L - tau - (rk-param.delta)*AH - param.wedge * sum( GDense.a.*(GDense.a<0) .*g))*GDense.dx
+ S + C - w*param.L - tau - (rk-param.delta)*AH - param.wedge * sum( GDense.a.*(GDense.a<0) .*g))*GDense.dx
+                                                                                               ↑
+{Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+S + C - w*param.L - tau - (rk-param.delta)*AH - param.wedge * sum( GDense.a.*(GDense.a<0) .*g)*GDense.dx
+
+ans =
+
+  -2.5591e-04
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.168404e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.168404e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.168404e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Complex values in VFI: terminating process.Complex values in VFI: terminating process.Complex values in VFI: terminating process.Complex values in VFI: terminating process.Stationary Equilibrium: (r = -0.1484, K = -2.00),  markets(S = 00,  Y-C-I = 4.00e-02, Kgap = -5.79e-08) 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+Evaluating 0 points to refine on ...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mpower', '/Applications/MATLAB_R2021a.app/toolbox/matlab/ops/mpower.m', 51)" style="font-weight:bold"> ^ </a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/ops/mpower.m',51,0)">line 51</a>)
+Incorrect dimensions for raising a matrix to a power. Check that the matrix is square and the power is a scalar. To perform elementwise
+matrix powers, use '.^'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents>find_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 63)" style="font-weight:bold">add_parents>find_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',63,0)">line 63</a>)
+    nmax = 2^maxl;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 4)" style="font-weight:bold">add_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',4,0)">line 4</a>)
+    [parentMat, fullGridVec, lVec] = find_parents(maxl);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('adapt_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m', 110)" style="font-weight:bold">adapt_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m',110,0)">line 110</a>)
+    [parents, parentLevels] = add_parents(gridNew, lvlNew);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 82)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',82,0)">line 82</a>)
+    [G, BH_adapt, blacklist, stats] = adapt_grid(G, ss.V, blacklist, ...
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+param.wedge * sum( ((G.BHDense * (G.a.*(G.a<0))) .*g))*GDense.dx
+
+ans =
+
+   -0.0199
+
+param.wedge * sum(sum( GDense.a .* g .* (GDense.a<0) .* GDense.dx))
+
+ans =
+
+   -0.0199
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+param.wedge * sum(sum( GDense.a .* g .* (GDense.a<0) .* GDense.dx))
+
+ans =
+
+   -0.0199
+
+param.wedge * sum( ((G.BHDense * (G.a.*(G.a<0))) .*g))*GDense.dx
+
+ans =
+
+   -0.0199
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+param.wedge * sum( ((G.BHDense * (G.a.*(G.a<0))) .*g))*GDense.dx
+
+ans =
+
+   -0.0199
+
+param.wedge * sum(sum( GDense.a .* g .* (GDense.a<0) .* GDense.dx))
+
+ans =
+
+   -0.0199
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+param.wedge * sum( ((G.BHDense * (G.a.*(G.a<0))) .*g))*GDense.dx
+
+ans =
+
+   -0.0198
+
+param.wedge * sum(sum( GDense.a .* g .* (GDense.a<0) .* GDense.dx))
+
+ans =
+
+   -0.0198
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+param.wedge * sum( ((G.BHDense * (G.a.*(G.a<0))) .*g))*GDense.dx
+
+ans =
+
+   -0.0085
+
+param.wedge * sum(sum( GDense.a .* g .* (GDense.a<0) .* GDense.dx))
+
+ans =
+
+   -0.0084
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.168404e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+param.wedge * sum( ((G.BHDense * (G.a.*(G.a<0))) .*g))*GDense.dx
+
+ans =
+
+   -0.0200
+
+param.wedge * sum(sum( GDense.a .* g .* (GDense.a<0) .* GDense.dx))
+
+ans =
+
+   -0.0200
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+hjb.c
+
+ans =
+
+    0.9933
+    0.8204
+    2.0454
+    3.3281
+    4.6535
+    6.0296
+    7.4615
+    8.9593
+   10.5345
+   12.2031
+   13.9867
+   15.9164
+   18.0397
+   20.4368
+   23.2635
+   26.9220
+   35.6237
+    0.8595
+    2.0892
+    4.7062
+    7.5201
+   10.5992
+   14.0585
+   18.1207
+   23.3576
+   35.7576
+    0.7257
+    0.2658
+    0.8792
+    1.5021
+    2.1340
+    2.7751
+    3.4258
+    4.0870
+    4.7594
+    5.4438
+    6.1412
+    6.8526
+    7.5791
+    8.3220
+    9.0827
+    9.8628
+   10.6642
+   11.4890
+   12.3396
+   13.2190
+   14.1307
+   15.0789
+   16.0688
+   17.1070
+   18.2019
+   19.3647
+   20.6106
+   21.9617
+   23.4519
+   25.1380
+   27.1308
+   29.7163
+   35.8914
+    0.5919
+    2.1778
+    4.8121
+    7.6378
+   10.7290
+   14.2026
+   18.2830
+   23.5461
+   36.0252
+    0.4581
+    0.9711
+    2.2224
+    3.5256
+    4.8651
+    6.2532
+    7.6967
+    9.2062
+   10.7939
+   12.4761
+   14.2747
+   16.2213
+   18.3642
+   20.7846
+   23.6404
+   27.3397
+   36.1590
+
+hjb.s
+
+ans =
+
+   -1.9867
+    0.4936
+    1.5559
+    2.5605
+    3.5224
+    4.4337
+    5.2891
+    6.0786
+    6.7907
+    7.4094
+    7.9132
+    8.2708
+    8.4348
+    8.3250
+    7.7856
+    6.4144
+         0
+   -1.7190
+    1.6460
+    3.6036
+    5.3643
+    6.8598
+    7.9751
+    8.4876
+    7.8253
+         0
+   -1.4514
+    0.1684
+    0.7024
+    1.2232
+    1.7349
+    2.2375
+    2.7304
+    3.2129
+    3.6842
+    4.1434
+    4.5897
+    5.0219
+    5.4391
+    5.8398
+    6.2228
+    6.5863
+    6.9286
+    7.2475
+    7.5406
+    7.8048
+    8.0368
+    8.2323
+    8.3860
+    8.4915
+    8.5402
+    8.5211
+    8.4188
+    8.2113
+    7.8648
+    7.3224
+    6.4733
+    5.0314
+         0
+   -1.1838
+    1.8250
+    3.7653
+    5.5142
+    6.9976
+    8.0986
+    8.5929
+    7.9044
+         0
+   -0.9161
+    0.8781
+    1.9142
+    2.8983
+    3.8461
+    4.7454
+    5.5892
+    6.3669
+    7.0665
+    7.6717
+    8.1604
+    8.5011
+    8.6455
+    8.5125
+    7.9440
+    6.5320
+         0
+
+isnan(g)
+
+ans =
+
+  645×1 <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a> array
+
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+   1
+
+if any(isnan(g)), diff = NaN(1); return; end
+if system_dependent('IsDebugMode')==1, dbquit all; end
+stationary
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 4)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',4,0)">line 4</a>)
+K   = x(1);
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.168404e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.168404e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.168404e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Complex values in VFI: terminating process.<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Complex values in VFI: terminating process.<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Complex values in VFI: terminating process.<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Complex values in VFI: terminating process.<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Stationary Equilibrium: (r = -0.1484, K = -2.00),  markets(S = 00,  Y-C-I = 4.00e-02, Kgap = -5.79e-08) 
+
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',78,1)">78  </a>    V_adapt{adaptIter} = ss.V; G_adapt{adaptIter} = G;
+if system_dependent('IsDebugMode')==1, dbcont; end
+Evaluating 0 points to refine on ...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mpower', '/Applications/MATLAB_R2021a.app/toolbox/matlab/ops/mpower.m', 51)" style="font-weight:bold"> ^ </a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/ops/mpower.m',51,0)">line 51</a>)
+Incorrect dimensions for raising a matrix to a power. Check that the matrix is square and the power is a scalar. To perform elementwise
+matrix powers, use '.^'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents>find_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 63)" style="font-weight:bold">add_parents>find_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',63,0)">line 63</a>)
+    nmax = 2^maxl;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 4)" style="font-weight:bold">add_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',4,0)">line 4</a>)
+    [parentMat, fullGridVec, lVec] = find_parents(maxl);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('adapt_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m', 110)" style="font-weight:bold">adapt_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m',110,0)">line 110</a>)
+    [parents, parentLevels] = add_parents(gridNew, lvlNew);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 82)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',82,0)">line 82</a>)
+    [G, BH_adapt, blacklist, stats] = adapt_grid(G, ss.V, blacklist, ...
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.681043e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',83,1)">83  </a>end
+if system_dependent('IsDebugMode')==1, dbquit; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.681043e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Stationary Equilibrium: (r = 0.0481, K = 5.50),  markets(S = 1.52e-19,  Y-C-I = 1.33e-03, Kgap = 4.12e-12) 
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.084202e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.084202e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.084202e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Complex values in VFI: terminating process.Complex values in VFI: terminating process.Complex values in VFI: terminating process.Complex values in VFI: terminating process.Stationary Equilibrium: (r = -0.1484, K = -2.00),  markets(S = 00,  Y-C-I = 4.00e-02, Kgap = -9.44e-09) 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+Evaluating 0 points to refine on ...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mpower', '/Applications/MATLAB_R2021a.app/toolbox/matlab/ops/mpower.m', 51)" style="font-weight:bold"> ^ </a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/ops/mpower.m',51,0)">line 51</a>)
+Incorrect dimensions for raising a matrix to a power. Check that the matrix is square and the power is a scalar. To perform elementwise
+matrix powers, use '.^'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents>find_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 63)" style="font-weight:bold">add_parents>find_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',63,0)">line 63</a>)
+    nmax = 2^maxl;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 4)" style="font-weight:bold">add_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',4,0)">line 4</a>)
+    [parentMat, fullGridVec, lVec] = find_parents(maxl);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('adapt_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m', 110)" style="font-weight:bold">adapt_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m',110,0)">line 110</a>)
+    [parents, parentLevels] = add_parents(gridNew, lvlNew);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 82)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',82,0)">line 82</a>)
+    [G, BH_adapt, blacklist, stats] = adapt_grid(G, ss.V, blacklist, ...
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.084202e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.084202e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.084202e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Complex values in VFI: terminating process.Complex values in VFI: terminating process.Complex values in VFI: terminating process.Complex values in VFI: terminating process.Stationary Equilibrium: (r = -0.1484, K = -2.00),  markets(S = 00,  Y-C-I = 4.00e-02, Kgap = -8.88e-16) 
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.681043e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Stationary Equilibrium: (r = 0.0481, K = 5.50),  markets(S = 1.52e-19,  Y-C-I = 1.33e-03, Kgap = 4.12e-12) 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+Evaluating 84 points to refine on ...
+Mean level of abs(aH): 0.606436. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 114, parents added: 0, 
+Net change: 85 -> 199 = << 114 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0487, K = 5.45),  markets(S = -1.41e-18,  Y-C-I = 2.92e-04, Kgap = 1.20e-11) 
+
+Evaluating 185 points to refine on ...
+Mean level of abs(aH): 0.265566. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 242, parents added: 0, 
+Net change: 199 -> 441 = << 242 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.775558e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Stationary Equilibrium: (r = 0.0493, K = 5.40),  markets(S = -1.25e-18,  Y-C-I = 2.40e-04, Kgap = -1.44e-09) 
+
+Evaluating 346 points to refine on ...
+Mean level of abs(aH): 0.122315. Maximum level of grid: 8. 
+Nodes coarsened: 13, children added: 401, parents added: 4, 
+Net change: 441 -> 833 = << 392 >>, blacklisted: 13. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  5.551115e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+] 
+Stationary Equilibrium: (r = 0.0496, K = 5.38),  markets(S = -2.59e-18,  Y-C-I = 3.00e-04, Kgap = 5.89e-11) 
+
+Evaluating 527 points to refine on ...
+Mean level of abs(aH): 0.0653824. Maximum level of grid: 9. 
+Nodes coarsened: 30, children added: 479, parents added: 36, 
+Net change: 833 -> 1318 = << 485 >>, blacklisted: 41. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.65e-18,  Y-C-I = 2.50e-04, Kgap = -1.72e-10) 
+
+Evaluating 703 points to refine on ...
+Mean level of abs(aH): 0.0415934. Maximum level of grid: 10. 
+Nodes coarsened: 49, children added: 466, parents added: 76, 
+Net change: 1318 -> 1811 = << 493 >>, blacklisted: 89. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.42e-18,  Y-C-I = 2.04e-04, Kgap = 3.49e-10) 
+
+Evaluating 893 points to refine on ...
+Mean level of abs(aH): 0.0304057. Maximum level of grid: 11. 
+Nodes coarsened: 133, children added: 503, parents added: 155, 
+Net change: 1811 -> 2336 = << 525 >>, blacklisted: 216. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -4.21e-19,  Y-C-I = 1.69e-04, Kgap = 1.34e-09) 
+
+Evaluating 1097 points to refine on ...
+Mean level of abs(aH): 0.0236609. Maximum level of grid: 12. 
+Nodes coarsened: 220, children added: 522, parents added: 226, 
+Net change: 2336 -> 2864 = << 528 >>, blacklisted: 348. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.00e-18,  Y-C-I = 1.60e-04, Kgap = -1.24e-11) 
+
+Evaluating 1265 points to refine on ...
+Mean level of abs(aH): 0.0193409. Maximum level of grid: 12. 
+Nodes coarsened: 281, children added: 442, parents added: 266, 
+Net change: 2864 -> 3291 = << 427 >>, blacklisted: 484. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.71e-18,  Y-C-I = 1.55e-04, Kgap = -3.44e-10) 
+
+Evaluating 1382 points to refine on ...
+Mean level of abs(aH): 0.0168443. Maximum level of grid: 13. 
+Nodes coarsened: 318, children added: 373, parents added: 310, 
+Net change: 3291 -> 3656 = << 365 >>, blacklisted: 612. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Stationary Equilibrium: (r = 0.0497, K = 5.37),  markets(S = -1.37e-18,  Y-C-I = 1.53e-04, Kgap = -1.14e-09) 
+
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',82,1)">82  </a>    [G, BH_adapt, blacklist, stats] = adapt_grid(G, ss.V, blacklist, ...
+figure; scatter3(G_adapt{n}.a, G_adapt{n}.z, ss.c);
+{Unrecognized function or variable 'n'.
+} 
+figure; scatter3(G_adapt{adaptIter}.a, G_adapt{adaptIter}.z, ss.c);
+figure; scatter3(G_adapt{adaptIter}.a, G_adapt{adaptIter}.z, ss.s);
+figure; scatter3(G_adapt{adaptIter}.a, G_adapt{adaptIter}.z, ss.V);
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 71)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',71,0)">line 71</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 71)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',71,0)">line 71</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.681043e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 71)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',71,0)">line 71</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 71)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',71,0)">line 71</a>)
+] 
+Stationary Equilibrium: (r = 0.0481, K = 5.50),  markets(S = 1.52e-19,  Y-C-I = 1.33e-03, Kgap = 4.12e-12) 
+
+Evaluating 84 points to refine on ...
+Mean level of abs(aH): 0.606436. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 114, parents added: 0, 
+Net change: 85 -> 199 = << 114 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0487, K = 5.45),  markets(S = -1.41e-18,  Y-C-I = 2.92e-04, Kgap = 1.20e-11) 
+
+Evaluating 185 points to refine on ...
+Mean level of abs(aH): 0.265566. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 242, parents added: 0, 
+Net change: 199 -> 441 = << 242 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.775558e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 71)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',71,0)">line 71</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 71)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',71,0)">line 71</a>)
+] 
+Stationary Equilibrium: (r = 0.0493, K = 5.40),  markets(S = -1.25e-18,  Y-C-I = 2.40e-04, Kgap = -1.44e-09) 
+
+Evaluating 346 points to refine on ...
+Mean level of abs(aH): 0.122315. Maximum level of grid: 8. 
+Nodes coarsened: 13, children added: 401, parents added: 4, 
+Net change: 441 -> 833 = << 392 >>, blacklisted: 13. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  5.551115e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m', 41)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/stationary.m',41,0)">line 41</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 71)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',71,0)">line 71</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 71)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',71,0)">line 71</a>)
+] 
+Stationary Equilibrium: (r = 0.0496, K = 5.38),  markets(S = -2.59e-18,  Y-C-I = 3.00e-04, Kgap = 5.89e-11) 
+
+Evaluating 527 points to refine on ...
+Mean level of abs(aH): 0.0653824. Maximum level of grid: 9. 
+Nodes coarsened: 30, children added: 479, parents added: 36, 
+Net change: 833 -> 1318 = << 485 >>, blacklisted: 41. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.65e-18,  Y-C-I = 2.50e-04, Kgap = -1.72e-10) 
+
+Evaluating 703 points to refine on ...
+Mean level of abs(aH): 0.0415934. Maximum level of grid: 10. 
+Nodes coarsened: 49, children added: 466, parents added: 76, 
+Net change: 1318 -> 1811 = << 493 >>, blacklisted: 89. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.42e-18,  Y-C-I = 2.04e-04, Kgap = 3.49e-10) 
+
+Evaluating 893 points to refine on ...
+Mean level of abs(aH): 0.0304057. Maximum level of grid: 11. 
+Nodes coarsened: 133, children added: 503, parents added: 155, 
+Net change: 1811 -> 2336 = << 525 >>, blacklisted: 216. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -4.21e-19,  Y-C-I = 1.69e-04, Kgap = 1.34e-09) 
+
+Evaluating 1097 points to refine on ...
+Mean level of abs(aH): 0.0236609. Maximum level of grid: 12. 
+Nodes coarsened: 220, children added: 522, parents added: 226, 
+Net change: 2336 -> 2864 = << 528 >>, blacklisted: 348. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.00e-18,  Y-C-I = 1.60e-04, Kgap = -1.24e-11) 
+
+Evaluating 1265 points to refine on ...
+Mean level of abs(aH): 0.0193409. Maximum level of grid: 12. 
+Nodes coarsened: 281, children added: 442, parents added: 266, 
+Net change: 2864 -> 3291 = << 427 >>, blacklisted: 484. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.71e-18,  Y-C-I = 1.55e-04, Kgap = -3.44e-10) 
+
+Evaluating 1382 points to refine on ...
+Mean level of abs(aH): 0.0168443. Maximum level of grid: 13. 
+Nodes coarsened: 318, children added: 373, parents added: 310, 
+Net change: 3291 -> 3656 = << 365 >>, blacklisted: 612. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Stationary Equilibrium: (r = 0.0497, K = 5.37),  markets(S = -1.37e-18,  Y-C-I = 1.53e-04, Kgap = -1.14e-09) 
+
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',83,1)">83  </a>    [G, BH_adapt, blacklist, stats] = adapt_grid(G, ss.V, blacklist, ...
+if system_dependent('IsDebugMode')==1, dbquit; end
+runTime = toc(runTime); fprintf('\n\nAlgorithm converged. Run-time of: %.2f seconds.\n',runTime);
+
+
+Algorithm converged. Run-time of: 29.74 seconds.
+
+fprintf('\nPlotting Figures...\n');
+
+Plotting Figures...
+for n = 1:adaptIter
+    
+    figure('visible', 'off');
+    subplot(1,2,1);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, V_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$V(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');
+        
+    subplot(1,2,2);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, c_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$c(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');        
+
+    set(gcf,'renderer','Painters');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+figure('visible', 'on');
+    subplot(1,2,1);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, V_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$V(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');
+        
+    subplot(1,2,2);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, c_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$c(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');        
+    
+    
+    set(gcf,'renderer','Painters', 'Position', [10 10 20 20]);
+figure('visible', 'on');
+    subplot(1,2,1);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, V_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$V(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');
+        
+    subplot(1,2,2);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, c_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$c(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');        
+    
+    
+    set(gcf,'renderer','Painters', 'Position', [10 10 900 900]);
+figure('visible', 'on');
+    subplot(1,2,1);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, V_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$V(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');
+        
+    subplot(1,2,2);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, c_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$c(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');        
+    
+    
+    set(gcf,'renderer','Painters', 'Position', [10 10 500 900]);
+figure('visible', 'on');
+    subplot(1,2,1);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, V_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$V(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');
+        
+    subplot(1,2,2);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, c_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    zlabel('$c(a,z)$','Interpreter','Latex');
+        zlh = get(gca,'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+        set(zlh,'Rotation',0,'Position',zlp+[0, 11, -2],'VerticalAlignment','middle','HorizontalAlignment','left');        
+    
+    
+    set(gcf,'renderer','Painters', 'Position', [10 10 1000 500]);
+figure('visible', 'on');
+    subplot(1,2,1);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, V_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    title('$V(a,z)$','Interpreter','Latex');
+        
+    subplot(1,2,2);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, c_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    title('$c(a,z)$','Interpreter','Latex');
+    
+    set(gcf,'renderer','Painters', 'Position', [10 10 1000 500]);
+figure('visible', 'on');
+    subplot(1,2,1);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, V_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    title('$V(a,z)$','Interpreter','Latex');
+        
+    subplot(1,2,2);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, c_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    title('$c(a,z)$','Interpreter','Latex');
+    
+    set(gcf,'renderer','Painters', 'Position', [10 10 1500 500]);
+figure('visible', 'on');
+    subplot(1,2,1);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, V_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    title('$V(a,z)$','Interpreter','Latex');
+        
+    subplot(1,2,2);
+    l1=scatter3(G_adapt{n}.a, G_adapt{n}.z, c_adapt{n});
+    xlabel('Wealth: $a$','Interpreter','Latex');
+        xlh = get(gca,'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+        set(xlh,'Rotation', 16,'Position',xlp,'VerticalAlignment','middle','HorizontalAlignment','left');
+    ylabel('Earnings: $z$','Interpreter','Latex');
+        ylh = get(gca,'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+        set(ylh,'Rotation',-27,'Position',ylp,'VerticalAlignment','middle','HorizontalAlignment','right');
+    title('$c(a,z)$','Interpreter','Latex');
+    
+    set(gcf,'rendRunning algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium: (r = 0.0481, K = 5.50),  markets(S = 1.52e-19,  Y-C-I = 1.33e-03, Kgap = 4.12e-12) 
+
+Evaluating 84 points to refine on ...
+Mean level of abs(aH): 0.606436. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 114, parents added: 0, 
+Net change: 85 -> 199 = << 114 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0487, K = 5.45),  markets(S = -1.41e-18,  Y-C-I = 2.92e-04, Kgap = 1.20e-11) 
+
+Evaluating 185 points to refine on ...
+Mean level of abs(aH): 0.265566. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 242, parents added: 0, 
+Net change: 199 -> 441 = << 242 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Stationary Equilibrium: (r = 0.0493, K = 5.40),  markets(S = -1.25e-18,  Y-C-I = 2.40e-04, Kgap = -1.44e-09) 
+
+Evaluating 346 points to refine on ...
+Mean level of abs(aH): 0.122315. Maximum level of grid: 8. 
+Nodes coarsened: 13, children added: 401, parents added: 4, 
+Net change: 441 -> 833 = << 392 >>, blacklisted: 13. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Stationary Equilibrium: (r = 0.0496, K = 5.38),  markets(S = -2.59e-18,  Y-C-I = 3.00e-04, Kgap = 5.89e-11) 
+
+Evaluating 527 points to refine on ...
+Mean level of abs(aH): 0.0653824. Maximum level of grid: 9. 
+Nodes coarsened: 30, children added: 479, parents added: 36, 
+Net change: 833 -> 1318 = << 485 >>, blacklisted: 41. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.65e-18,  Y-C-I = 2.50e-04, Kgap = -1.72e-10) 
+
+Evaluating 703 points to refine on ...
+Mean level of abs(aH): 0.0415934. Maximum level of grid: 10. 
+Nodes coarsened: 49, children added: 466, parents added: 76, 
+Net change: 1318 -> 1811 = << 493 >>, blacklisted: 89. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.42e-18,  Y-C-I = 2.04e-04, Kgap = 3.49e-10) 
+
+Evaluating 893 points to refine on ...
+Mean level of abs(aH): 0.0304057. Maximum level of grid: 11. 
+Nodes coarsened: 133, children added: 503, parents added: 155, 
+Net change: 1811 -> 2336 = << 525 >>, blacklisted: 216. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -4.21e-19,  Y-C-I = 1.69e-04, Kgap = 1.34e-09) 
+
+Evaluating 1097 points to refine on ...
+Mean level of abs(aH): 0.0236609. Maximum level of grid: 12. 
+Nodes coarsened: 220, children added: 522, parents added: 226, 
+Net change: 2336 -> 2864 = << 528 >>, blacklisted: 348. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.00e-18,  Y-C-I = 1.60e-04, Kgap = -1.24e-11) 
+
+Evaluating 1265 points to refine on ...
+Mean level of abs(aH): 0.0193409. Maximum level of grid: 12. 
+Nodes coarsened: 281, children added: 442, parents added: 266, 
+Net change: 2864 -> 3291 = << 427 >>, blacklisted: 484. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.71e-18,  Y-C-I = 1.55e-04, Kgap = -3.44e-10) 
+
+Evaluating 1382 points to refine on ...
+Mean level of abs(aH): 0.0168443. Maximum level of grid: 13. 
+Nodes coarsened: 318, children added: 373, parents added: 310, 
+Net change: 3291 -> 3656 = << 365 >>, blacklisted: 612. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Stationary Equilibrium: (r = 0.0497, K = 5.37),  markets(S = -1.37e-18,  Y-C-I = 1.53e-04, Kgap = -1.14e-09) 
+
+Evaluating 1462 points to refine on ...
+Mean level of abs(aH): 0.0151578. Maximum level of grid: 14. 
+Nodes coarsened: 358, children added: 262, parents added: 339, 
+Net change: 3656 -> 3899 = << 243 >>, blacklisted: 728. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Complex values in VFI: terminating process.{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 300)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',300,0)">line 300</a>)
+Objective function is returning undefined values at initial point. FSOLVE cannot continue.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m', 70)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01c_stationary_borrowing_wedge/main.m',70,0)">line 70</a>)
+    X = fsolve(@(x) stationary(x, G, G_dense, param), X0, options);
+} 
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium: (r = 0.0481, K = 5.50),  markets(S = 1.52e-19,  Y-C-I = 1.33e-03, Kgap = 4.12e-12) 
+
+Evaluating 84 points to refine on ...
+Mean level of abs(aH): 0.606436. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 114, parents added: 0, 
+Net change: 85 -> 199 = << 114 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0487, K = 5.45),  markets(S = -1.41e-18,  Y-C-I = 2.92e-04, Kgap = 1.20e-11) 
+
+Evaluating 185 points to refine on ...
+Mean level of abs(aH): 0.265566. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 242, parents added: 0, 
+Net change: 199 -> 441 = << 242 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Stationary Equilibrium: (r = 0.0493, K = 5.40),  markets(S = -1.25e-18,  Y-C-I = 2.40e-04, Kgap = -1.44e-09) 
+
+Evaluating 346 points to refine on ...
+Mean level of abs(aH): 0.122315. Maximum level of grid: 8. 
+Nodes coarsened: 13, children added: 401, parents added: 4, 
+Net change: 441 -> 833 = << 392 >>, blacklisted: 13. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Stationary Equilibrium: (r = 0.0496, K = 5.38),  markets(S = -2.59e-18,  Y-C-I = 3.00e-04, Kgap = 5.89e-11) 
+
+Evaluating 527 points to refine on ...
+Mean level of abs(aH): 0.0653824. Maximum level of grid: 9. 
+Nodes coarsened: 30, children added: 479, parents added: 36, 
+Net change: 833 -> 1318 = << 485 >>, blacklisted: 41. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.65e-18,  Y-C-I = 2.50e-04, Kgap = -1.72e-10) 
+
+Evaluating 703 points to refine on ...
+Mean level of abs(aH): 0.0415934. Maximum level of grid: 10. 
+Nodes coarsened: 49, children added: 466, parents added: 76, 
+Net change: 1318 -> 1811 = << 493 >>, blacklisted: 89. 
+
+
+Algorithm converged. Run-time of: 5.94 seconds.
+
+Plotting Figures...

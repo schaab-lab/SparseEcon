@@ -1,0 +1,53 @@
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium: (r = 0.0468, K = 5.61),  markets(S = -5.15e-18,  Y-C-I = -1.98e-10, Kgap = -2.05e-09) 
+
+Evaluating 51 points to refine on ...
+Mean level of abs(aH): 0.709794. Maximum level of grid: 5. 
+Nodes coarsened: 0, children added: 82, parents added: 0, 
+Net change: 51 -> 133 = << 82 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0485, K = 5.47),  markets(S = -1.65e-18,  Y-C-I = 1.22e-15, Kgap = 1.24e-14) 
+
+Evaluating 127 points to refine on ...
+Mean level of abs(aH): 0.280083. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 184, parents added: 0, 
+Net change: 133 -> 317 = << 184 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Stationary Equilibrium: (r = 0.0492, K = 5.42),  markets(S = -2.28e-18,  Y-C-I = 1.75e-13, Kgap = 1.76e-12) 
+
+Evaluating 257 points to refine on ...
+Mean level of abs(aH): 0.118633. Maximum level of grid: 7. 
+Nodes coarsened: 2, children added: 318, parents added: 3, 
+Net change: 317 -> 636 = << 319 >>, blacklisted: 2. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Stationary Equilibrium: (r = 0.0495, K = 5.39),  markets(S = -1.71e-18,  Y-C-I = -1.49e-10, Kgap = -1.50e-09) 
+
+L_inf norm |V_tpg1 - V_fine| = 2.77e+00  with # grid points: 51
+L_inf norm |V_tpg2 - V_fine| = 1.28e+00  with # grid points: 165
+L_inf norm |V_tpg3 - V_fine| = 5.61e-01  with # grid points: 585
+L_inf norm |V_tpg4 - V_fine| = 1.99e-01  with # grid points: 2193
+L_inf norm |V_sg1 - Vfine| = 2.77e+00  with # grid points: 51
+L_inf norm |V_sg2 - Vfine| = 1.24e+00  with # grid points: 133
+L_inf norm |V_sg3 - Vfine| = 5.19e-01  with # grid points: 329
+L_inf norm |V_sg4 - Vfine| = 1.40e-01  with # grid points: 785
+L_inf norm |V_sg5 - Vfine| = 1.42e-01  with # grid points: 1825
+L_inf norm |V_sg6 - Vfine| = 1.75e-01  with # grid points: 4161
+L_inf norm |V_sg7 - Vfine| = 1.89e-01  with # grid points: 9345
+
+
+Algorithm converged. Run-time of: 29.77 seconds.
+
+Plotting Figures...

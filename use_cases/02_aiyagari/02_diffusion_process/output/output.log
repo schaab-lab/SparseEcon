@@ -1,0 +1,1139 @@
+Running algorithm:
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('nchoosek', '/Applications/MATLAB_R2021a.app/toolbox/matlab/specfun/nchoosek.m', 65)" style="font-weight:bold">nchoosek</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/specfun/nchoosek.m',65,0)">line 65</a>)
+K must be an integer between 0 and N.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_sparse_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_sparse_grid.m', 37)" style="font-weight:bold">gen_sparse_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_sparse_grid.m',37,0)">line 37</a>)
+normalDimCombs = nchoosek(normalDims, dPosLevel);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/setup_grid.m', 38)" style="font-weight:bold">setup_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/setup_grid.m',38,0)">line 38</a>)
+[G.grid, G.lvl] = gen_sparse_grid(G.d, n, surplus);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 39)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',39,0)">line 39</a>)
+GDense = setup_grid(param.lDense, 0, param.min, param.max, 'named_dims', {1,2}, 'names', {'k','z'}, 'dxx_dims', 2);
+} 
+param.lDense
+
+ans =
+
+     8
+
+main
+Running algorithm:
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Incorrect dimensions for matrix multiplication. Check that the number of columns in the first matrix matches the number of rows in the
+second matrix. To perform elementwise multiplication, use '.*'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_sparse_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_sparse_grid.m', 14)" style="font-weight:bold">gen_sparse_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_sparse_grid.m',14,0)">line 14</a>)
+l = n * ones(1, d) + surplus;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/setup_grid.m', 38)" style="font-weight:bold">setup_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/setup_grid.m',38,0)">line 38</a>)
+[G.grid, G.lvl] = gen_sparse_grid(G.d, n, surplus);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 39)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',39,0)">line 39</a>)
+GDense = setup_grid(param.lDense, 0, param.min, param.max, 'named_dims', {1,2}, 'names', {'k','z'}, 'dxx_dims', 2);
+
+<a href="matlab:helpview('matlab','error_innerdim')" style="font-weight:bold">Related documentation</a>
+} 
+opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',39,0)
+param.lDense
+
+ans =
+
+     7     2
+
+main
+Running algorithm:
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('nchoosek', '/Applications/MATLAB_R2021a.app/toolbox/matlab/specfun/nchoosek.m', 65)" style="font-weight:bold">nchoosek</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/specfun/nchoosek.m',65,0)">line 65</a>)
+K must be an integer between 0 and N.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_sparse_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_sparse_grid.m', 37)" style="font-weight:bold">gen_sparse_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_sparse_grid.m',37,0)">line 37</a>)
+normalDimCombs = nchoosek(normalDims, dPosLevel);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/setup_grid.m', 38)" style="font-weight:bold">setup_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/setup_grid.m',38,0)">line 38</a>)
+[G.grid, G.lvl] = gen_sparse_grid(G.d, n, surplus);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 43)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',43,0)">line 43</a>)
+G = setup_grid(param.l, 0, param.min, param.max, 'named_dims', {1,2}, 'names', {'k','z'}, 'dxx_dims', 2);
+} 
+opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',43,0)
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+{Unrecognized field name "discreteTypes".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('HJB', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/HJB.m', 5)" style="font-weight:bold">HJB</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/HJB.m',5,0)">line 5</a>)
+VkF = zeros(G.J, param.discreteTypes);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VFI', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/VFI.m', 12)" style="font-weight:bold">VFI</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/VFI.m',12,0)">line 12</a>)
+hjb = HJB(V, G, param);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 31)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',31,0)">line 31</a>)
+[V, hjb] = VFI(G, [], param);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 63)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',63,0)">line 63</a>)
+    [DIFF0,G,GDense,~] = stationary(X0, G, GDense, param);
+} 
+opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/HJB.m',5,0)
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+{Unrecognized field name "zz".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 45)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',45,0)">line 45</a>)
+LH = sum(sum( (G.BHDense * (param.zz .* hjb.l)) .* g .* GDense.dx));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 63)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',63,0)">line 63</a>)
+    [DIFF0,G,GDense,~] = stationary(X0, G, GDense, param);
+} 
+opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',45,0)
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+{Unrecognized function or variable 'L'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 54)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',54,0)">line 54</a>)
+ss.K = K; ss.L = L; ss.C = C; ss.S = S; ss.r = r; ss.Y = Y; ss.w = w;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 63)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',63,0)">line 63</a>)
+    [DIFF0,G,GDense,~] = stationary(X0, G, GDense, param);
+} 
+opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',54,0)
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  5.551115e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+Stationary Equilibrium: (r = 0.0199, K = 19.66),  markets(S = 6.86e-18,  Y-C-I = -9.54e-13, Kgap = -2.13e-11) 
+
+Evaluating 77 points to refine on ...
+Mean level of abs(aH): 0.432148. Maximum level of grid: 6. 
+Nodes coarsened: 2, children added: 100, parents added: 4, 
+Net change: 85 -> 187 = << 102 >>, blacklisted: 2. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0199, K = 19.65),  markets(S = 3.07e-18,  Y-C-I = 9.87e-13, Kgap = 2.20e-11) 
+
+Evaluating 144 points to refine on ...
+Mean level of abs(aH): 0.197221. Maximum level of grid: 7. 
+Nodes coarsened: 15, children added: 181, parents added: 15, 
+Net change: 187 -> 368 = << 181 >>, blacklisted: 15. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Stationary Equilibrium: (r = 0.0199, K = 19.64),  markets(S = 1.83e-18,  Y-C-I = -2.39e-11, Kgap = -5.31e-10) 
+
+Evaluating 243 points to refine on ...
+Mean level of abs(aH): 0.100483. Maximum level of grid: 8. 
+Nodes coarsened: 36, children added: 326, parents added: 19, 
+Net change: 368 -> 677 = << 309 >>, blacklisted: 42. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  8.673617e-18.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+Stationary Equilibrium: (r = 0.0199, K = 19.61),  markets(S = -2.25e-19,  Y-C-I = -6.64e-11, Kgap = -1.48e-09) 
+
+Evaluating 333 points to refine on ...
+Mean level of abs(aH): 0.0547384. Maximum level of grid: 9. 
+Nodes coarsened: 101, children added: 303, parents added: 28, 
+Net change: 677 -> 907 = << 230 >>, blacklisted: 132. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0200, K = 19.59),  markets(S = 6.48e-18,  Y-C-I = -1.72e-10, Kgap = -3.83e-09) 
+
+Evaluating 350 points to refine on ...
+Mean level of abs(aH): 0.0409086. Maximum level of grid: 10. 
+Nodes coarsened: 152, children added: 60, parents added: 29, 
+Net change: 907 -> 844 = << -63 >>, blacklisted: 270. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0200, K = 19.59),  markets(S = -3.44e-18,  Y-C-I = 2.82e-11, Kgap = 6.27e-10) 
+
+Evaluating 371 points to refine on ...
+Mean level of abs(aH): 0.0439766. Maximum level of grid: 10. 
+Nodes coarsened: 39, children added: 63, parents added: 30, 
+Net change: 844 -> 898 = << 54 >>, blacklisted: 283. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0200, K = 19.59),  markets(S = 4.53e-18,  Y-C-I = -2.21e-10, Kgap = -4.92e-09) 
+
+Evaluating 385 points to refine on ...
+Mean level of abs(aH): 0.0413427. Maximum level of grid: 11. 
+Nodes coarsened: 38, children added: 41, parents added: 34, 
+Net change: 898 -> 935 = << 37 >>, blacklisted: 292. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VFI', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/VFI.m', 24)" style="font-weight:bold">VFI</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/VFI.m',24,0)">line 24</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 31)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',31,0)">line 31</a>)
+[V, hjb] = VFI(G, [], param);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 63)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',63,0)">line 63</a>)
+    [DIFF0,G,GDense,~] = stationary(X0, G, GDense, param);
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Complex values in VFI: terminating process.Complex values in VFI: terminating process.Complex values in VFI: terminating process.Complex values in VFI: terminating process.Complex values in VFI: terminating process.Stationary Equilibrium: (r = -1282572180.3957, K = -0.00),  markets(S = 00,  Y-C-I = -4.66e-06, Kgap = -1.78e-15) 
+
+Evaluating 0 points to refine on ...
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mpower', '/Applications/MATLAB_R2021a.app/toolbox/matlab/ops/mpower.m', 51)" style="font-weight:bold"> ^ </a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/ops/mpower.m',51,0)">line 51</a>)
+Incorrect dimensions for raising a matrix to a power. Check that the matrix is square and the power is a scalar. To perform elementwise
+matrix powers, use '.^'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents>find_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 63)" style="font-weight:bold">add_parents>find_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',63,0)">line 63</a>)
+    nmax = 2^maxl;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('add_parents', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m', 4)" style="font-weight:bold">add_parents</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/add_parents.m',4,0)">line 4</a>)
+    [parentMat, fullGridVec, lVec] = find_parents(maxl);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('adapt_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m', 110)" style="font-weight:bold">adapt_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m',110,0)">line 110</a>)
+    [parents, parentLevels] = add_parents(gridNew, lvlNew);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 81)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',81,0)">line 81</a>)
+    [G, BH_adapt, blacklist, stats] = adapt_grid(G, ss.V, blacklist, ...
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  3.252607e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 63)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',63,0)">line 63</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.168404e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 260)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',260,0)">line 260</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 124)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',124,0)">line 124</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.084202e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 124)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',124,0)">line 124</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.084202e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.168404e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+Stationary Equilibrium: (r = 0.0251, K = 50.00),  markets(S = -6.79e-18,  Y-C-I = 3.51e-11, Kgap = 7.00e-10) 
+
+Evaluating 78 points to refine on ...
+Mean level of abs(aH): 0.129704. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 105, parents added: 0, 
+Net change: 85 -> 190 = << 105 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 63)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',63,0)">line 63</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.081668e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 260)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',260,0)">line 260</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.857226e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 124)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',124,0)">line 124</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  3.469447e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.081668e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  3.469447e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 72)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',72,0)">line 72</a>)
+] 
+Stationary Equilibrium: (r = 0.0251, K = 50.00),  markets(S = -1.00e-17,  Y-C-I = 7.01e-12, Kgap = 1.40e-10) 
+
+Evaluating 144 points to refine on ...
+Mean level of abs(aH): 0.0580529. Maximum level of grid: 7. 
+Nodes coarsened: 10, children added: 193, parents added: 4, 
+Net change: 190 -> 377 = << 187 >>, blacklisted: 10. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.110223e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 63)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',63,0)">line 63</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.775558e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 260)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',260,0)">line 260</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  8.326673e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 124)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',124,0)">line 124</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.110223e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  5.551115e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In finDiffEvalAndChkErr
+In finitedifferences
+In computeFinDiffGradAndJac
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 255)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',255,0)">line 255</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.110223e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 72)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',72,0)">line 72</a>)
+] 
+Stationary Equilibrium: (r = 0.0251, K = 50.00),  markets(S = 6.25e-18,  Y-C-I = -5.90e-11, Kgap = -1.18e-09) 
+
+Evaluating 245 points to refine on ...
+Mean level of abs(aH): 0.0292675. Maximum level of grid: 8. 
+Nodes coarsened: 28, children added: 333, parents added: 25, 
+Net change: 377 -> 707 = << 330 >>, blacklisted: 34. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Stationary Equilibrium: (r = 0.0251, K = 50.00),  markets(S = -9.74e-19,  Y-C-I = -1.09e-10, Kgap = -2.18e-09) 
+
+Evaluating 260 points to refine on ...
+Mean level of abs(aH): 0.01561. Maximum level of grid: 9. 
+Nodes coarsened: 129, children added: 50, parents added: 4, 
+Net change: 707 -> 632 = << -75 >>, blacklisted: 145. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0251, K = 50.00),  markets(S = -8.42e-19,  Y-C-I = 1.22e-10, Kgap = 2.44e-09) 
+
+Evaluating 273 points to refine on ...
+Mean level of abs(aH): 0.0174639. Maximum level of grid: 9. 
+Nodes coarsened: 17, children added: 39, parents added: 17, 
+Net change: 632 -> 671 = << 39 >>, blacklisted: 161. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0251, K = 50.00),  markets(S = -1.06e-17,  Y-C-I = -3.69e-12, Kgap = -7.37e-11) 
+
+Evaluating 278 points to refine on ...
+Mean level of abs(aH): 0.0164493. Maximum level of grid: 10. 
+Nodes coarsened: 15, children added: 25, parents added: 11, 
+Net change: 671 -> 692 = << 21 >>, blacklisted: 172. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0251, K = 50.00),  markets(S = -7.23e-18,  Y-C-I = -4.75e-08, Kgap = -9.47e-07) 
+
+Evaluating 283 points to refine on ...
+Mean level of abs(aH): 0.0159504. Maximum level of grid: 11. 
+Nodes coarsened: 20, children added: 23, parents added: 16, 
+Net change: 692 -> 711 = << 19 >>, blacklisted: 185. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: (r = 0.0251, K = 50.00),  markets(S = -7.76e-18,  Y-C-I = -4.75e-08, Kgap = -9.47e-07) 
+
+Evaluating 284 points to refine on ...
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('parallel_function>distributed_execution', '/Applications/MATLAB_R2021a.app/toolbox/matlab/lang/parallel_function.m', 750)" style="font-weight:bold">parallel_function>distributed_execution</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/lang/parallel_function.m',750,0)">line 750</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('parallel_function', '/Applications/MATLAB_R2021a.app/toolbox/matlab/lang/parallel_function.m', 573)" style="font-weight:bold">parallel_function</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/lang/parallel_function.m',573,0)">line 573</a>)
+    R = distributed_execution(...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Hbasis', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/Hbasis.m', 25)" style="font-weight:bold">Hbasis</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/Hbasis.m',25,0)">line 25</a>)
+    parfor i = 1:size(lvlGridGroups, 1)
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_bound_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_bound_grid.m', 35)" style="font-weight:bold">gen_bound_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_bound_grid.m',35,0)">line 35</a>)
+boundGridCell.BHComp = Hbasis(boundGridAll, boundLvlAll, G.grid, G.lvl) * G.HComp;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_derived_fields', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_derived_fields.m', 22)" style="font-weight:bold">gen_derived_fields</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/gen_derived_fields.m',22,0)">line 22</a>)
+    G = gen_bound_grid(G);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('update_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/update_grid.m', 10)" style="font-weight:bold">update_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/update_grid.m',10,0)">line 10</a>)
+G = gen_derived_fields(G);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('adapt_grid', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m', 126)" style="font-weight:bold">adapt_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/grid/adapt_grid.m',126,0)">line 126</a>)
+    G = update_grid(G, gridNew, lvlNew);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 81)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',81,0)">line 81</a>)
+    [G, BH_adapt, blacklist, stats] = adapt_grid(G, ss.V, blacklist, ...
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Complex values in VFI: terminating process.[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.336809e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 63)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',63,0)">line 63</a>)
+] 
+Distribution not normalized!
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 260)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',260,0)">line 260</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 300)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',300,0)">line 300</a>)
+Objective function is returning undefined values at initial point. FSOLVE cannot continue.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+    X = fsolve(@(x) stationary(x, G, GDense, param), X0, options);
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.168404e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  8.673617e-19.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+Stationary Equilibrium: (r = 0.0495, K = 5.98),  markets(S = 4.70e-19,  Y-C-I = -1.63e-11, Kgap = -1.63e-10) 
+
+Evaluating 81 points to refine on ...
+Mean level of abs(aH): 0.28768. Maximum level of grid: 6. 
+Nodes coarsened: 1, children added: 108, parents added: 1, 
+Net change: 85 -> 193 = << 108 >>, blacklisted: 1. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0495, K = 5.99),  markets(S = -1.04e-18,  Y-C-I = -1.21e-13, Kgap = -1.22e-12) 
+
+Evaluating 162 points to refine on ...
+Mean level of abs(aH): 0.127751. Maximum level of grid: 7. 
+Nodes coarsened: 8, children added: 205, parents added: 6, 
+Net change: 193 -> 396 = << 203 >>, blacklisted: 8. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Stationary Equilibrium: (r = 0.0495, K = 5.98),  markets(S = 1.84e-18,  Y-C-I = -3.35e-10, Kgap = -3.36e-09) 
+
+Evaluating 280 points to refine on ...
+Mean level of abs(aH): 0.0625813. Maximum level of grid: 8. 
+Nodes coarsened: 28, children added: 354, parents added: 22, 
+Net change: 396 -> 744 = << 348 >>, blacklisted: 30. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Stationary Equilibrium: (r = 0.0497, K = 5.97),  markets(S = 5.39e-19,  Y-C-I = 1.06e-12, Kgap = 1.07e-11) 
+
+Evaluating 404 points to refine on ...
+Mean level of abs(aH): 0.0334535. Maximum level of grid: 9. 
+Nodes coarsened: 94, children added: 377, parents added: 43, 
+Net change: 744 -> 1070 = << 326 >>, blacklisted: 116. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 1.63e-18,  Y-C-I = 1.01e-10, Kgap = 1.01e-09) 
+
+Evaluating 472 points to refine on ...
+Mean level of abs(aH): 0.023322. Maximum level of grid: 10. 
+Nodes coarsened: 123, children added: 225, parents added: 39, 
+Net change: 1070 -> 1211 = << 141 >>, blacklisted: 213. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0499, K = 5.95),  markets(S = 9.22e-19,  Y-C-I = -1.56e-10, Kgap = -1.56e-09) 
+
+Evaluating 496 points to refine on ...
+Mean level of abs(aH): 0.0206309. Maximum level of grid: 10. 
+Nodes coarsened: 79, children added: 75, parents added: 37, 
+Net change: 1211 -> 1244 = << 33 >>, blacklisted: 256. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0499, K = 5.95),  markets(S = 8.13e-20,  Y-C-I = -2.07e-11, Kgap = -2.08e-10) 
+
+Evaluating 521 points to refine on ...
+Mean level of abs(aH): 0.0200926. Maximum level of grid: 11. 
+Nodes coarsened: 51, children added: 66, parents added: 52, 
+Net change: 1244 -> 1311 = << 67 >>, blacklisted: 270. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: (r = 0.0499, K = 5.95),  markets(S = 1.97e-18,  Y-C-I = -6.19e-11, Kgap = -6.20e-10) 
+
+Evaluating 530 points to refine on ...
+Mean level of abs(aH): 0.0190727. Maximum level of grid: 12. 
+Nodes coarsened: 42, children added: 35, parents added: 56, 
+Net change: 1311 -> 1360 = << 49 >>, blacklisted: 273. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Stationary Equilibrium: (r = 0.0499, K = 5.95),  markets(S = -8.81e-19,  Y-C-I = 5.20e-10, Kgap = 5.20e-09) 
+
+Evaluating 534 points to refine on ...
+Mean level of abs(aH): 0.0183886. Maximum level of grid: 13. 
+Nodes coarsened: 60, children added: 19, parents added: 55, 
+Net change: 1360 -> 1374 = << 14 >>, blacklisted: 291. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Stationary Equilibrium: (r = 0.0499, K = 5.95),  markets(S = -1.33e-18,  Y-C-I = 9.45e-11, Kgap = 9.46e-10) 
+
+Evaluating 533 points to refine on ...
+Mean level of abs(aH): 0.0182021. Maximum level of grid: 13. 
+Nodes coarsened: 66, children added: 0, parents added: 45, 
+Net change: 1374 -> 1353 = << -21 >>, blacklisted: 302. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Stationary Equilibrium: (r = 0.0499, K = 5.95),  markets(S = -4.74e-19,  Y-C-I = -4.67e-10, Kgap = -4.68e-09) 
+
+Evaluating 534 points to refine on ...
+Mean level of abs(aH): 0.0184846. Maximum level of grid: 13. 
+Nodes coarsened: 44, children added: 0, parents added: 44, 
+Net change: 1353 -> 1353 = << 0 >>, blacklisted: 302. 
+
+
+Algorithm converged. Run-time of: 8.26 seconds.
+
+Plotting Figures...
+{Unrecognized function or variable 'lscatter3'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 99)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',99,0)">line 99</a>)
+    lscatter3(G_adapt{n}.k, G_adapt{n}.z, V_adapt{n});
+} 
+fprintf('\nPlotting Figures...\n');
+
+Plotting Figures...
+for n = 1:adaptIter
+    
+    figure('visible', 'off'); hold on;
+    scatter3(G_adapt{n}.k, G_adapt{n}.z, V_adapt{n}); 
+    hold off; xlabel('Capital'); xlabel('Earnings');
+    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+
+end
+
+diary off
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+Stationary Equilibrium: (r = 0.0480, K = 6.13),  markets(S = 8.10e-18,  Y-C-I = 1.74e-13, Kgap = 1.78e-12) 
+
+Evaluating 84 points to refine on ...
+Mean level of abs(aH): 0.337895. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 114, parents added: 0, 
+Net change: 85 -> 199 = << 114 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0489, K = 6.04),  markets(S = 5.89e-18,  Y-C-I = -8.22e-14, Kgap = -8.31e-13) 
+
+Evaluating 182 points to refine on ...
+Mean level of abs(aH): 0.147593. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 239, parents added: 0, 
+Net change: 199 -> 438 = << 239 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Stationary Equilibrium: (r = 0.0494, K = 6.00),  markets(S = 5.97e-18,  Y-C-I = -2.96e-11, Kgap = -2.98e-10) 
+
+Evaluating 339 points to refine on ...
+Mean level of abs(aH): 0.068022. Maximum level of grid: 8. 
+Nodes coarsened: 16, children added: 408, parents added: 3, 
+Net change: 438 -> 833 = << 395 >>, blacklisted: 16. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Stationary Equilibrium: (r = 0.0496, K = 5.97),  markets(S = 3.85e-18,  Y-C-I = 9.32e-12, Kgap = 9.36e-11) 
+
+Evaluating 507 points to refine on ...
+Mean level of abs(aH): 0.0360882. Maximum level of grid: 9. 
+Nodes coarsened: 35, children added: 455, parents added: 33, 
+Net change: 833 -> 1286 = << 453 >>, blacklisted: 48. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 6.82e-18,  Y-C-I = 1.43e-11, Kgap = 1.43e-10) 
+
+Evaluating 640 points to refine on ...
+Mean level of abs(aH): 0.0234968. Maximum level of grid: 10. 
+Nodes coarsened: 70, children added: 369, parents added: 64, 
+Net change: 1286 -> 1649 = << 363 >>, blacklisted: 117. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 5.62e-18,  Y-C-I = -2.53e-11, Kgap = -2.54e-10) 
+
+Evaluating 739 points to refine on ...
+Mean level of abs(aH): 0.0183712. Maximum level of grid: 10. 
+Nodes coarsened: 123, children added: 263, parents added: 107, 
+Net change: 1649 -> 1896 = << 247 >>, blacklisted: 216. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 4.43e-18,  Y-C-I = 1.74e-10, Kgap = 1.74e-09) 
+
+Evaluating 818 points to refine on ...
+Mean level of abs(aH): 0.0160003. Maximum level of grid: 11. 
+Nodes coarsened: 148, children added: 219, parents added: 132, 
+Net change: 1896 -> 2099 = << 203 >>, blacklisted: 299. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 5.85e-18,  Y-C-I = -3.77e-10, Kgap = -3.78e-09) 
+
+Evaluating 886 points to refine on ...
+Mean level of abs(aH): 0.0144698. Maximum level of grid: 12. 
+Nodes coarsened: 137, children added: 170, parents added: 132, 
+Net change: 2099 -> 2264 = << 165 >>, blacklisted: 335. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 7.43e-18,  Y-C-I = 1.86e-11, Kgap = 1.86e-10) 
+
+Evaluating 923 points to refine on ...
+Mean level of abs(aH): 0.013425. Maximum level of grid: 13. 
+Nodes coarsened: 147, children added: 103, parents added: 156, 
+Net change: 2264 -> 2376 = << 112 >>, blacklisted: 381. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 7.03e-18,  Y-C-I = -4.66e-10, Kgap = -4.67e-09) 
+
+Evaluating 936 points to refine on ...
+Mean level of abs(aH): 0.0127968. Maximum level of grid: 14. 
+Nodes coarsened: 154, children added: 44, parents added: 160, 
+Net change: 2376 -> 2426 = << 50 >>, blacklisted: 404. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 4.34e-18,  Y-C-I = -3.83e-11, Kgap = -3.84e-10) 
+
+Evaluating 944 points to refine on ...
+Mean level of abs(aH): 0.0125341. Maximum level of grid: 15. 
+Nodes coarsened: 170, children added: 29, parents added: 165, 
+Net change: 2426 -> 2450 = << 24 >>, blacklisted: 420. 
+
+
+ -------  GRID ADAPTATION ITERATION 12  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 3.88e-18,  Y-C-I = -5.86e-11, Kgap = -5.87e-10) 
+
+Evaluating 944 points to refine on ...
+Mean level of abs(aH): 0.0124122. Maximum level of grid: 15. 
+Nodes coarsened: 166, children added: 2, parents added: 156, 
+Net change: 2450 -> 2442 = << -8 >>, blacklisted: 428. 
+
+
+ -------  GRID ADAPTATION ITERATION 13  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 7.35e-18,  Y-C-I = -3.05e-10, Kgap = -3.05e-09) 
+
+Evaluating 943 points to refine on ...
+Mean level of abs(aH): 0.0124532. Maximum level of grid: 15. 
+Nodes coarsened: 157, children added: 0, parents added: 156, 
+Net change: 2442 -> 2441 = << -1 >>, blacklisted: 429. 
+
+
+ -------  GRID ADAPTATION ITERATION 14  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.96),  markets(S = 5.18e-18,  Y-C-I = 8.48e-11, Kgap = 8.50e-10) 
+
+Evaluating 943 points to refine on ...
+Mean level of abs(aH): 0.0124583. Maximum level of grid: 15. 
+Nodes coarsened: 156, children added: 0, parents added: 156, 
+Net change: 2441 -> 2441 = << 0 >>, blacklisted: 429. 
+
+
+Algorithm converged. Run-time of: 20.41 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+Stationary Equilibrium: (r = 0.0477, K = 5.53),  markets(S = -2.51e-18,  Y-C-I = -1.84e-12, Kgap = -1.89e-11) 
+
+Evaluating 84 points to refine on ...
+Mean level of abs(aH): 0.45199. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 114, parents added: 0, 
+Net change: 85 -> 199 = << 114 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  8.326673e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+Stationary Equilibrium: (r = 0.0488, K = 5.45),  markets(S = -2.73e-18,  Y-C-I = 6.31e-13, Kgap = 6.39e-12) 
+
+Evaluating 183 points to refine on ...
+Mean level of abs(aH): 0.198149. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 242, parents added: 0, 
+Net change: 199 -> 441 = << 242 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  5.551115e-17.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KF', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m', 17)" style="font-weight:bold">KF</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/KF.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m', 40)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/stationary.m',40,0)">line 40</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x)stationary(x,G,GDense,param)', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main>@(x)stationary(x,G,GDense,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trustnleqn', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m', 210)" style="font-weight:bold">trustnleqn</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/private/trustnleqn.m',210,0)">line 210</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m', 436)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/optim/optim/fsolve.m',436,0)">line 436</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m', 69)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/04_aiyagari_transition_dynamics/01b_stationary_diffusion/main.m',69,0)">line 69</a>)
+] 
+Stationary Equilibrium: (r = 0.0493, K = 5.40),  markets(S = -1.42e-18,  Y-C-I = 2.30e-12, Kgap = 2.32e-11) 
+
+Evaluating 348 points to refine on ...
+Mean level of abs(aH): 0.0910262. Maximum level of grid: 8. 
+Nodes coarsened: 12, children added: 410, parents added: 6, 
+Net change: 441 -> 845 = << 404 >>, blacklisted: 12. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Stationary Equilibrium: (r = 0.0496, K = 5.38),  markets(S = -1.76e-18,  Y-C-I = -5.67e-12, Kgap = -5.69e-11) 
+
+Evaluating 533 points to refine on ...
+Mean level of abs(aH): 0.0480355. Maximum level of grid: 9. 
+Nodes coarsened: 34, children added: 478, parents added: 31, 
+Net change: 845 -> 1320 = << 475 >>, blacklisted: 44. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -5.18e-19,  Y-C-I = -1.26e-11, Kgap = -1.26e-10) 
+
+Evaluating 683 points to refine on ...
+Mean level of abs(aH): 0.0309436. Maximum level of grid: 10. 
+Nodes coarsened: 48, children added: 413, parents added: 69, 
+Net change: 1320 -> 1754 = << 434 >>, blacklisted: 92. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.46e-18,  Y-C-I = -1.07e-11, Kgap = -1.08e-10) 
+
+Evaluating 824 points to refine on ...
+Mean level of abs(aH): 0.0233636. Maximum level of grid: 10. 
+Nodes coarsened: 128, children added: 389, parents added: 143, 
+Net change: 1754 -> 2158 = << 404 >>, blacklisted: 215. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.22e-18,  Y-C-I = -1.38e-10, Kgap = -1.39e-09) 
+
+Evaluating 956 points to refine on ...
+Mean level of abs(aH): 0.0190227. Maximum level of grid: 11. 
+Nodes coarsened: 222, children added: 348, parents added: 209, 
+Net change: 2158 -> 2493 = << 335 >>, blacklisted: 360. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -2.48e-18,  Y-C-I = 4.33e-11, Kgap = 4.34e-10) 
+
+Evaluating 1067 points to refine on ...
+Mean level of abs(aH): 0.016491. Maximum level of grid: 12. 
+Nodes coarsened: 226, children added: 301, parents added: 208, 
+Net change: 2493 -> 2776 = << 283 >>, blacklisted: 452. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.30e-18,  Y-C-I = -2.52e-11, Kgap = -2.53e-10) 
+
+Evaluating 1149 points to refine on ...
+Mean level of abs(aH): 0.0148249. Maximum level of grid: 13. 
+Nodes coarsened: 235, children added: 218, parents added: 235, 
+Net change: 2776 -> 2994 = << 218 >>, blacklisted: 527. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.06e-18,  Y-C-I = -1.10e-11, Kgap = -1.10e-10) 
+
+Evaluating 1208 points to refine on ...
+Mean level of abs(aH): 0.0137538. Maximum level of grid: 14. 
+Nodes coarsened: 253, children added: 161, parents added: 259, 
+Net change: 2994 -> 3161 = << 167 >>, blacklisted: 583. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -2.81e-18,  Y-C-I = 1.01e-10, Kgap = 1.01e-09) 
+
+Evaluating 1236 points to refine on ...
+Mean level of abs(aH): 0.0130309. Maximum level of grid: 15. 
+Nodes coarsened: 270, children added: 99, parents added: 272, 
+Net change: 3161 -> 3262 = << 101 >>, blacklisted: 618. 
+
+
+ -------  GRID ADAPTATION ITERATION 12  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.49e-18,  Y-C-I = -9.50e-11, Kgap = -9.52e-10) 
+
+Evaluating 1252 points to refine on ...
+Mean level of abs(aH): 0.0126282. Maximum level of grid: 16. 
+Nodes coarsened: 281, children added: 45, parents added: 274, 
+Net change: 3262 -> 3300 = << 38 >>, blacklisted: 639. 
+
+
+ -------  GRID ADAPTATION ITERATION 13  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.61e-18,  Y-C-I = 8.93e-11, Kgap = 8.95e-10) 
+
+Evaluating 1258 points to refine on ...
+Mean level of abs(aH): 0.0124834. Maximum level of grid: 16. 
+Nodes coarsened: 275, children added: 20, parents added: 273, 
+Net change: 3300 -> 3318 = << 18 >>, blacklisted: 643. 
+
+
+ -------  GRID ADAPTATION ITERATION 14  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -4.07e-20,  Y-C-I = 3.28e-07, Kgap = 3.29e-06) 
+
+Evaluating 1259 points to refine on ...
+Mean level of abs(aH): 0.012416. Maximum level of grid: 16. 
+Nodes coarsened: 277, children added: 4, parents added: 273, 
+Net change: 3318 -> 3318 = << 0 >>, blacklisted: 647. 
+
+
+Algorithm converged. Run-time of: 25.86 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium: (r = 0.0477, K = 5.53),  markets(S = -2.51e-18,  Y-C-I = -1.84e-12, Kgap = -1.89e-11) 
+
+Evaluating 84 points to refine on ...
+Mean level of abs(aH): 0.45199. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 114, parents added: 0, 
+Net change: 85 -> 199 = << 114 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0488, K = 5.45),  markets(S = -2.73e-18,  Y-C-I = 6.31e-13, Kgap = 6.39e-12) 
+
+Evaluating 183 points to refine on ...
+Mean level of abs(aH): 0.198149. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 242, parents added: 0, 
+Net change: 199 -> 441 = << 242 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Stationary Equilibrium: (r = 0.0493, K = 5.40),  markets(S = -1.42e-18,  Y-C-I = 2.30e-12, Kgap = 2.32e-11) 
+
+Evaluating 348 points to refine on ...
+Mean level of abs(aH): 0.0910262. Maximum level of grid: 8. 
+Nodes coarsened: 12, children added: 410, parents added: 6, 
+Net change: 441 -> 845 = << 404 >>, blacklisted: 12. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Stationary Equilibrium: (r = 0.0496, K = 5.38),  markets(S = -1.76e-18,  Y-C-I = -5.67e-12, Kgap = -5.69e-11) 
+
+Evaluating 533 points to refine on ...
+Mean level of abs(aH): 0.0480355. Maximum level of grid: 9. 
+Nodes coarsened: 34, children added: 478, parents added: 31, 
+Net change: 845 -> 1320 = << 475 >>, blacklisted: 44. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -5.18e-19,  Y-C-I = -1.26e-11, Kgap = -1.26e-10) 
+
+Evaluating 683 points to refine on ...
+Mean level of abs(aH): 0.0309436. Maximum level of grid: 10. 
+Nodes coarsened: 48, children added: 413, parents added: 69, 
+Net change: 1320 -> 1754 = << 434 >>, blacklisted: 92. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -3.46e-18,  Y-C-I = -1.07e-11, Kgap = -1.08e-10) 
+
+Evaluating 824 points to refine on ...
+Mean level of abs(aH): 0.0233636. Maximum level of grid: 10. 
+Nodes coarsened: 128, children added: 389, parents added: 143, 
+Net change: 1754 -> 2158 = << 404 >>, blacklisted: 215. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.22e-18,  Y-C-I = -1.38e-10, Kgap = -1.39e-09) 
+
+Evaluating 956 points to refine on ...
+Mean level of abs(aH): 0.0190227. Maximum level of grid: 11. 
+Nodes coarsened: 222, children added: 348, parents added: 209, 
+Net change: 2158 -> 2493 = << 335 >>, blacklisted: 360. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -2.48e-18,  Y-C-I = 4.33e-11, Kgap = 4.34e-10) 
+
+Evaluating 1067 points to refine on ...
+Mean level of abs(aH): 0.016491. Maximum level of grid: 12. 
+Nodes coarsened: 226, children added: 301, parents added: 208, 
+Net change: 2493 -> 2776 = << 283 >>, blacklisted: 452. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.30e-18,  Y-C-I = -2.52e-11, Kgap = -2.53e-10) 
+
+Evaluating 1149 points to refine on ...
+Mean level of abs(aH): 0.0148249. Maximum level of grid: 13. 
+Nodes coarsened: 235, children added: 218, parents added: 235, 
+Net change: 2776 -> 2994 = << 218 >>, blacklisted: 527. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.06e-18,  Y-C-I = -1.10e-11, Kgap = -1.10e-10) 
+
+Evaluating 1208 points to refine on ...
+Mean level of abs(aH): 0.0137538. Maximum level of grid: 14. 
+Nodes coarsened: 253, children added: 161, parents added: 259, 
+Net change: 2994 -> 3161 = << 167 >>, blacklisted: 583. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -2.81e-18,  Y-C-I = 1.01e-10, Kgap = 1.01e-09) 
+
+Evaluating 1236 points to refine on ...
+Mean level of abs(aH): 0.0130309. Maximum level of grid: 15. 
+Nodes coarsened: 270, children added: 99, parents added: 272, 
+Net change: 3161 -> 3262 = << 101 >>, blacklisted: 618. 
+
+
+ -------  GRID ADAPTATION ITERATION 12  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.49e-18,  Y-C-I = -9.50e-11, Kgap = -9.52e-10) 
+
+Evaluating 1252 points to refine on ...
+Mean level of abs(aH): 0.0126282. Maximum level of grid: 16. 
+Nodes coarsened: 281, children added: 45, parents added: 274, 
+Net change: 3262 -> 3300 = << 38 >>, blacklisted: 639. 
+
+
+ -------  GRID ADAPTATION ITERATION 13  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -1.61e-18,  Y-C-I = 8.93e-11, Kgap = 8.95e-10) 
+
+Evaluating 1258 points to refine on ...
+Mean level of abs(aH): 0.0124834. Maximum level of grid: 16. 
+Nodes coarsened: 275, children added: 20, parents added: 273, 
+Net change: 3300 -> 3318 = << 18 >>, blacklisted: 643. 
+
+
+ -------  GRID ADAPTATION ITERATION 14  ------- 
+
+Stationary Equilibrium: (r = 0.0498, K = 5.37),  markets(S = -4.07e-20,  Y-C-I = 3.28e-07, Kgap = 3.29e-06) 
+
+Evaluating 1259 points to refine on ...
+Mean level of abs(aH): 0.012416. Maximum level of grid: 16. 
+Nodes coarsened: 277, children added: 4, parents added: 273, 
+Net change: 3318 -> 3318 = << 0 >>, blacklisted: 647. 
+
+
+Algorithm converged. Run-time of: 26.04 seconds.
+
+Plotting Figures...
