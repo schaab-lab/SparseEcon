@@ -1,0 +1,795 @@
+Running algorithm:
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Incorrect dimensions for matrix multiplication. Check that the number of columns in the first matrix matches the number of rows in the
+second matrix. To perform elementwise multiplication, use '.*'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_sparse_grid', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/gen_sparse_grid.m', 14)" style="font-weight:bold">gen_sparse_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/gen_sparse_grid.m',14,0)">line 14</a>)
+    l = n * ones(1, d) + surplus;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup_grid', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/setup_grid.m', 38)" style="font-weight:bold">setup_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/setup_grid.m',38,0)">line 38</a>)
+    [G.grid, G.lvl] = gen_sparse_grid(G.d, n, surplus);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 40)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',40,0)">line 40</a>)
+G_dense = setup_grid(param.l_dense, 0, param.min, param.max, ...
+
+<a href="matlab:helpview('matlab','error_innerdim')" style="font-weight:bold">Related documentation</a>
+} 
+param.l_dense
+
+ans =
+
+     7     4
+
+param.surplus
+
+ans =
+
+     5     2
+
+main
+Running algorithm:
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Incorrect dimensions for matrix multiplication. Check that the number of columns in the first matrix matches the number of rows in the
+second matrix. To perform elementwise multiplication, use '.*'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_sparse_grid', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/gen_sparse_grid.m', 14)" style="font-weight:bold">gen_sparse_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/gen_sparse_grid.m',14,0)">line 14</a>)
+    l = n * ones(1, d) + surplus;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup_grid', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/setup_grid.m', 38)" style="font-weight:bold">setup_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/setup_grid.m',38,0)">line 38</a>)
+    [G.grid, G.lvl] = gen_sparse_grid(G.d, n, surplus);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 40)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',40,0)">line 40</a>)
+G_dense = setup_grid(param.l_dense, [0, 0], param.min, param.max, 'NamedDims', {1}, 'Names', {'a'});
+
+<a href="matlab:helpview('matlab','error_innerdim')" style="font-weight:bold">Related documentation</a>
+} 
+param.l_dense
+
+ans =
+
+     7     4
+
+main
+Running algorithm:
+{Unrecognized field name "dz".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 41)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',41,0)">line 41</a>)
+G_dense.dx = G_dense.da * G_dense.dz;
+} 
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('FD_operator', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/fd/FD_operator.m', 61)" style="font-weight:bold">FD_operator</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/fd/FD_operator.m',61,0)">line 61</a>)
+Error: Nonzero SIGMA detected in dimension 2. dxx operator in dimension 2 must be enabled. See "DxxDims" optional input in setup_grid().
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VFI', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/VFI.m', 6)" style="font-weight:bold">VFI</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/VFI.m',6,0)">line 6</a>)
+[Az, const_z] = FD_operator(G, param.theta_z * (param.zmean - G.z), param.sig_z*ones(G.J,1), 2);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/stationary.m', 28)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/stationary.m',28,0)">line 28</a>)
+[V, hjb] = VFI(G, param);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 65)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',65,0)">line 65</a>)
+    [diff0, G, G_dense, ~] = stationary(X0, G, G_dense, param);
+} 
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+log(2)
+
+ans =
+
+    0.6931
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+fprintf('\n\n:::::::::::   TRANSITION DYNAMICS   ::::::::::: \n\n');
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+
+% Productivity shock: 
+shock = param.shock_level * ones(param.N, 1);
+{Unrecognized field name "shock_level".
+} 
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  100 quarters,  120 time steps,  using 25 cheb BFs
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+X0 = ss.r .* ones(param.N, 1);
+[PHI0, param.nodes] = basis_fun_irf(X0, [], param.H(1), param.H(2), ...
+    param.bfun_type, param.t, "get_coefficient");
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  100 quarters,  120 time steps,  using 25 cheb BFs
+
+{Unrecognized function or variable 'c0'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('transition', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m', 61)" style="font-weight:bold">transition</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m',61,0)">line 61</a>)
+    c = cF.*IF + cB.*IB + c0.*I0;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 114)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',114,0)">line 114</a>)
+[diff0, G, G_dense, ~] = transition(PHI0, G, G_dense, shock, ss, param);
+} 
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m',61,0)
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  100 quarters,  120 time steps,  using 25 cheb BFs
+
+{Unable to resolve the name hjb.s.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('transition', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m', 66)" style="font-weight:bold">transition</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m',66,0)">line 66</a>)
+    [Aa, const_a] = FD_operator(G, hjb.s, zeros(G.J,1), 1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 114)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',114,0)">line 114</a>)
+[diff0, G, G_dense, ~] = transition(PHI0, G, G_dense, shock, ss, param);
+} 
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m',66,0)
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  100 quarters,  120 time steps,  using 25 cheb BFs
+
+figure; plot(sim.t, sim.Y)
+figure; plot(sim.t, sim.r)
+figure; plot(sim.t, sim.S)
+figure; plot(sim.t, sim.B)
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 3.70 seconds.
+Iteration 001, fCount 26:  Objective = 0.0011994,  stepSize =      0.25,  norm(dx) =  0.015428.
+Iteration 002, fCount 27:  Objective = 0.00067527,  stepSize =       0.5,  norm(dx) =  0.027665.
+Iteration 003, fCount 28:  Objective = 0.00012632,  stepSize =         1,  norm(dx) = 0.0066772.
+Iteration 004, fCount 32:  Objective = 0.00011866,  stepSize =      0.25,  norm(dx) =  0.022902.
+Iteration 005, fCount 33:  Objective = 5.981e-05,  stepSize =       0.5,  norm(dx) = 0.0023909.
+Iteration 006, fCount 34:  Objective = 1.4662e-05,  stepSize =         1,  norm(dx) = 0.0017141.
+Iteration 007, fCount 38:  Objective = 1.7099e-06,  stepSize =      0.25,  norm(dx) = 0.0031936.
+Iteration 008, fCount 39:  Objective = 8.0588e-07,  stepSize =       0.5,  norm(dx) = 6.8831e-05.
+Iteration 009, fCount 40:  Objective = 5.5688e-07,  stepSize =         1,  norm(dx) = 0.00010841.
+Iteration 010, fCount 43:  Objective = 3.0842e-07,  stepSize =       0.5,  norm(dx) = 8.4352e-05.
+Iteration 011, fCount 44:  Objective = 2.3906e-07,  stepSize =         1,  norm(dx) = 5.8822e-05.
+Iteration 012, fCount 46:  Objective = 1.8673e-07,  stepSize =         1,  norm(dx) = 3.2271e-05.
+Iteration 013, fCount 48:  Objective = 2.5323e-10,  stepSize =         1,  norm(dx) = 1.4126e-05.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 52.01 seconds.
+
+Plotting Figures...
+{Unrecognized field name "K".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 153)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',153,0)">line 153</a>)
+plot(sim.t, (sim.K - ss.K)/ss.K); title('$K_t$', 'Interpreter', 'Latex');
+} 
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',153,0)
+figure('visible', 'off');
+subplot(2, 2, 1); 
+plot(sim.t, (sim.Y - ss.Y)/ss.Y); ylabel('% dev'); title('$Y_t$', 'Interpreter', 'Latex');
+subplot(2, 2, 2); 
+plot(sim.t, (sim.C - ss.C)/ss.C); title('$C_t$', 'Interpreter', 'Latex');
+subplot(2, 2, 3); 
+plot(sim.t, sim.r; ylabel('lvl'); xlabel('Quarters'); title('$L_t$', 'Interpreter', 'Latex');
+ plot(sim.t, sim.r; ylabel('lvl'); xlabel('Quarters'); title('$L_t$', 'Interpreter', 'Latex');
+                  ↑
+{Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+figure('visible', 'off');
+subplot(2, 2, 1); 
+plot(sim.t, (sim.Y - ss.Y)/ss.Y); ylabel('% dev'); title('$Y_t$', 'Interpreter', 'Latex');
+subplot(2, 2, 2); 
+plot(sim.t, (sim.C - ss.C)/ss.C); title('$C_t$', 'Interpreter', 'Latex');
+subplot(2, 2, 3); 
+plot(sim.t, sim.r); ylabel('lvl'); xlabel('Quarters'); title('$L_t$', 'Interpreter', 'Latex');
+subplot(2, 2, 4); 
+plot(sim.t, exp(sim.Z)); xlabel('Quarters'); title('$Z_t$', 'Interpreter', 'Latex');
+exportgraphics(gcf, './output/transition_dynamics.eps');
+figure('visible', 'off');
+subplot(1, 3, 1);
+plot(sim.t, sim.excess_bonds); ylabel('level'); title('$B_t$', 'Interpreter', 'Latex');
+subplot(1, 3, 2); 
+plot(sim.t, sim.excess_goods); xlabel('Quarters'); title('$Y_t - C_t$', 'Interpreter', 'Latex');
+subplot(1, 3, 3); 
+plot(sim.t, sim.excess_saving); title('$S_t$', 'Interpreter', 'Latex');
+exportgraphics(gcf, './output/market_clearing.eps');
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  40 quarters,  120 time steps,  using 25 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 3.16 seconds.
+Iteration 001, fCount 26:  Objective = 0.0011994,  stepSize =      0.25,  norm(dx) =  0.015428.
+Iteration 002, fCount 27:  Objective = 0.00067527,  stepSize =       0.5,  norm(dx) =  0.027665.
+Iteration 003, fCount 28:  Objective = 0.00012632,  stepSize =         1,  norm(dx) = 0.0066772.
+Iteration 004, fCount 32:  Objective = 0.00011866,  stepSize =      0.25,  norm(dx) =  0.022902.
+Iteration 005, fCount 33:  Objective = 5.981e-05,  stepSize =       0.5,  norm(dx) = 0.0023909.
+Iteration 006, fCount 34:  Objective = 1.4662e-05,  stepSize =         1,  norm(dx) = 0.0017141.
+Iteration 007, fCount 38:  Objective = 1.7099e-06,  stepSize =      0.25,  norm(dx) = 0.0031936.
+Iteration 008, fCount 39:  Objective = 8.0588e-07,  stepSize =       0.5,  norm(dx) = 6.8831e-05.
+Iteration 009, fCount 40:  Objective = 5.5688e-07,  stepSize =         1,  norm(dx) = 0.00010841.
+Iteration 010, fCount 43:  Objective = 3.0842e-07,  stepSize =       0.5,  norm(dx) = 8.4352e-05.
+Iteration 011, fCount 44:  Objective = 2.3906e-07,  stepSize =         1,  norm(dx) = 5.8822e-05.
+Iteration 012, fCount 46:  Objective = 1.8673e-07,  stepSize =         1,  norm(dx) = 3.2271e-05.
+Iteration 013, fCount 48:  Objective = 2.5323e-10,  stepSize =         1,  norm(dx) = 1.4126e-05.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 12.96 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  40 quarters,  120 time steps,  using 25 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 3.37 seconds.
+Iteration 001, fCount 26:  Objective = 0.0015653,  stepSize =      0.25,  norm(dx) =  0.026616.
+Iteration 002, fCount 27:  Objective = 0.00079172,  stepSize =       0.5,  norm(dx) =  0.042294.
+Iteration 003, fCount 28:  Objective = 0.00025566,  stepSize =         1,  norm(dx) =  0.026713.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 004, fCount 76:  Objective = 0.00018979,  stepSize =      0.25,  norm(dx) =  0.024205.
+Iteration 005, fCount 77:  Objective = 9.4705e-05,  stepSize =       0.5,  norm(dx) = 0.0023459.
+Iteration 006, fCount 78:  Objective = 9.0272e-06,  stepSize =         1,  norm(dx) =  0.012561.
+Iteration 007, fCount 81:  Objective = 2.4218e-06,  stepSize =       0.5,  norm(dx) = 0.0039134.
+Iteration 008, fCount 82:  Objective = 3.8525e-07,  stepSize =         1,  norm(dx) = 0.00029728.
+Iteration 009, fCount 83:  Objective = 2.0719e-07,  stepSize =         2,  norm(dx) = 0.0002636.
+Iteration 010, fCount 85:  Objective = 5.4705e-08,  stepSize =         1,  norm(dx) = 0.00020966.
+Iteration 011, fCount 86:  Objective = 4.4281e-08,  stepSize =         2,  norm(dx) = 0.00010582.
+Iteration 012, fCount 88:  Objective = 3.797e-12,  stepSize =         1,  norm(dx) = 4.7338e-05.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 19.89 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  40 quarters,  120 time steps,  using 120 nodal BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 9.76 seconds.
+Iteration 001, fCount 127:  Objective = 0.00042966,  stepSize = 0.0039062,  norm(dx) =  0.016489.
+Iteration 002, fCount 131:  Objective = 0.00042965,  stepSize = 0.00097656,  norm(dx) = 0.0040423.
+Iteration 003, fCount 135:  Objective = 0.00042961,  stepSize = 0.00024414,  norm(dx) = 0.00094721.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 004, fCount 272:  Objective = 0.00031472,  stepSize =      0.25,  norm(dx) =   0.88086.
+Iteration 005, fCount 277:  Objective = 0.00028727,  stepSize =   0.03125,  norm(dx) =     1.301.
+Iteration 006, fCount 278:  Objective = 0.00027629,  stepSize =    0.0625,  norm(dx) =   0.12475.
+Iteration 007, fCount 279:  Objective = 0.00023744,  stepSize =     0.125,  norm(dx) =  0.038579.
+Iteration 008, fCount 280:  Objective = 0.00018458,  stepSize =      0.25,  norm(dx) =  0.072795.
+Iteration 009, fCount 281:  Objective = 0.00011965,  stepSize =       0.5,  norm(dx) =  0.083889.
+Iteration 010, fCount 282:  Objective = 6.6075e-05,  stepSize =         1,  norm(dx) =   0.11261.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 011, fCount 433:  Objective = 6.4007e-05,  stepSize =   0.03125,  norm(dx) =  0.072169.
+Solver failed to make progress, recomputing Jacobian ...
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('distcomp.remoteparfor/getCompleteIntervals', '/Applications/MATLAB_R2021a.app/toolbox/parallel/distcomp/+distcomp/remoteparfor.m', 379)" style="font-weight:bold">distcomp.remoteparfor/getCompleteIntervals</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/parallel/distcomp/+distcomp/remoteparfor.m',379,0)">line 379</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('parallel_function>distributed_execution', '/Applications/MATLAB_R2021a.app/toolbox/matlab/lang/parallel_function.m', 741)" style="font-weight:bold">parallel_function>distributed_execution</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/lang/parallel_function.m',741,0)">line 741</a>)
+        [tags, out] = P.getCompleteIntervals(chunkSize);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('parallel_function', '/Applications/MATLAB_R2021a.app/toolbox/matlab/lang/parallel_function.m', 573)" style="font-weight:bold">parallel_function</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/lang/parallel_function.m',573,0)">line 573</a>)
+    R = distributed_execution(...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve_newton>compute_jacobian', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/fsolve_newton.m', 120)" style="font-weight:bold">fsolve_newton>compute_jacobian</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/fsolve_newton.m',120,0)">line 120</a>)
+    parfor k = 1:numel(x0)
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve_newton', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/fsolve_newton.m', 74)" style="font-weight:bold">fsolve_newton</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/fsolve_newton.m',74,0)">line 74</a>)
+            J = compute_jacobian(f, x, obj, y);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 118)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',118,0)">line 118</a>)
+PHI = fsolve_newton(f, reshape(PHI0, [numel(PHI0), 1]), diff0, y0, 0, 5, 2);
+} 
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  60 quarters,  120 time steps,  using 120 nodal BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 9.00 seconds.
+Iteration 001, fCount 121:  Objective = 0.00037377,  stepSize =      0.25,  norm(dx) =   0.68492.
+Iteration 002, fCount 122:  Objective = 0.00017634,  stepSize =       0.5,  norm(dx) =     1.985.
+Iteration 003, fCount 123:  Objective = 0.00011367,  stepSize =         1,  norm(dx) =    2.2374.
+Iteration 004, fCount 127:  Objective = 0.0001103,  stepSize =      0.25,  norm(dx) =   0.11617.
+Iteration 005, fCount 130:  Objective = 0.00010031,  stepSize =     0.125,  norm(dx) =   0.21011.
+Iteration 006, fCount 134:  Objective = 9.3971e-05,  stepSize =   0.03125,  norm(dx) =  0.099166.
+Iteration 007, fCount 135:  Objective = 9.1262e-05,  stepSize =    0.0625,  norm(dx) =   0.11977.
+Iteration 008, fCount 136:  Objective = 6.8133e-05,  stepSize =     0.125,  norm(dx) =   0.15154.
+Iteration 009, fCount 137:  Objective = 4.8836e-05,  stepSize =      0.25,  norm(dx) =  0.021545.
+Iteration 010, fCount 138:  Objective = 2.3699e-05,  stepSize =       0.5,  norm(dx) =  0.028788.
+Iteration 011, fCount 139:  Objective = 1.3346e-05,  stepSize =         1,  norm(dx) =  0.022134.
+Iteration 012, fCount 141:  Objective = 8.535e-06,  stepSize =         1,  norm(dx) =  0.019729.
+Iteration 013, fCount 147:  Objective = 7.6448e-06,  stepSize =    0.0625,  norm(dx) = 0.0072259.
+Iteration 014, fCount 148:  Objective = 7.5878e-06,  stepSize =     0.125,  norm(dx) = 0.0013924.
+Iteration 015, fCount 149:  Objective = 7.217e-06,  stepSize =      0.25,  norm(dx) = 0.0036615.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 016, fCount 288:  Objective = 6.0806e-06,  stepSize =      0.25,  norm(dx) =   0.44133.
+Iteration 017, fCount 291:  Objective = 5.8927e-06,  stepSize =     0.125,  norm(dx) =   0.23931.
+Iteration 018, fCount 292:  Objective = 5.7616e-06,  stepSize =      0.25,  norm(dx) =   0.66936.
+Iteration 019, fCount 295:  Objective = 5.7148e-06,  stepSize =     0.125,  norm(dx) =    0.4274.
+Iteration 020, fCount 297:  Objective = 5.4992e-06,  stepSize =     0.125,  norm(dx) =   0.61077.
+Iteration 021, fCount 299:  Objective = 5.3253e-06,  stepSize =     0.125,  norm(dx) =   0.76744.
+Iteration 022, fCount 301:  Objective = 5.1954e-06,  stepSize =     0.125,  norm(dx) =    1.0182.
+Iteration 023, fCount 303:  Objective = 5.1159e-06,  stepSize =     0.125,  norm(dx) =      1.39.
+Iteration 024, fCount 305:  Objective = 5.0847e-06,  stepSize =     0.125,  norm(dx) =    1.9845.
+Iteration 025, fCount 308:  Objective = 5.0171e-06,  stepSize =    0.0625,  norm(dx) =     1.474.
+Iteration 026, fCount 309:  Objective = 4.9875e-06,  stepSize =     0.125,  norm(dx) =    4.1685.
+Iteration 027, fCount 312:  Objective =  4.98e-06,  stepSize =    0.0625,  norm(dx) =    3.1736.
+Iteration 028, fCount 314:  Objective = 4.9592e-06,  stepSize =    0.0625,  norm(dx) =    5.1842.
+Iteration 029, fCount 318:  Objective = 4.9516e-06,  stepSize =  0.015625,  norm(dx) =    1.9358.
+Iteration 030, fCount 319:  Objective = 4.9374e-06,  stepSize =   0.03125,  norm(dx) =    5.2719.
+Iteration 031, fCount 320:  Objective = 4.9131e-06,  stepSize =    0.0625,  norm(dx) =    13.406.
+Iteration 032, fCount 324:  Objective = 4.9021e-06,  stepSize =  0.015625,  norm(dx) =    5.8086.
+Iteration 033, fCount 328:  Objective = 4.853e-06,  stepSize = 0.0039062,  norm(dx) =    2.3539.
+Iteration 034, fCount 329:  Objective = 4.8253e-06,  stepSize = 0.0078125,  norm(dx) =   0.55245.
+Iteration 035, fCount 330:  Objective = 4.7866e-06,  stepSize =  0.015625,  norm(dx) =   0.76496.
+Iteration 036, fCount 331:  Objective = 4.7721e-06,  stepSize =   0.03125,  norm(dx) =    1.5592.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 037, fCount 484:  Objective = 4.4829e-06,  stepSize = 0.0039062,  norm(dx) =    11.385.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 038, fCount 636:  Objective = 4.4785e-06,  stepSize = 0.0039062,  norm(dx) =     5.366.
+Solver failed to make progress, recomputing Jacobian ...
+Terminating solver: Jacobian recomputed 5 times 
+Solver stopped for unknown reason.
+
+
+
+Algorithm converged. Run-time of: 112.24 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  30 quarters,  40 time steps,  using 120 nodal BFs
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('griddedInterpolant')" style="font-weight:bold">griddedInterpolant</a>
+Sample points vector corresponding to grid dimension 1 must contain 41 elements.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('basis_function', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/basis_function.m', 21)" style="font-weight:bold">basis_function</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/basis_function.m',21,0)">line 21</a>)
+        F = griddedInterpolant(X(:), data);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('basis_fun_irf', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/basis_fun_irf.m', 36)" style="font-weight:bold">basis_fun_irf</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/basis_fun_irf.m',36,0)">line 36</a>)
+            T_node = basis_function(H, nodes, t(1), t(end), bfun_type, nodes, 1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 111)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',111,0)">line 111</a>)
+[PHI0, param.nodes] = basis_fun_irf(X0, [], param.H(1), param.H(2), ...
+} 
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',111,0)
+param.N
+
+ans =
+
+    40
+
+param.H(1)
+
+ans =
+
+   120
+
+param.H(2)
+
+ans =
+
+     1
+
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  30 quarters,  40 time steps,  using 40 nodal BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 1.43 seconds.
+Iteration 001, fCount 41:  Objective = 0.0011619,  stepSize =      0.25,  norm(dx) =   0.77881.
+Iteration 002, fCount 42:  Objective = 0.00052636,  stepSize =       0.5,  norm(dx) =    1.9744.
+Iteration 003, fCount 43:  Objective = 0.00037604,  stepSize =         1,  norm(dx) =    2.5675.
+Iteration 004, fCount 47:  Objective = 0.00026713,  stepSize =      0.25,  norm(dx) =   0.23943.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 005, fCount 113:  Objective = 0.00019604,  stepSize =      0.25,  norm(dx) =   0.15733.
+Iteration 006, fCount 116:  Objective = 0.0001861,  stepSize =     0.125,  norm(dx) =  0.081887.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 007, fCount 180:  Objective = 0.00014534,  stepSize =      0.25,  norm(dx) =   0.27413.
+Iteration 008, fCount 184:  Objective = 0.00014504,  stepSize =    0.0625,  norm(dx) =  0.077919.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 009, fCount 247:  Objective = 0.00010919,  stepSize =      0.25,  norm(dx) =   0.54027.
+Iteration 010, fCount 248:  Objective = 7.8144e-05,  stepSize =       0.5,  norm(dx) =    3.6312.
+Iteration 011, fCount 249:  Objective = 4.7832e-05,  stepSize =         1,  norm(dx) =    3.1064.
+Iteration 012, fCount 253:  Objective = 3.0627e-05,  stepSize =      0.25,  norm(dx) =    3.1546.
+Iteration 013, fCount 255:  Objective = 3.0339e-05,  stepSize =      0.25,  norm(dx) =    3.9951.
+Iteration 014, fCount 256:  Objective = 2.5284e-05,  stepSize =       0.5,  norm(dx) =    6.3899.
+Iteration 015, fCount 261:  Objective = 2.396e-05,  stepSize =    0.0625,  norm(dx) =    1.4416.
+Solver failed to make progress, recomputing Jacobian ...
+Terminating solver: Jacobian recomputed 5 times 
+Solver stopped for unknown reason.
+
+
+
+Algorithm converged. Run-time of: 22.55 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  30 quarters,  200 time steps,  using 200 nodal BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 6.11 seconds.
+KF not preserving mass.
+KF not preserving mass.
+Iteration 001, fCount 208:  Objective = 0.00035135,  stepSize = 0.0019531,  norm(dx) =  0.021373.
+Solver failed to make progress, recomputing Jacobian ...
+KF not preserving mass.
+KF not preserving mass.
+Iteration 002, fCount 430:  Objective = 0.00034627,  stepSize =     0.125,  norm(dx) =   0.75236.
+Solver failed to make progress, recomputing Jacobian ...
+KF not preserving mass.
+Iteration 003, fCount 656:  Objective = 0.00032943,  stepSize =      0.25,  norm(dx) =     1.935.
+KF not preserving mass.
+KF not preserving mass.
+KF not preserving mass.
+KF not preserving mass.
+KF not preserving mass.
+KF not preserving mass.
+KF not preserving mass.
+KF not preserving mass.
+Iteration 004, fCount 661:  Objective = 0.00032479,  stepSize =   0.03125,  norm(dx) =   0.32266.
+KF not preserving mass.
+KF not preserving mass.
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('transition', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m', 47)" style="font-weight:bold">transition</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m',47,0)">line 47</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x,y)transition(x,y{1},y{2},shock,ss,param)', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 117)" style="font-weight:bold">main>@(x,y)transition(x,y{1},y{2},shock,ss,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',117,0)">line 117</a>)
+f = @(x, y) transition(x, y{1}, y{2}, shock, ss, param); y0{1} = G; y0{2} = G_dense;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve_newton', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/fsolve_newton.m', 54)" style="font-weight:bold">fsolve_newton</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/fsolve_newton.m',54,0)">line 54</a>)
+    if numel(y0) == 2, [obj, y{1}, y{2}] = f(x, y); end
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 118)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',118,0)">line 118</a>)
+PHI = fsolve_newton(f, reshape(PHI0, [numel(PHI0), 1]), diff0, y0, 0, 5, 2);
+} 
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  30 quarters,  90 time steps,  using 90 nodal BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 5.33 seconds.
+Iteration 001, fCount 97:  Objective = 0.00057229,  stepSize = 0.0039062,  norm(dx) =  0.016427.
+Iteration 002, fCount 101:  Objective = 0.00057227,  stepSize = 0.00097656,  norm(dx) = 0.0040289.
+Iteration 003, fCount 105:  Objective = 0.00057219,  stepSize = 0.00024414,  norm(dx) = 0.00094415.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 004, fCount 212:  Objective = 0.00041857,  stepSize =      0.25,  norm(dx) =   0.87837.
+Iteration 005, fCount 217:  Objective = 0.00036314,  stepSize =   0.03125,  norm(dx) =    1.0504.
+Iteration 006, fCount 218:  Objective = 0.00035282,  stepSize =    0.0625,  norm(dx) =    0.1214.
+Iteration 007, fCount 219:  Objective = 0.00031149,  stepSize =     0.125,  norm(dx) =  0.033325.
+Iteration 008, fCount 220:  Objective = 0.00024161,  stepSize =      0.25,  norm(dx) =  0.058418.
+Iteration 009, fCount 221:  Objective = 0.00013769,  stepSize =       0.5,  norm(dx) =  0.082078.
+Iteration 010, fCount 223:  Objective = 8.007e-05,  stepSize =       0.5,  norm(dx) =   0.11152.
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('transition', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m', 97)" style="font-weight:bold">transition</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m',97,0)">line 97</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x,y)transition(x,y{1},y{2},shock,ss,param)', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 117)" style="font-weight:bold">main>@(x,y)transition(x,y{1},y{2},shock,ss,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',117,0)">line 117</a>)
+f = @(x, y) transition(x, y{1}, y{2}, shock, ss, param); y0{1} = G; y0{2} = G_dense;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve_newton', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/fsolve_newton.m', 54)" style="font-weight:bold">fsolve_newton</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/fsolve_newton.m',54,0)">line 54</a>)
+    if numel(y0) == 2, [obj, y{1}, y{2}] = f(x, y); end
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 118)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',118,0)">line 118</a>)
+PHI = fsolve_newton(f, reshape(PHI0, [numel(PHI0), 1]), diff0, y0, 0, 5, 2);
+} 
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  30 quarters,  90 time steps,  using 90 nodal BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 5.92 seconds.
+Iteration 001, fCount 91:  Objective = 2.8493e-05,  stepSize =      0.25,  norm(dx) =  0.014783.
+Iteration 002, fCount 94:  Objective = 2.6204e-05,  stepSize =     0.125,  norm(dx) = 0.0080352.
+Iteration 003, fCount 97:  Objective = 2.5332e-05,  stepSize =    0.0625,  norm(dx) = 0.0061902.
+Iteration 004, fCount 101:  Objective =  2.53e-05,  stepSize =  0.015625,  norm(dx) = 0.00083302.
+Iteration 005, fCount 102:  Objective = 2.143e-05,  stepSize =   0.03125,  norm(dx) = 0.0026267.
+Iteration 006, fCount 103:  Objective = 1.9697e-05,  stepSize =    0.0625,  norm(dx) = 0.00060798.
+Iteration 007, fCount 104:  Objective = 1.6358e-05,  stepSize =     0.125,  norm(dx) =  0.001429.
+Iteration 008, fCount 105:  Objective = 1.1893e-05,  stepSize =      0.25,  norm(dx) = 0.0019111.
+Iteration 009, fCount 106:  Objective = 7.5631e-06,  stepSize =       0.5,  norm(dx) = 0.0022631.
+Iteration 010, fCount 107:  Objective = 2.8551e-06,  stepSize =         1,  norm(dx) = 0.0024482.
+Iteration 011, fCount 109:  Objective = 7.0831e-07,  stepSize =         1,  norm(dx) = 0.00098045.
+Iteration 012, fCount 111:  Objective = 2.9197e-07,  stepSize =         1,  norm(dx) = 0.00026902.
+Iteration 013, fCount 113:  Objective = 1.8929e-07,  stepSize =         1,  norm(dx) = 9.6528e-05.
+Iteration 014, fCount 114:  Objective = 1.7968e-07,  stepSize =         2,  norm(dx) = 9.3518e-05.
+Iteration 015, fCount 116:  Objective = 1.8142e-08,  stepSize =         1,  norm(dx) = 3.7674e-05.
+Iteration 016, fCount 118:  Objective = 4.7868e-09,  stepSize =         1,  norm(dx) = 9.752e-06.
+Iteration 017, fCount 120:  Objective = 9.1169e-10,  stepSize =         1,  norm(dx) = 1.4944e-06.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 14.82 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  50 quarters,  100 time steps,  using 100 nodal BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 6.48 seconds.
+Iteration 001, fCount 101:  Objective = 2.683e-05,  stepSize =      0.25,  norm(dx) =  0.024622.
+Iteration 002, fCount 105:  Objective = 2.6397e-05,  stepSize =    0.0625,  norm(dx) = 0.0034972.
+Iteration 003, fCount 106:  Objective = 2.6103e-05,  stepSize =     0.125,  norm(dx) = 0.0058462.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 004, fCount 228:  Objective = 2.0865e-05,  stepSize =      0.25,  norm(dx) =  0.013782.
+Iteration 005, fCount 231:  Objective = 2.0172e-05,  stepSize =     0.125,  norm(dx) = 0.0075257.
+Solver failed to make progress, recomputing Jacobian ...
+Iteration 006, fCount 360:  Objective = 1.7135e-05,  stepSize =  0.015625,  norm(dx) =   0.02088.
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('transition', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m', 103)" style="font-weight:bold">transition</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/transition.m',103,0)">line 103</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main>@(x,y)transition(x,y{1},y{2},shock,ss,param)', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 117)" style="font-weight:bold">main>@(x,y)transition(x,y{1},y{2},shock,ss,param)</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',117,0)">line 117</a>)
+f = @(x, y) transition(x, y{1}, y{2}, shock, ss, param); y0{1} = G; y0{2} = G_dense;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve_newton', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/fsolve_newton.m', 54)" style="font-weight:bold">fsolve_newton</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/utilities/fsolve_newton.m',54,0)">line 54</a>)
+    if numel(y0) == 2, [obj, y{1}, y{2}] = f(x, y); end
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m', 118)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/05_transition_dynamics/02_huggett_public_good/main.m',118,0)">line 118</a>)
+PHI = fsolve_newton(f, reshape(PHI0, [numel(PHI0), 1]), diff0, y0, 0, 5, 2);
+} 
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  40 quarters,  100 time steps,  using 100 nodal BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 6.29 seconds.
+Iteration 001, fCount 101:  Objective = 2.0929e-05,  stepSize =      0.25,  norm(dx) =  0.010398.
+Iteration 002, fCount 104:  Objective = 1.9416e-05,  stepSize =     0.125,  norm(dx) =    0.0138.
+Iteration 003, fCount 110:  Objective = 1.9392e-05,  stepSize = 0.0078125,  norm(dx) = 0.00068366.
+Iteration 004, fCount 111:  Objective = 1.9363e-05,  stepSize =  0.015625,  norm(dx) = 0.00083511.
+Iteration 005, fCount 112:  Objective = 1.7316e-05,  stepSize =   0.03125,  norm(dx) = 0.0017166.
+Iteration 006, fCount 113:  Objective = 1.6152e-05,  stepSize =    0.0625,  norm(dx) =  0.001003.
+Iteration 007, fCount 114:  Objective = 1.3332e-05,  stepSize =     0.125,  norm(dx) = 0.0014023.
+Iteration 008, fCount 115:  Objective = 1.0347e-05,  stepSize =      0.25,  norm(dx) = 0.0017075.
+Iteration 009, fCount 116:  Objective = 5.3036e-06,  stepSize =       0.5,  norm(dx) = 0.0024768.
+Iteration 010, fCount 117:  Objective = 2.1949e-06,  stepSize =         1,  norm(dx) = 0.0028299.
+Iteration 011, fCount 119:  Objective = 1.5892e-06,  stepSize =         1,  norm(dx) = 0.0013947.
+Iteration 012, fCount 121:  Objective = 9.5188e-07,  stepSize =         1,  norm(dx) = 0.0010309.
+Iteration 013, fCount 123:  Objective = 6.3874e-07,  stepSize =         1,  norm(dx) = 0.00032351.
+Iteration 014, fCount 125:  Objective = 9.9682e-08,  stepSize =         1,  norm(dx) = 0.00017625.
+Iteration 015, fCount 127:  Objective = 3.4463e-08,  stepSize =         1,  norm(dx) = 5.1052e-05.
+Iteration 016, fCount 129:  Objective = 2.4549e-09,  stepSize =         1,  norm(dx) = 1.335e-05.
+Iteration 017, fCount 131:  Objective = 2.1138e-10,  stepSize =         1,  norm(dx) = 1.002e-06.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 16.31 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  Grid Adaptation Iteration 1  ------- 
+
+Stationary Equilibrium: r = 0.0196,  markets(B = 6.58e-13,  S = 5.61e-18,  Y-C = -1.24e-14) 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  20 quarters,  100 time steps,  using 100 nodal BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 6.25 seconds.
+Iteration 001, fCount 101:  Objective = 3.021e-05,  stepSize =      0.25,  norm(dx) =   0.01426.
+Iteration 002, fCount 104:  Objective = 2.433e-05,  stepSize =     0.125,  norm(dx) =  0.011375.
+Iteration 003, fCount 106:  Objective = 2.4314e-05,  stepSize =     0.125,  norm(dx) =  0.010904.
+Iteration 004, fCount 108:  Objective = 2.3551e-05,  stepSize =     0.125,  norm(dx) = 0.0097847.
+Iteration 005, fCount 109:  Objective = 2.099e-05,  stepSize =      0.25,  norm(dx) =  0.016286.
+Iteration 006, fCount 110:  Objective = 2.051e-05,  stepSize =       0.5,  norm(dx) =  0.020334.
+Iteration 007, fCount 111:  Objective = 2.0343e-05,  stepSize =         1,  norm(dx) =  0.026338.
+Iteration 008, fCount 114:  Objective = 1.8785e-05,  stepSize =       0.5,  norm(dx) =  0.020949.
+Iteration 009, fCount 117:  Objective =  1.68e-05,  stepSize =      0.25,  norm(dx) =  0.013066.
+Iteration 010, fCount 118:  Objective = 5.1166e-06,  stepSize =       0.5,  norm(dx) = 0.0088078.
+Iteration 011, fCount 121:  Objective = 4.5987e-06,  stepSize =      0.25,  norm(dx) = 0.0020183.
+Iteration 012, fCount 122:  Objective = 2.6655e-06,  stepSize =       0.5,  norm(dx) = 0.0021026.
+Iteration 013, fCount 123:  Objective = 1.6465e-06,  stepSize =         1,  norm(dx) = 0.0014271.
+Iteration 014, fCount 125:  Objective = 5.4504e-07,  stepSize =         1,  norm(dx) = 0.0007075.
+Iteration 015, fCount 127:  Objective = 2.767e-07,  stepSize =         1,  norm(dx) = 0.00021386.
+Iteration 016, fCount 129:  Objective = 1.9888e-07,  stepSize =         1,  norm(dx) = 0.00017417.
+Iteration 017, fCount 131:  Objective = 1.1458e-07,  stepSize =         1,  norm(dx) = 0.00018384.
+Iteration 018, fCount 133:  Objective = 4.4038e-08,  stepSize =         1,  norm(dx) = 6.5989e-05.
+Iteration 019, fCount 135:  Objective = 9.5083e-09,  stepSize =         1,  norm(dx) = 3.0994e-05.
+Iteration 020, fCount 137:  Objective = 1.2734e-09,  stepSize =         1,  norm(dx) = 6.013e-06.
+Solver stopped after failing to make progress. Local minimum possible.
+Objective = 1.2734e-09,  stepSize = 0.00048828,  norm(dx) = 6.8477e-10.
+
+
+
+Algorithm converged. Run-time of: 21.28 seconds.
+
+Plotting Figures...
