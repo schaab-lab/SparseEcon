@@ -21,7 +21,7 @@ I0 = ~IF & ~IB;
 
 s = sF.*IF + sB.*IB;
 c = cF.*IF + cB.*IB + c0.*I0;
-u = param.u(c);
+u = param.u(c) + param.v(param.policy);
 
 % COLLECT OUTPUT
 hjb.c = c; hjb.s = s; hjb.u = u;

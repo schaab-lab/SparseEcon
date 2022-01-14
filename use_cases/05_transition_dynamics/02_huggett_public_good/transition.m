@@ -1,4 +1,4 @@
-function [diff, G, G_dense, sim] = transition(PHI, G, G_dense, shock, ss, param)
+function [diff, G, G_dense, sim] = transition(PHI, G, G_dense, shock, policy, ss, param)
 
 %% SETUP
 sim.N  = param.N;
@@ -22,6 +22,7 @@ X = basis_fun_irf([], reshape(PHI, [1, numel(PHI)]), param.H(1), param.H(2), ...
 
 sim.r = X(:,1); 
 sim.Z = shock;
+sim.G = policy;
 
 sim.L = param.L * ones(param.N, 1);
 sim.Y = exp(sim.Z) .* sim.L;
@@ -36,7 +37,7 @@ sim.g{1} = ss.g;
 
 for n = param.N:-1:1
     
-    G.income = sim.r(n) * G.a + sim.w(n) .* G.z;
+    G.income = sim.r(n) * G.a + sim.w(n) .* G.z - sim.G(n);
     
     % POLICY FUNCTIONS
     num0 = 1e-8; % numerical 0 for upwind scheme
@@ -60,7 +61,7 @@ for n = param.N:-1:1
     
     s = sF.*IF + sB.*IB;
     c = cF.*IF + cB.*IB + c0.*I0;
-    u = param.u(c);
+    u = param.u(c) + param.v(sim.G(n));
     
     % CONSTRUCT FD OPERATORS
     [Aa, const_a] = FD_operator(G, s, zeros(G.J,1), 1);
@@ -82,10 +83,6 @@ end
 
 
 %% SOLVE KF FORWARDS
-% dgdtA = [Aa1' * g_t{n}(:, 1); Aa2' * g_t{n}(:, 2)] + ...
-%         [Ak1' * g_t{n}(:, 1); Ak2' * g_t{n}(:, 2)] + ...
-%          Az' * [g_t{n}(:, 1); g_t{n}(:, 2)];
-% dgdtA = [dgdtA(1:GDense.J), dgdtA(GDense.J+1:end)];
 Az_dense = FD_operator(G_dense, param.theta_z * (param.zmean - G_dense.z), param.sig_z*ones(G_dense.J,1), 2);
 
 for n = 1:param.N
@@ -130,7 +127,7 @@ for n = 1:param.N
 end
 
 sim.excess_bonds = sim.B;
-sim.excess_goods = sim.Y - sim.C;
+sim.excess_goods = sim.Y - sim.C - sim.G;
 sim.excess_saving = sim.S;
 
 

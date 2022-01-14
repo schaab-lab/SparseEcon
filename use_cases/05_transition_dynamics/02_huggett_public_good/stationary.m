@@ -8,7 +8,7 @@ w = exp(param.shock_mean);
 
 
 %% VFI
-G.income = r * G.a + w .* G.z;
+G.income = r * G.a + w .* G.z - param.policy;
 
 % State-constrained boundary conditions:
 left_bound  = param.u1(G.income);
@@ -22,7 +22,7 @@ G = gen_FD(G, BC);
 G_dense = gen_FD(G_dense, BC); % Note this is not actually necessary for Huggett
 
 % Initialize guess V0:
-if ~isfield(G, 'V0'), G.V0 = param.u(G.income) / param.rho; end
+if ~isfield(G, 'V0'), G.V0 = (param.u(G.income) + param.v(param.policy)) / param.rho; end
 
 % Solve VFI:
 [V, hjb] = VFI(G, param);
@@ -45,10 +45,12 @@ L = sum(sum( G_dense.z .* g .* G_dense.dx));
 
 if abs(L - param.L) > 1e-8, error('Aggregate labor not normalized.\n'); end
 
+ss.excess_supply = Y - C - param.policy;
+
 diff = B;
 
 ss.V = V; ss.g = g; ss.c = hjb.c; ss.s = hjb.s;
-ss.B = B; ss.C = C; ss.S = S; ss.r = r; ss.Y = Y; ss.w = w; ss.excess_supply = Y - C;
+ss.B = B; ss.C = C; ss.S = S; ss.r = r; ss.Y = Y; ss.w = w;
 
 
 end

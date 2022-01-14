@@ -3,7 +3,7 @@ function param = define_parameters(varargin)
 %% GRID PARAMETERS
 
 % Grid construction:
-param.l = 0; param.surplus = [5,2];
+param.l = 0; param.surplus = [7,2];
 param.d = 2; param.d_idio = 2; param.d_agg = 0;
 
 param.l_dense = [7,4]; % vector of "surplus" for dense grid
@@ -56,6 +56,9 @@ param.u     = @(x) x.^(1-param.gamma) / (1-param.gamma);
 param.u1    = @(x) x.^(-param.gamma);
 param.u1inv = @(x) x.^(-1/param.gamma);
 
+param.v     = @(x) 0.2 * x.^(1-param.gamma) / (1-param.gamma); 
+param.v1    = @(x) 0.2 * x.^(-param.gamma);
+
 % Earnings parameters:
 param.discrete_types = 1; %numel(param.zz);
 param.L = 1;
@@ -66,8 +69,13 @@ param.sig_z = 0.01;
 
 % TFP shock:
 param.shock_mean = 0;
-param.shock_level = 0.01;
+param.shock_level = 0.005;
 param.theta_shock = log(2);
+
+% Government:
+param.policy = 0.20;
+param.policy_shock = 0.002;
+param.theta_policy = log(2);
 
 
 %% VARIABLE INPUTS
