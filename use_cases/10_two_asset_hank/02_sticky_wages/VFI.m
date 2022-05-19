@@ -1,4 +1,4 @@
-function [V, hjb] = VFI(G, agg, param)
+function [V, hjb] = VFI(G, param)
 
 V = G.V0;
 
@@ -23,8 +23,8 @@ end
 
 A = blkdiag(Asc{1} + Asi{1} + Ami{1} + Amk{1}, Asc{2} + Asi{2} + Ami{2} + Amk{2}) + Az;
 
-B = (1/param.Delta + param.rho + param.deathrate)*speye(2*G.J) - A;
-b = [hjb.u(:, 1); hjb.u(:, 2)] + [V(:, 1); V(:, 2)] / param.Delta;
+B = (1/param.Delta + param.rho)*speye(2*G.J) - A;
+b = hjb.u(:) + V(:) / param.Delta;
 
 % SOLVE LINEAR SYSTEM
 V_new = B\b;
@@ -42,7 +42,7 @@ if ~isreal(V), fprintf('Complex values in VFI: terminating process.'); V = NaN(1
 
 end
 
-hjb.A = A;
+hjb.A = A; %hjb.Aa = blkdiag(Aa{1}, Aa{2}); hjb.Az = Az;
 if iter == param.maxit, fprintf('VFI did not converge. Remaining Gap: %.2d\n', iter, dist); V = NaN(1); return; end
 
 end

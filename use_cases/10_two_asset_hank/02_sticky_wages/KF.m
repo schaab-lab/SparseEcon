@@ -13,32 +13,15 @@ for j = 1:param.discrete_types
 end
 AT = (blkdiag(Asc{1} + Asi{1} + Ami{1} + Amk{1}, Asc{2} + Asi{2} + Ami{2} + Amk{2}) + Az)';
 
-
-% BIRTH PROCESS:
+% SOLVE KF PDE:
 g = zeros(G.J, 2);
 g(G.k == param.kmin & G.a == param.amin, :) = 1/numel(param.zz) / G.dx;
 
-[~, birth_idx] = min( (G.a).^2 + (G.k).^2 );
-if G.a(birth_idx, :) < 0, birth_idx2 = birth_idx+1; elseif G.a(birth_idx, :) > 0, birth_idx2 = birth_idx-1; end
-birth_ID = zeros(G.J, 2); 
-if G.a(birth_idx) == 0 
-    birth_ID(birth_idx, :) = [param.la2/(param.la1+param.la2), param.la1/(param.la1+param.la2)];
-else
-    birth_ID(birth_idx, :) = [param.la2/(param.la1+param.la2), param.la1/(param.la1+param.la2)] ...
-                            * ( abs(G.a(birth_idx2)) / ...
-                              ( abs(G.a(birth_idx)) + abs(G.a(birth_idx2))));
-    birth_ID(birth_idx2, :) = [param.la2/(param.la1+param.la2), param.la1/(param.la1+param.la2)] ...
-                            * ( abs(G.a(birth_idx)) / ...
-                              ( abs(G.a(birth_idx)) + abs(G.a(birth_idx2))));
-end
-
-
-% SOLVE KF PDE:
 for n = 1:param.maxit_KF   
-    B = (1/param.Delta_KF + param.deathrate) .* speye(2*G.J) - AT;
-    b = [g(:, 1); g(:, 2)] / param.Delta_KF + param.deathrate * [birth_ID(:, 1); birth_ID(:, 2)] / G.dx;
+    B = 1/param.Delta_KF * speye(2*G.J) - AT;
+    b = g(:) / param.Delta_KF;
 
-    g_new = B\b;
+    g_new = B \ b;
 
     diff = max(abs( [g(:, 1); g(:, 2)] - g_new ));
     if diff < param.crit_KF

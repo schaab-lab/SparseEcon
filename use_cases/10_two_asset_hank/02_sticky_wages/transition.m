@@ -47,7 +47,7 @@ X = basis_fun_irf([], reshape(PHI, [1, numel(PHI)]), param.H(1), param.H(2), par
 
 sim.i  = X(:, 1);
 sim.K  = X(:, 2);
-sim.L  = X(:, 3);
+sim.N  = X(:, 3);
 
 sim.Z   = zeros(param.N, 1);
 sim.eps = zeros(param.N, 1);
@@ -63,7 +63,14 @@ switch param.shock_type
         sim.G  = shock;
 end
 
-sim.Y  = exp(sim.Z) .* sim.K.^param.alpha .* sim.L.^(1-param.alpha);
+sim.Y  = exp(sim.Z) .* sim.K.^param.alpha .* sim.N.^(1-param.alpha);
+
+sim.rk = param.alpha * sim.Y ./ sim.K;
+sim.w  = (1-param.alpha) * sim.Y ./ sim.N;
+
+
+
+sim.r  = sim.i - sim.pi;
 
 sim.pi = (sim.i - sim.eps - ss.r) / param.lambda_pi;
 sim.r  = sim.i - sim.pi;
@@ -77,8 +84,6 @@ for n = 1:param.N-1
     sim.dpi(n) = (sim.pi(n+1) - sim.pi(n)) / sim.dt(n);
 end
 
-%%% Using the nominal riskfree rate as the firm's discount rate implies
-%%% that we don't have to guess 'ik' beforehand. 
 sim.mc = (param.epsilonF-1)/param.epsilonF * (1 + param.chiF/(param.epsilonF-1) ...
          .* (sim.pi.*(sim.i - sim.pi - sim.dY./sim.Y) - sim.dpi));
 sim.rk = param.alpha * sim.mc .* sim.Y ./ sim.K;
@@ -86,7 +91,6 @@ sim.ik = sim.rk .* sim.P;
 sim.w  = 1/(1-param.tau_empl) * ( exp(sim.Z) .* sim.mc * (param.alpha^param.alpha * (1-param.alpha)^(1-param.alpha)) ...
          .* (sim.rk).^(-param.alpha) ).^(1./(1-param.alpha));
 
-sim.Pi = (1-sim.mc) .* sim.Y;
 % sim.L  = sim.Y .* (param.alpha/(1-param.alpha) .* (1-param.tau_empl) .* sim.w ./ sim.rk).^(-param.alpha);
 % sim.K  = param.alpha./(1-param.alpha) .* (1-param.tau_empl) .* sim.L .* sim.w ./ sim.rk;
 % sim.L = (1-param.alpha) * sim.mc .* sim.Y ./ ((1-param.tau_empl)*sim.w);
@@ -114,6 +118,8 @@ sim.H = sim.L ./ (1-sim.U);
 
 sim.tau = sim.Pi + param.tau_lab * sim.w .* sim.L - param.UI * sim.U - sim.G - sim.r * param.gov_bond_supply;
 
+
+% => FOR HJB, we need: r, rk, w, N
 
 %% SOLVE VFI BACKWARDS
 V = ss.V;

@@ -53732,3 +53732,359 @@ Solver converged.
 Algorithm converged. Run-time of: 207.26 seconds.
 
 Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium: [r = 0.0302, K=5.1738, L=0.7429, Q=1.0000]   Markets=[G=3.3e-08, B=-8.8e-11, L=8.0e-12, K=-2.5e-10])
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  150 quarters,  180 time steps,  using 30 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 43.45 seconds.
+Iteration 001, fCount 91:  Objective = 0.00053685,  stepSize =      0.25,  norm(dx) = 0.00094804.
+Iteration 002, fCount 92:  Objective = 0.00026799,  stepSize =       0.5,  norm(dx) = 0.0014245.
+Iteration 003, fCount 93:  Objective = 1.0538e-06,  stepSize =         1,  norm(dx) = 0.0014348.
+Iteration 004, fCount 95:  Objective = 4.5556e-08,  stepSize =         1,  norm(dx) = 1.5611e-05.
+Iteration 005, fCount 97:  Objective = 8.4248e-10,  stepSize =         1,  norm(dx) = 3.8831e-07.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 65.96 seconds.
+
+Plotting Figures...
+{Unrecognized function or variable 'figure_format'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m', 26)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m',26,0)">line 26</a>)
+figure_format;
+} 
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+{Unrecognized function or variable 'L'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/stationary.m', 16)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/stationary.m',16,0)">line 16</a>)
+tau = param.tau_lab * w * L - param.G - r*param.gov_bond_supply;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m', 71)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m',71,0)">line 71</a>)
+[~, G, G_dense, ~] = stationary(X0, piw, G, G_dense, param);
+} 
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/stationary.m',16,0)
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+{Unrecognized field name "H".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('HJB', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/HJB.m', 58)" style="font-weight:bold">HJB</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/HJB.m',58,0)">line 58</a>)
+u = param.u(c) - param.v(G.H);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VFI', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/VFI.m', 12)" style="font-weight:bold">VFI</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/VFI.m',12,0)">line 12</a>)
+hjb = HJB(V, G, param);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/stationary.m', 55)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/stationary.m',55,0)">line 55</a>)
+[V, hjb] = VFI(G, param);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m', 71)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m',71,0)">line 71</a>)
+[~, G, G_dense, ~] = stationary(X0, piw, G, G_dense, param);
+} 
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/HJB.m',58,0)
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+{Undefined variable Aa.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VFI', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/VFI.m', 45)" style="font-weight:bold">VFI</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/VFI.m',45,0)">line 45</a>)
+hjb.A = A; hjb.Aa = blkdiag(Aa{1}, Aa{2}); hjb.Az = Az;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/stationary.m', 55)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/stationary.m',55,0)">line 55</a>)
+[V, hjb] = VFI(G, param);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m', 71)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m',71,0)">line 71</a>)
+[~, G, G_dense, ~] = stationary(X0, piw, G, G_dense, param);
+} 
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/VFI.m',45,0)
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+{Unrecognized function or variable 'L'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/stationary.m', 104)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/stationary.m',104,0)">line 104</a>)
+ss.r = r; ss.rk = rk; ss.S = S; ss.L = L; ss.H = H; ss.zBar = zBar; ss.Pi = Pi; ss.Xi=Xi;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m', 71)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m',71,0)">line 71</a>)
+[~, G, G_dense, ~] = stationary(X0, piw, G, G_dense, param);
+} 
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/stationary.m',104,0)
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          4         646.117                      1.63e+03               1
+Objective function returned NaN; trying a new point...
+     1          5         646.117              1       1.63e+03               1
+     2          9         481.977           0.05       1.15e+03            0.05
+Objective function returned NaN; trying a new point...
+     3         10         481.977          0.125       1.15e+03           0.125
+     4         14         462.096        0.00625        1.2e+03         0.00625
+     5         18         407.248       0.015625        1.4e+03          0.0156
+     6         22         260.034      0.0390625       1.79e+03          0.0391
+Objective function returned NaN; trying a new point...
+     7         23         260.034      0.0976563       1.79e+03          0.0977
+     8         27         235.512     0.00488281       1.84e+03         0.00488
+     9         31         168.817       0.012207       2.16e+03          0.0122
+    10         35         4.32157      0.0305176            648          0.0305
+    11         39         3.72632      0.0762939             22          0.0763
+    12         43         3.71758       0.190735            115           0.191
+    13         47         3.60687       0.190735           4.95           0.191
+    14         48         3.60687       0.476837           4.95           0.477
+    15         52          3.5596       0.119209           21.6           0.119
+    16         53          3.5596       0.298023           21.6           0.298
+    17         57         3.51944      0.0745058           13.8          0.0745
+    18         61         3.45904       0.186265           48.9           0.186
+    19         65         3.31078       0.186265           45.8           0.186
+    20         66         3.31078       0.186265           45.8           0.186
+    21         70         3.13675      0.0465661           7.47          0.0466
+    22         71         3.13675       0.116415           7.47           0.116
+    23         75         3.11463      0.0291038           15.4          0.0291
+    24         79         2.99054      0.0291038           6.47          0.0291
+    25         80         2.99054      0.0727596           6.47          0.0728
+    26         84         2.89681      0.0181899           59.2          0.0182
+    27         88         2.54689      0.0181899           10.4          0.0182
+    28         92         1.20308      0.0454747           31.1          0.0455
+    29         93         1.20308       0.113687           31.1           0.114
+    30         97        0.663726      0.0284217           51.5          0.0284
+    31        101        0.289994      0.0710543           50.6          0.0711
+    32        105       0.0711813       0.177636           65.8           0.178
+    33        109     0.000437425       0.177636           1.93           0.178
+    34        113     1.33738e-08      0.0247676         0.0309           0.444
+    35        117     9.98168e-17    4.89101e-05       2.78e-06           0.444
+    36        121     2.41437e-24    5.49445e-10       2.88e-10           0.444
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','2.877064e-10','1.000000e-06','2.414366e-24','1.000000e-03'},true,true);;">stopping criteria details</a>>
+{Unrecognized field name "L".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m', 82)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m',82,0)">line 82</a>)
+          ss.r, ss.K, ss.L, ss.excess_goods, ss.excess_bonds, ss.excess_labor, ss.excess_capital);
+} 
+X
+
+X =
+
+    0.0307    6.7195    0.8105
+
+0.80 * param.rho
+
+ans =
+
+    0.0280
+
+fprintf(['Stationary Equilibrium: [r=%.4f, K=%.4f, N=%.4f]   ', ...
+         'Markets: [goods = %.1d, bonds = %.1d, labor = %.1d, capital = %.1d])\n\n'], ...
+          ss.r, ss.K, ss.N, ss.excess_goods, ss.excess_bonds, ss.excess_labor, ss.excess_capital);
+Stationary Equilibrium: [r=0.0307, K=6.7195, N=0.8105]   Markets: [goods = 4.9e-08, bonds = 2.2e-13, labor = 2.5e-13, capital = -1.5e-12])
+
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          4         16.4675                           262               1
+     1          8         7.47126       0.426482            837               1
+     2         12       0.0535454       0.131148           42.5               1
+     3         16     4.97376e-06      0.0144852          0.379               1
+     4         20     4.48767e-14    0.000144121       3.58e-05               1
+     5         24     2.35544e-25    1.44019e-08       1.07e-10               1
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','1.071737e-10','1.000000e-06','2.355438e-25','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Stationary Equilibrium: r = 0.0307,  K = 6.7195,  N = 0.8105Markets:  goods=4.9e-08   bonds=1.6e-13   labor=1.1e-13   capital=-4.4e-13   savings=2.3e-09 
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          4         16.4675                           262               1
+     1          8         7.47126       0.426482            837               1
+     2         12       0.0535454       0.131148           42.5               1
+     3         16     4.97376e-06      0.0144852          0.379               1
+     4         20     4.48767e-14    0.000144121       3.58e-05               1
+     5         24     2.35544e-25    1.44019e-08       1.07e-10               1
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','1.071737e-10','1.000000e-06','2.355438e-25','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Stationary Equilibrium: r = 0.0307,  K = 6.7195,  N = 0.8105 
+Markets:  goods=4.9e-08   bonds=1.6e-13   labor=1.1e-13   capital=-4.4e-13   savings=2.3e-09 
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          4         16.4675                           262               1
+     1          8         7.47126       0.426482            837               1
+     2         12       0.0535454       0.131148           42.5               1
+     3         16     4.97376e-06      0.0144852          0.379               1
+     4         20     4.48767e-14    0.000144121       3.58e-05               1
+     5         24     2.35544e-25    1.44019e-08       1.07e-10               1
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','1.071737e-10','1.000000e-06','2.355438e-25','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Stationary Equilibrium: r = 0.0307   K = 6.7195   N = 0.8105 
+Markets:  goods=4.9e-08   bonds=1.6e-13   labor=1.1e-13   capital=-4.4e-13   savings=2.3e-09 
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          4         9.47668                           249               1
+     1          8        0.667696       0.114924            100               1
+     2         12     0.000457834      0.0911007           2.49               1
+     3         16     3.07282e-10      0.0010618        0.00204               1
+     4         20      4.6888e-23    1.32842e-06       7.93e-10               1
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','7.929209e-10','1.000000e-06','4.688804e-23','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Stationary Equilibrium:  r = 0.0281   K = 7.1960   N = 0.8526 
+Markets:  goods=4.5e-08   bonds=-4.8e-13   labor=-3.1e-13   capital=6.8e-12   savings=1.6e-09 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+{Unrecognized field name "shock_level".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m', 98)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/10_two_asset_hank/02_sticky_wages/main.m',98,0)">line 98</a>)
+dz = param.shock_level * ones(param.N, 1);
+} 
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          4         147.553                      3.32e+03               1
+     1          8        0.253366       0.878452            101               1
+     2         12     0.000770764      0.0931991           5.69             2.2
+     3         16     1.50538e-07    0.000884849          0.077             2.2
+     4         20     5.80215e-15    1.83193e-05       1.51e-05             2.2
+     5         24     1.41082e-24    3.51426e-09       2.68e-10             2.2
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','2.678354e-10','1.000000e-06','1.410822e-24','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Stationary Equilibrium:  r = 0.0287   K = 7.7836   N = 0.8367 
+Markets:  goods=1.7e-08   bonds=-4.9e-14   labor=1.5e-13   capital=-1.2e-12   savings=4.7e-10 
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+ss.Q
+
+ans =
+
+     1
+
+main
+Running algorithm:
+
+
+:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          4         147.553                      3.32e+03               1
+     1          8        0.253366       0.878452            101               1
+     2         12     0.000770764      0.0931991           5.69             2.2
+     3         16     1.50538e-07    0.000884849          0.077             2.2
+     4         20     5.80215e-15    1.83193e-05       1.51e-05             2.2
+     5         24     1.41082e-24    3.51426e-09       2.68e-10             2.2
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','2.678354e-10','1.000000e-06','1.410822e-24','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Stationary Equilibrium:  r = 0.0287   K = 7.7836   N = 0.8367 
+Markets:  goods=1.7e-08   bonds=-4.9e-14   labor=1.5e-13   capital=-1.2e-12   savings=4.7e-10 
+

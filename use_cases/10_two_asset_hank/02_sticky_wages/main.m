@@ -1,16 +1,15 @@
 %------------------------------------------------------------------------%
 % 
-% This code computes the stationary equilibrium and transition dynamics of
-% a two-asset HANK model similar to Kaplan-Moll-Violante (AER, 2018) using 
-% adaptive sparse grids.
+% This code computes a two-asset HANK model with sticky wages.
 % 
 % Code written by Andreas Schaab.
-% Current version: December 2021. First version: August 2019.
+% Current version: May 2022. First version: May 2022.
 % 
 % If you find this code helpful in your own work, please cite:
-%  1. Schaab, A. Micro and Macro Uncertainty. Working Paper.
-%  2. Schaab, A. and A. T. Zhang. Dynamic Programming in Continuous Time 
+%  1. Schaab, A. and A. T. Zhang. Dynamic Programming in Continuous Time 
 %     with Adaptive Sparse Grids. Working Paper.
+%  2. Dávila, E. and A. Schaab. Optimal Monetary Policy with Heterogeneous
+%     Agents: A Timeless Ramsey Approach. Working Paper.
 % Thanks!
 % 
 %------------------------------------------------------------------------%
@@ -31,17 +30,16 @@ run_time = tic;
 
 
 %% PARAMETERS
+param = define_parameters('shock_type', 'monetary', 'T', 15, 'N', 150, ...
+                          'tau_lab', 0);
 
-param = define_parameters('deathrate', 0, 'add_tol', 5e-5, 'keep_tol', 1e-5, 'max_adapt_iter', 1, 'kappa', 60, ...
-                          'shock_type', 'monetary', 'implicit_g', 1, 'T', 150, 'N', 180, 'bfun_type', "cheb", 'cheb_H', 30);
-
-
+                          
 %% INITIALIZE GRIDS
 
 % Dense grid:
 G_dense = setup_grid(0, param.l_dense, param.min, param.max, ...
     'NamedDims', {1, 2}, 'Names', {'a', 'k'});
-G_dense.dx = G_dense.da*G_dense.dk;
+G_dense.dx = G_dense.da * G_dense.dk;
 
 % Sparse grid:
 G = setup_grid(param.l, param.surplus, param.min, param.max, ...
@@ -58,92 +56,65 @@ for j = 1:param.discrete_types
     G_dense = gen_FD(G_dense, BC, num2str(j));
 end
 
+% For convenience:
+G.aa = [G.a, G.a];
+G.kk = [G.k, G.k];
+G.zz = [repmat(param.zz(1), [G.J, 1]), repmat(param.zz(2), [G.J, 1])];
 
-%% COMPUTE (D)ETERMINISTIC (S)TEADY (S)TATE ON ADAPTED SPARSE GRID
-fprintf('\n\n:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: ');
 
-blacklist = []; J0 = [];
-V_adapt = cell(param.max_adapt_iter, 1); 
-G_adapt = cell(param.max_adapt_iter, 1); 
+%% 0-INFLATION STATIONARY EQUILIBRIUM
+fprintf('\n\n:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: \n\n');
 
-for adapt_iter = 1:param.max_adapt_iter
-    
-    fprintf('\n\n -------  GRID ADAPTATION ITERATION %i  ------- \n\n', adapt_iter);
-    
-    %% SOLVE STATIONARY EQUILIBRIUM
-    r0 = 0.03; K0 = 6; L0 = 0.75; if exist('ss', 'var'), r0 = ss.r; K0 = ss.K; L0 = ss.L; end
-    X0 = [r0, K0, L0]; J0 = [];
-    
-    % Get better guess for value function:
-    [diff0, G, G_dense, ~] = stationary(X0, G, G_dense, param);
-    
-    % Solve for steady state prices:
-    % f = @(x, y) stationary(x, y, G_dense, param); y0 = G;
-    % [X, J0] = fsolve_newton(f, reshape(X0, [numel(X0), 1]), diff0, y0, J0, 5, 0);
-    options = optimset('Display', 'off', 'UseParallel', false, 'TolX', 1e-15);
-    X = fsolve(@(x) stationary(x, G, G_dense, param), X0, options);
-    
-    % Solve with correct prices:
-    [~, G, G_dense, ss] = stationary(X, G, G_dense, param);
-    
-    fprintf(['Stationary Equilibrium: [r = %.4f, K=%.4f, L=%.4f, Q=%.4f]   ', ...
-             'Markets=[G=%.1d, B=%.1d, L=%.1d, K=%.1d])\n\n'], ...
-              ss.r, ss.K, ss.L, ss.Q, ss.excess_goods, ss.excess_bonds, ss.excess_labor, ss.excess_capital);
-    
-    V_adapt{adapt_iter} = ss.V; G_adapt{adapt_iter} = G;
-    
-    
-    %% ADAPT GRID
-    if adapt_iter==param.max_adapt_iter, break; end
-    [G, BH_adapt, blacklist, stats] = adapt_grid(G, ss.V, blacklist, ...
-        'AddRule', param.add_rule, 'AddTol', param.add_tol, 'KeepTol', param.keep_tol);
-    if stats.n_change==0, break; end
-    
-    % Update grid objects:
-    G.V0 = BH_adapt * G.V0;
-    G.BH_dense = get_projection_matrix(G_dense.grid, G_dense.lvl, G);
-    
-    % Update BCs:
-    for j = 1:param.discrete_types
-        BC{1}.left.type = '0'; BC{1}.right.type = '0';
-        BC{2}.left.type = '0'; BC{2}.right.type = '0';
-        G = gen_FD(G, BC, num2str(j));
-    end
-end
+piw = 0;
+
+% Get better guess for value function:
+r0 = 0.80 * param.rho; K0 = 7; N0 = 0.8; X0 = [r0, K0, N0];
+[~, G, G_dense, ~] = stationary(X0, piw, G, G_dense, param);
+
+% Solve for steady state prices:
+options = optimset('Display', 'iter', 'UseParallel', false, 'TolX', 1e-15);
+X = fsolve(@(x) stationary(x, piw, G, G_dense, param), X0, options);
+
+% Solve with correct prices:
+[~, G, G_dense, ss] = stationary(X, piw, G, G_dense, param);
+
+fprintf('Stationary Equilibrium:  r = %.4f   K = %.4f   N = %.4f \n', ss.r, ss.K, ss.N);
+fprintf('Markets:  goods=%.1d   bonds=%.1d   labor=%.1d   capital=%.1d   savings=%.1d \n\n', ...
+    ss.excess_goods, ss.excess_bonds, ss.excess_labor, ss.excess_capital, ss.excess_saving);
 
 
 %% COMPUTE TRANSITION DYNAMICS
 fprintf('\n\n:::::::::::   TRANSITION DYNAMICS   ::::::::::: \n\n');
 
-% Productivity shock: 
+% Shock:
 switch param.shock_type
-    case 'productivity'
-        shock_lev = 0.05; shock_per = log(2);
-    case 'monetary'
-        shock_lev = 0.01; shock_per = log(2); 
+    case 'TFP'
+        z0 = ss.Z * ones(param.N, 1);
+    case 'demand'
+        z0 = param.rho * ones(param.N, 1);
+    case 'cost-push'
+        z0 = param.epsilon * ones(param.N, 1);
 end
-shock_t = shock_lev * ones(param.N, 1);
+dz = param.shock_level * ones(param.N, 1);
 for n = 1:param.N-1
-    shock_t(n+1) = exp(-shock_per * param.t(n+1))*shock_lev;
+    dz(n+1, :) = exp(-param.shock_theta * param.t(n+1)) .* param.shock_level;
 end
 
-fprintf('Impulse response paths:  %.i quarters,  %.i time steps,  using %.i %s BFs\n\n', ...
-         param.T, param.N, param.H(1), param.bfun_type);
+z = z0 + dz;
 
-% Initialize paths and grid: (guessing paths for Y and L)
-X0 = [ss.r, ss.K, ss.L] .* ones(param.N, 1);
-param.H(2) = 3;
-[PHI0, param.nodes] = basis_fun_irf(X0, [], param.H(1), param.H(2), param.bfun_type, param.t, "get_coefficient");
+% Initialize policy and guesses:
+t0 = zeros(param.N, 1);
+Y0 = ss.Y * ones(param.N, 1); 
+M0 = ss.M * ones(param.N, 1);
+K0 = ss.K * ones(param.N, 1);
+x0 = [Y0; K0; M0];
 
-[diff0, G, G_dense, ~] = transition(PHI0, G, G_dense, shock_t, ss, param);
+diff0 = transition(x0, t0, z, ss, G, G_dense, param, 'markets');
 
-% Solve for prices:
-f = @(x, y) transition(x, y{1}, y{2}, shock_t, ss, param); y0{1} = G; y0{2} = G_dense;
-PHI = fsolve_newton(f, reshape(PHI0, [numel(PHI0), 1]), diff0, y0, 0, 5, 2);
-
-% Update everything given new prices:
-[diff, G, G_dense, sim] = transition(PHI, G, G_dense, shock_t, ss, param);
-sim.PHI = PHI; sim.param = param;
+% Solve for price paths:
+f = @(x, y) transition(x, t0, z, ss, y{1}, y{2}, param, 'markets'); y0{1} = G; y0{2} = G_dense;
+x = fsolve_newton(f, reshape(x0, [numel(x0), 1]), diff0, y0, 0, 5, 2);
+sim = transition(x, t0, z, ss, G, G_dense, param, 'all');
 
 
 %% OUTPUT
@@ -172,7 +143,7 @@ end
 
 
 % Transition:
-figure('visible', 'off');
+figure('visible', 'on');
 subplot(3, 3, 1); 
 plot(sim.t, (sim.Y - ss.Y)/ss.Y); ylabel('% dev'); title('$Y_t$', 'Interpreter', 'Latex');
 subplot(3, 3, 2); 
