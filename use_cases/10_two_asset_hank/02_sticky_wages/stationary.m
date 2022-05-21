@@ -12,28 +12,19 @@ Z  = param.Z;
 Y  = Z * K.^param.alpha .* N.^(1-param.alpha);
 rk = param.alpha * Y / K;
 w  = (1-param.alpha)  * Y / N;
-
+I  = param.delta * K;
 tau = param.tau_lab * w * N - param.G - r*param.gov_bond_supply;
 
-gross_total_capital_accumulation = param.delta * K;
-Q = param.solve_for_Q_from_cap_accumulation(gross_total_capital_accumulation, K);
-
-gross_total_investment_expenditure = param.gross_total_investment_expenditure(Q, K, 0);
-I   = gross_total_investment_expenditure;
-PiQ = param.PiQ(Q, K, param.ZQmean);
-muK = param.gross_total_capital_accumulation(Q, K, param.ZQmean) - param.delta * K;
-
 ltau  = 15;
-ltau0 = (rk + PiQ/K) * (param.kmax*0.999)^(1-ltau);
+ltau0 = rk * (param.kmax*0.999)^(1-ltau);
 xi    = param.xi * ltau0 * G.k .^ ltau;
 
 
 %% VFI
-G.income_a = r * G.a + (rk + PiQ/K) * G.k - xi ...
-             + (1-param.tau_lab) * w .* param.zz .* N + tau;
+G.income_a = r * G.a + rk * G.k - xi + (1-param.tau_lab) * w .* param.zz .* N + tau;
 G.income_k = - param.delta * G.k;
 
-G.Q = Q; G.N = N; G.piw = piw;
+G.N = N; G.piw = piw;
 
 % State-constrained boundary conditions:
 % left_bound  = param.u1(G.income_a);
@@ -88,18 +79,17 @@ Xi  = sum(sum( (G.BH_dense * xi) .* g .* G_dense.dx));
 excess_bonds   = param.gov_bond_supply - B;
 excess_saving  = S;
 excess_capital = KH - K;
+excess_invest  = IH - I;
 excess_labor   = param.v1(N) - (param.epsilon - 1)/param.epsilon * (1+param.tau_L) * (1-param.tau_lab) * w * M;
-
-excess_cap_production = param.gross_total_capital_accumulation(Q, K, param.ZQmean) - IH;
-excess_goods = Y - C - param.gross_total_investment_expenditure(Q, K, param.ZQmean) - Chi - Xi - param.G;
+excess_goods   = Y - C - I - Chi - Xi - param.G;
 
 diff = [excess_bonds, excess_capital, excess_labor]';
 
 ss.V = V; ss.g = g; ss.iota = hjb.iota; ss.w = w; ss.A = hjb.A; ss.m = hjb.m; ss.c = hjb.c; ss.s = hjb.s; ss.c0 = hjb.c0;
 ss.mass = mass; ss.excess_goods = excess_goods; ss.excess_bonds = excess_bonds; ss.excess_capital = excess_capital; 
-ss.excess_labor = excess_labor; ss.excess_cap_production = excess_cap_production; ss.excess_saving = excess_saving;
+ss.excess_labor = excess_labor; ss.excess_invest = excess_invest; ss.excess_saving = excess_saving;
 ss.Y = Y; ss.Z = Z; ss.C = C; ss.K = K; ss.KH = KH; ss.B = B; ss.I = I; ss.M = M; ss.u1z = u1z; ss.piw = piw; ss.pi = pi;
-ss.r = r; ss.rk = rk; ss.S = S; ss.N = N; ss.Xi = Xi; ss.tau = tau; ss.Q = Q; ss.Chi = Chi; ss.PiQ = PiQ;
+ss.r = r; ss.rk = rk; ss.S = S; ss.N = N; ss.Xi = Xi; ss.tau = tau; ss.Chi = Chi;
 switch param.shock_type
     case 'TFP',       ss.shock = Z; 
     case 'demand',    ss.shock = param.rho; 

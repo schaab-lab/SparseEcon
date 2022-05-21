@@ -17,11 +17,17 @@ AT = (blkdiag(Asc{1} + Asi{1} + Ami{1} + Amk{1}, Asc{2} + Asi{2} + Ami{2} + Amk{
 g = zeros(G.J, 2);
 g(G.k == param.kmin & G.a == param.amin, :) = 1/numel(param.zz) / G.dx;
 
-for n = 1:param.maxit_KF   
-    B = 1/param.Delta_KF * speye(2*G.J) - AT;
-    b = g(:) / param.Delta_KF;
+for n = 1:param.maxit_KF
+    if param.implicit_g
+        % Implicit:
+        B = 1/param.Delta_KF * speye(param.discrete_types*G.J) - AT;
+        b = g(:) / param.Delta_KF;
 
-    g_new = B \ b;
+        g_new = B \ b;
+    else
+        % Explicit:
+        g_new = g(:) + param.Delta_KF * AT * g(:);
+    end
 
     diff = max(abs( [g(:, 1); g(:, 2)] - g_new ));
     if diff < param.crit_KF

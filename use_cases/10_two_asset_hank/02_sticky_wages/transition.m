@@ -4,7 +4,7 @@ function [sim, G, G_dense] = transition(x, t, z, ss, G, G_dense, param, query)
 %% AGGREGATE TRANSITION PATH
 sim = macro_block(x, t, z, ss, param);
 
-if nargin > 7 && ~any(ismember(query, {'u', 'c', 's', 'm', 'V', 'g', 'markets', 'adjoint', 'fake_news', 'all'}))
+if nargin > 7 && ~any(ismember(query, {'u', 'c', 's', 'm', 'V', 'g', 'markets', 'all'}))
     sim = sim.(query);
     return; 
 end
@@ -26,13 +26,13 @@ for n = param.N:-1:1
        
     % POLICY FUNCTIONS
     ltau  = 15;
-    ltau0 = (sim.rk(n) + sim.PiQ(n)/sim.K(n)) * (param.kmax*0.999)^(1-ltau);
+    ltau0 = sim.rk(n) * (param.kmax*0.999)^(1-ltau);
     sim.xi{n} = param.xi * ltau0 * G.k .^ ltau;
 
-    G.income_a = sim.r(n) * G.a + (sim.rk(n) + sim.PiQ(n)/sim.K(n)) * G.k - sim.xi{n} ...
+    G.income_a = sim.r(n) * G.a + sim.rk(n) * G.k - sim.xi{n} ...
                  + (1-param.tau_lab) * sim.w(n) .* param.zz .* sim.N(n) + sim.tau(n);
     G.income_k = - param.delta * G.k;
-    G.Q = sim.Q(n); G.N = sim.N(n);
+    G.N = sim.N(n); G.piw = sim.piw(n);
     
     hjb = HJB(V, G, param);
     
@@ -42,7 +42,7 @@ for n = param.N:-1:1
         Asc{j} = FD_operator(G, hjb.sc(:, j),   zeros(G.J, 1), 1, num2str(j));
         Asi{j} = FD_operator(G, hjb.si(:, j),   zeros(G.J, 1), 1, num2str(j));
         Ami{j} = FD_operator(G, hjb.iota(:, j), zeros(G.J, 1), 2, num2str(j));
-        Amk{j} = FD_operator(G, G.income_k,    zeros(G.J, 1), 2, num2str(j));
+        Amk{j} = FD_operator(G, G.income_k,     zeros(G.J, 1), 2, num2str(j));
     end
 
     A = blkdiag(Asc{1} + Asi{1} + Ami{1} + Amk{1}, Asc{2} + Asi{2} + Ami{2} + Amk{2}) + Az;
@@ -53,7 +53,7 @@ for n = param.N:-1:1
     % SOLVE LINEAR SYSTEM
     V_new = B \ b;
     V = [V_new(1:G.J), V_new(1+G.J:end)];
-    if ~isreal(V), disp('Complex values detected!'); DIFF = NaN(1); return; end
+    if ~isreal(V), disp('Complex values detected!'); sim = NaN(1); return; end
     
     % RECORD DATA
     sim.V{n} = V; sim.u{n} = hjb.u; sim.c{n} = hjb.c; sim.m{n} = hjb.m; sim.s{n} = hjb.s; 
@@ -115,7 +115,7 @@ if nargin > 7 && ~any(ismember(query, {'markets', 'all'}))
 end
 
 
-%% AGGREGATION & MARKET CLEARING
+%% AGGREGATION
 for n = 1:param.N    
     
     c_dense    = G.BH_dense * sim.c{n};
@@ -136,7 +136,6 @@ for n = 1:param.N
     sim.S2(n) = sum(sum((sc_dense+si_dense) .* sim.g{n} .* G_dense.dx));
     sim.M1(n) = sum(sum(m_dense .* sim.g{n} .* G_dense.dx));
     sim.M2(n) = sum(sum((mi_dense+mk_dense) .* sim.g{n} .* G_dense.dx));
-    sim.I(n)  = param.gross_total_investment_expenditure(sim.Q(n), sim.K(n), 0);
     sim.IH(n) = sum(sum(iota_dense .* sim.g{n} .* G_dense.dx));
     sim.Chi(n)= sum(sum(adjcostfn(iota_dense, G_dense.k, param) .* sim.g{n} .* G_dense.dx));
     sim.Xi(n) = sum(sum(xi_dense .* sim.g{n} .* G_dense.dx)); 
@@ -144,48 +143,32 @@ for n = 1:param.N
     
 end
 
-sim.iotaQ = param.solve_for_iota(sim.Q);
-sim.Phi = param.Phi(sim.iotaQ) .* sim.K;
-sim.IQ = sim.iotaQ .* sim.K;
-
-sim.Q2 = 1 + param.Phi_prime(sim.dK ./ sim.K + param.delta);
-sim.Q3 = 1 + param.Phi_prime(sim.iotaQ);
-
-sim.excess_capital = sim.KH - sim.K;
-sim.excess_saving  = sim.S;
-sim.excess_bonds   = sim.B - param.gov_bond_supply;
-sim.excess_goods   = sim.Y - sim.C - sim.I - sim.Chi - sim.Xi - sim.G;
-sim.excess_union   = sim.M - sim.MH;
-sim.excess_cap_production = sim.gross_total_capital_accumulation - sim.IH;
-
-sim.excess_MPL = sim.N - ( (1-param.alpha) * sim.Y ./ sim.w );
-sim.excess_MPK = sim.K - ( param.alpha * sim.Y ./ sim.rk );
-
-sim.M3 = sim.gross_total_capital_accumulation;
-
-sim.K2(1) = ss.K; sim.K3(1) = ss.K; sim.B2(1) = ss.B; sim.B3(1) = ss.B;
-for n = 1:param.N-1
-    sim.K2(n+1) = sim.K2(n) + param.dt * sim.M(n);
-    sim.K3(n+1) = sim.K3(n) + param.dt * (sim.M3(n) - param.delta *sim.K3(n));
-    sim.B2(n+1) = sim.B2(n) + param.dt * sim.S(n);
-    sim.B3(n+1) = sim.B3(n) + param.dt * sim.S2(n);
-end
+% sim.K2(1) = ss.K; sim.K3(1) = ss.K; sim.B2(1) = ss.B; sim.B3(1) = ss.B;
+% for n = 1:param.N-1
+%     sim.K2(n+1) = sim.K2(n) + param.dt * sim.M(n);
+%     sim.K3(n+1) = sim.K3(n) + param.dt * (sim.M3(n) - param.delta *sim.K3(n));
+%     sim.B2(n+1) = sim.B2(n) + param.dt * sim.S(n);
+%     sim.B3(n+1) = sim.B3(n) + param.dt * sim.S2(n);
+% end
 
 
-%% COLLOCATION POINTS
+%% MARKET CLEARING
+sim.diff_K = sim.KH - sim.K;
+sim.diff_I = sim.IH - sim.I;
+sim.diff_S = sim.S;
+sim.diff_B = sim.B - param.gov_bond_supply;
+sim.diff_Y = sim.Y - sim.C - sim.I - sim.Chi - sim.Xi - sim.G;
+sim.diff_M = sim.M - sim.MH;
 
-sim.diff_Y = sim.excess_goods;
-sim.diff_B = sim.excess_bonds;
-sim.diff_M = sim.excess_union;
-sim.diff_S = sim.excess_saving;
-sim.diff_K = sim.excess_capital;
-sim.diff_dK = sim.excess_cap_production;
+% sim.excess_MPL = sim.N - ( (1-param.alpha) * sim.Y ./ sim.w );
+% sim.excess_MPK = sim.K - ( param.alpha * sim.Y ./ sim.rk );
 
-sim.diff_markets = [sim.diff_Y, sim.diff_B, sim.diff_M, sim.diff_S, sim.diff_K, sim.diff_dK];
+sim.diff_markets = [sim.diff_Y, sim.diff_B, sim.diff_M, sim.diff_S, sim.diff_K, sim.diff_I];
 
 if nargin > 7 && any(ismember(query, {'markets'}))
     % sim = sim.(query);
-    sim = [sim.diff_S; sim.diff_K; sim.diff_M];
+    % Cannot use diff_B or diff_K because at n=0, they are =0 by ss init!
+    sim = [sim.diff_S; sim.diff_I; sim.diff_M];
 end
 
 end

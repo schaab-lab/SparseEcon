@@ -35,15 +35,15 @@ sc = scF.*IF + scB.*IB;
 
 
 %% INVESTMENT
-iotaFF = adjcostfn1inv(VkF./VaF-G.Q, G.k, param); iotaFF(G.k == param.kmax, :) = 0;
-iotaFB = adjcostfn1inv(VkB./VaF-G.Q, G.k, param); iotaFB(G.k == param.kmin, :) = 0;
-iotaBF = adjcostfn1inv(VkF./VaB-G.Q, G.k, param); iotaBF(G.k == param.kmax, :) = 0;
-iotaBB = adjcostfn1inv(VkB./VaB-G.Q, G.k, param); iotaBB(G.k == param.kmin, :) = 0;
+iotaFF = adjcostfn1inv(VkF./VaF-1, G.k, param); iotaFF(G.k == param.kmax, :) = 0;
+iotaFB = adjcostfn1inv(VkB./VaF-1, G.k, param); iotaFB(G.k == param.kmin, :) = 0;
+iotaBF = adjcostfn1inv(VkF./VaB-1, G.k, param); iotaBF(G.k == param.kmax, :) = 0;
+iotaBB = adjcostfn1inv(VkB./VaB-1, G.k, param); iotaBB(G.k == param.kmin, :) = 0;
 
-siFF = - G.Q.*iotaFF - adjcostfn(iotaFF, G.k, param); siFF(G.a == param.amax, :) = 0;
-siFB = - G.Q.*iotaFB - adjcostfn(iotaFB, G.k, param); siFB(G.a == param.amax, :) = 0;
-siBF = - G.Q.*iotaBF - adjcostfn(iotaBF, G.k, param); siBF(G.a == param.amin, :) = 0;
-siBB = - G.Q.*iotaBB - adjcostfn(iotaBB, G.k, param); siBB(G.a == param.amin, :) = 0;
+siFF = - iotaFF - adjcostfn(iotaFF, G.k, param); siFF(G.a == param.amax, :) = 0;
+siFB = - iotaFB - adjcostfn(iotaFB, G.k, param); siFB(G.a == param.amax, :) = 0;
+siBF = - iotaBF - adjcostfn(iotaBF, G.k, param); siBF(G.a == param.amin, :) = 0;
+siBB = - iotaBB - adjcostfn(iotaBB, G.k, param); siBB(G.a == param.amin, :) = 0;
 
 IFF = (siFF > num0) & (iotaFF > num0);
 IFB = (siFB > num0) & (iotaFB <-num0) & ~IFF;
@@ -51,7 +51,7 @@ IBF = (siBF <-num0) & (iotaBF > num0) & ~IFF & ~IFB;
 IBB = (siBB <-num0) & (iotaBB <-num0) & ~IFF & ~IFB & ~IBF;
 
 iota = iotaFF.*IFF + iotaFB.*IFB + iotaBF.*IBF + iotaBB.*IBB;
-si = - G.Q.*iota - adjcostfn(iota, G.k, param);
+si = - iota - adjcostfn(iota, G.k, param);
 
 
 %% OUTPUT

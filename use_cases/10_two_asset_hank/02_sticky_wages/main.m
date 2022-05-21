@@ -30,10 +30,12 @@ run_time = tic;
 
 
 %% PARAMETERS
-param = define_parameters('shock_type', 'demand', 'implicit_g', 0, 'T', 10, 'N', 100, 'shock_theta', 10, ...
+param = define_parameters('shock_type', 'demand', 'T', 120, 'N', 100, 'shock_theta', log(2), ...
+                          'implicit_g', 1, 'xi', 0, 'rho', 0.08, 'delta', 0.05, ...
+                          ... % 'Delta_KF', 0.05, 'maxit_KF', 100000, ...
                           'tau_lab', 0);
 
-                          
+
 %% INITIALIZE GRIDS
 
 % Dense grid:
@@ -68,7 +70,7 @@ fprintf('\n\n:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: \n\n');
 piw = 0;
 
 % Get better guess for value function:
-r0 = 0.80 * param.rho; K0 = 7; N0 = 0.8; X0 = [r0, K0, N0];
+r0 = 0.80 * param.rho; K0 = 6; N0 = 0.8; X0 = [r0, K0, N0];
 [~, G, G_dense, ~] = stationary(X0, piw, G, G_dense, param);
 
 % Solve for steady state prices:
@@ -100,14 +102,14 @@ for n = 1:param.N-1
     dz(n+1, :) = exp(-param.shock_theta * param.t(n+1)) .* param.shock_level;
 end
 
-z = z0 + 0*dz;
+z = z0 + dz;
 
 % Initialize policy and guesses:
 t0 = zeros(param.N, 1);
 Y0 = ss.Y * ones(param.N, 1); 
-K0 = ss.K * ones(param.N, 1);
+I0 = ss.I * ones(param.N, 1);
 M0 = ss.M * ones(param.N, 1);
-x0 = [Y0; K0; M0];
+x0 = [Y0; I0; M0];
 
 diff0 = transition(x0, t0, z, ss, G, G_dense, param, 'markets');
 

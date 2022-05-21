@@ -63,7 +63,7 @@ param.shock_percent = 0.01;
 param.shock_theta = log(2);
 
 % Household parameters:
-param.rho   = 0.035;%0.012728925130000;%0.05;
+param.rho   = 0.035; %0.075;%0.012728925130000;%0.05;
 param.gamma = 2;
 param.eta   = 2;
 param.delta = 0.03;

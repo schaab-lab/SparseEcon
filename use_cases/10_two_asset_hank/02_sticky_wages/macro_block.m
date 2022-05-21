@@ -38,9 +38,21 @@ end
 
 % Inputs:
 sim.Y = reshape(x(1+0*param.N : 1*param.N), [param.N, 1]);
-sim.K = reshape(x(1+1*param.N : 2*param.N), [param.N, 1]);
+sim.I = reshape(x(1+1*param.N : 2*param.N), [param.N, 1]);
 sim.M = reshape(x(1+2*param.N : 3*param.N), [param.N, 1]);
 sim.theta = t;
+
+% Capital accumulation:
+sim.K = ss.K * ones(param.N, 1);
+% sim.dK = zeros(param.N, 1);
+% for n = 1:param.N-1
+%     sim.dK(n)  = (sim.K(n+1) - sim.K(n)) / param.dt;
+% end
+for n = 1:param.N-1
+    sim.K(n+1) = sim.K(n) + param.dt * (sim.I(n) - param.delta * sim.K(n));
+end
+% sim.I = sim.dK + param.delta * sim.K;
+sim.dK = sim.I - param.delta * sim.K;
 
 % Production and factor prices:
 sim.N  = (sim.Y ./ (sim.Z .* sim.K.^param.alpha)) .^ (1/(1-param.alpha));
@@ -82,24 +94,6 @@ for n = param.N-1 : -1 : 1
         - param.v1(sim.N(n))) * sim.N(n);
     sim.piw(n) = (sim.piw(n+1) - param.dt * X) / (1 + param.dt * sim.rho(n));
 end
-
-% Capital production:
-sim.dK = zeros(param.N, 1);
-for n = 1:param.N-1
-sim.dK(n)  = (sim.K(n+1) - sim.K(n)) / param.dt;
-end
-
-sim.gross_total_capital_accumulation = sim.dK + param.delta * sim.K;
-sim.Q = param.solve_for_Q_from_cap_accumulation(sim.gross_total_capital_accumulation, sim.K);
-
-sim.gross_total_investment_expenditure = param.gross_total_investment_expenditure(sim.Q, sim.K, 0);
-sim.iotaQ = param.solve_for_iota(sim.Q);
-assert( max(abs( sim.gross_total_capital_accumulation - param.gross_total_capital_accumulation(sim.Q, sim.K, 0) )) < 1e-8 );
-assert( max(abs( sim.Q - param.solve_for_Q(sim.iotaQ) )) < 1e-8 );
-assert( max(abs( sim.iotaQ - sim.gross_total_capital_accumulation ./ sim.K )) < 1e-8 );
-
-sim.I   = sim.gross_total_investment_expenditure;
-sim.PiQ = param.PiQ(sim.Q, sim.K, zeros(param.N, 1));
 
 % CPI inflation:
 sim.pi = sim.piw - (sim.dY - sim.dN);
