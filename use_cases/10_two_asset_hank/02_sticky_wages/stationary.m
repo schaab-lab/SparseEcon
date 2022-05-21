@@ -33,7 +33,7 @@ G.income_a = r * G.a + (rk + PiQ/K) * G.k - xi ...
              + (1-param.tau_lab) * w .* param.zz .* N + tau;
 G.income_k = - param.delta * G.k;
 
-G.Q = Q; G.N = N;
+G.Q = Q; G.N = N; G.piw = piw;
 
 % State-constrained boundary conditions:
 % left_bound  = param.u1(G.income_a);
@@ -77,8 +77,8 @@ B = sum(sum( G_dense.a .* g .* G_dense.dx));
 C = sum(sum( (G.BH_dense * hjb.c) .* g .* G_dense.dx));
 S = sum(sum( (G.BH_dense * hjb.s) .* g .* G_dense.dx));
 
-m = param.zz .* (G.BH_dense * param.u1(hjb.c));
-M = sum(sum(m .* g .* G_dense.dx));
+u1z = param.zz .* (G.BH_dense * param.u1(hjb.c));
+M = sum(sum(u1z .* g .* G_dense.dx));
 
 IH  = sum(sum( (G.BH_dense * hjb.iota) .* g .* G_dense.dx));
 KH  = sum(sum( G_dense.k .* g .* G_dense.dx));
@@ -93,14 +93,12 @@ excess_labor   = param.v1(N) - (param.epsilon - 1)/param.epsilon * (1+param.tau_
 excess_cap_production = param.gross_total_capital_accumulation(Q, K, param.ZQmean) - IH;
 excess_goods = Y - C - param.gross_total_investment_expenditure(Q, K, param.ZQmean) - Chi - Xi - param.G;
 
-zBar = sum(sum( param.zz .* g .* G_dense.dx));
-
 diff = [excess_bonds, excess_capital, excess_labor]';
 
 ss.V = V; ss.g = g; ss.iota = hjb.iota; ss.w = w; ss.A = hjb.A; ss.m = hjb.m; ss.c = hjb.c; ss.s = hjb.s; ss.c0 = hjb.c0;
 ss.mass = mass; ss.excess_goods = excess_goods; ss.excess_bonds = excess_bonds; ss.excess_capital = excess_capital; 
 ss.excess_labor = excess_labor; ss.excess_cap_production = excess_cap_production; ss.excess_saving = excess_saving;
-ss.Y = Y; ss.C = C; ss.K = K; ss.KH = KH; ss.B = B; ss.I = I;
+ss.Y = Y; ss.Z = Z; ss.C = C; ss.K = K; ss.KH = KH; ss.B = B; ss.I = I; ss.M = M; ss.u1z = u1z; ss.piw = piw; ss.pi = pi;
 ss.r = r; ss.rk = rk; ss.S = S; ss.N = N; ss.Xi = Xi; ss.tau = tau; ss.Q = Q; ss.Chi = Chi; ss.PiQ = PiQ;
 switch param.shock_type
     case 'TFP',       ss.shock = Z; 

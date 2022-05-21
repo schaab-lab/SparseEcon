@@ -7,7 +7,7 @@ function param = define_parameters(varargin)
 param.l = 0; param.surplus = [5, 5];
 param.d = 2; param.d_idio = 2; param.d_agg = 0;
 
-param.l_dense = [5, 5]; % vector of "surplus" for dense grid
+param.l_dense = [4, 4]; % vector of "surplus" for dense grid
 
 param.amin = -1;
 param.amax = 7;

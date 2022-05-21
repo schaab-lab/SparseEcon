@@ -55,7 +55,7 @@ si = - G.Q.*iota - adjcostfn(iota, G.k, param);
 
 
 %% OUTPUT
-u = param.u(c) - param.v(G.N);
+u = param.u(c) - param.v(G.N) - param.delta/2 * G.piw^2;
 s = sc + si;
 m = G.income_k + iota;
 

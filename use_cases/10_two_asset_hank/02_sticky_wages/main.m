@@ -30,7 +30,7 @@ run_time = tic;
 
 
 %% PARAMETERS
-param = define_parameters('shock_type', 'monetary', 'T', 15, 'N', 150, ...
+param = define_parameters('shock_type', 'demand', 'implicit_g', 0, 'T', 10, 'N', 100, 'shock_theta', 10, ...
                           'tau_lab', 0);
 
                           
@@ -100,13 +100,13 @@ for n = 1:param.N-1
     dz(n+1, :) = exp(-param.shock_theta * param.t(n+1)) .* param.shock_level;
 end
 
-z = z0 + dz;
+z = z0 + 0*dz;
 
 % Initialize policy and guesses:
 t0 = zeros(param.N, 1);
 Y0 = ss.Y * ones(param.N, 1); 
-M0 = ss.M * ones(param.N, 1);
 K0 = ss.K * ones(param.N, 1);
+M0 = ss.M * ones(param.N, 1);
 x0 = [Y0; K0; M0];
 
 diff0 = transition(x0, t0, z, ss, G, G_dense, param, 'markets');
@@ -123,45 +123,45 @@ run_time = toc(run_time); fprintf('\n\nAlgorithm converged. Run-time of: %.2f se
 fprintf('\nPlotting Figures...\n');
 
 % DSS: 
-for n = 1:adapt_iter
-    
-    figure('visible', 'off');
-    l1=scatter3(G_adapt{n}.a, G_adapt{n}.k, V_adapt{n}(:, 1));
-    xlabel('Liquid: $a$', 'Interpreter', 'Latex');
-        xlh = get(gca, 'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
-        set(xlh, 'Rotation', 16, 'Position', xlp, 'VerticalAlignment', 'middle', 'HorizontalAlignment', 'left');
-    ylabel('Illiquid: $k$', 'Interpreter', 'Latex');
-        ylh = get(gca, 'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
-        set(ylh, 'Rotation', -27, 'Position', ylp, 'VerticalAlignment', 'middle', 'HorizontalAlignment', 'right');
-    zlabel('$V^U(a, k)$', 'Interpreter', 'Latex');
-        zlh = get(gca, 'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
-        set(zlh, 'Rotation', 0, 'Position', zlp+[0, 11, -2], 'VerticalAlignment', 'middle', 'HorizontalAlignment', 'left');        
-    set(gcf, 'renderer', 'Painters');
-    exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
-
-end
+% for n = 1:adapt_iter
+%     
+%     figure('visible', 'off');
+%     l1=scatter3(G_adapt{n}.a, G_adapt{n}.k, V_adapt{n}(:, 1));
+%     xlabel('Liquid: $a$', 'Interpreter', 'Latex');
+%         xlh = get(gca, 'xlabel'); gxl = get(xlh); xlp = get(xlh, 'Position');
+%         set(xlh, 'Rotation', 16, 'Position', xlp, 'VerticalAlignment', 'middle', 'HorizontalAlignment', 'left');
+%     ylabel('Illiquid: $k$', 'Interpreter', 'Latex');
+%         ylh = get(gca, 'ylabel'); gyl = get(ylh); ylp = get(ylh, 'Position');
+%         set(ylh, 'Rotation', -27, 'Position', ylp, 'VerticalAlignment', 'middle', 'HorizontalAlignment', 'right');
+%     zlabel('$V^U(a, k)$', 'Interpreter', 'Latex');
+%         zlh = get(gca, 'zlabel'); gzl = get(zlh); zlp = get(zlh, 'Position');
+%         set(zlh, 'Rotation', 0, 'Position', zlp+[0, 11, -2], 'VerticalAlignment', 'middle', 'HorizontalAlignment', 'left');        
+%     set(gcf, 'renderer', 'Painters');
+%     exportgraphics(gcf, ['./output/grid_adaptation', num2str(n-1), '.eps']);
+% 
+% end
 
 
 % Transition:
 figure('visible', 'on');
 subplot(3, 3, 1); 
-plot(sim.t, (sim.Y - ss.Y)/ss.Y); ylabel('% dev'); title('$Y_t$', 'Interpreter', 'Latex');
+plot(param.t, 100 * (sim.Y - ss.Y)/ss.Y); ylabel('% dev'); title('$Y_t$', 'Interpreter', 'Latex');
 subplot(3, 3, 2); 
-plot(sim.t, (sim.K - ss.K)/ss.K); title('$K_t$', 'Interpreter', 'Latex');
+plot(param.t, 100 * (sim.K - ss.K)/ss.K); title('$K_t$', 'Interpreter', 'Latex');
 subplot(3, 3, 3); 
-plot(sim.t, (sim.L - ss.L)/ss.L); title('$L_t$', 'Interpreter', 'Latex');
+plot(param.t, 100 * (sim.N - ss.N)/ss.N); title('$N_t$', 'Interpreter', 'Latex');
 subplot(3, 3, 4); 
-plot(sim.t, (sim.C - ss.C)/ss.C); ylabel('% dev'); title('$C_t$', 'Interpreter', 'Latex');
+plot(param.t, 100 * (sim.C - ss.C)/ss.C); ylabel('% dev'); title('$C_t$', 'Interpreter', 'Latex');
 subplot(3, 3, 5); 
-plot(sim.t, (sim.I - ss.I)/ss.I); title('$I_t$', 'Interpreter', 'Latex');
+plot(param.t, 100 * (sim.I - ss.I)/ss.I); title('$I_t$', 'Interpreter', 'Latex');
 subplot(3, 3, 6); 
-plot(sim.t, (sim.w - ss.w)/ss.w); title('$w_t$', 'Interpreter', 'Latex');
+plot(param.t, 100 * (sim.w - ss.w)/ss.w); title('$w_t$', 'Interpreter', 'Latex');
 subplot(3, 3, 7); 
-plot(sim.t, (sim.r - ss.r)/ss.r); ylabel('% dev'); xlabel('Quarters'); ylabel('% dev'); title('$r_t$', 'Interpreter', 'Latex');
+plot(param.t, 100 * (sim.r - ss.r)); ylabel('%'); xlabel('Quarters'); title('$r_t$', 'Interpreter', 'Latex');
 subplot(3, 3, 8); 
-plot(sim.t, (sim.rk - ss.rk)/ss.rk); xlabel('Quarters'); title('$r_t^k$', 'Interpreter', 'Latex');
+plot(param.t, 100 * (sim.rk - ss.rk)); xlabel('Quarters'); title('$r_t^k$', 'Interpreter', 'Latex');
 subplot(3, 3, 9); 
-plot(sim.t, shock_t); xlabel('Quarters'); title([param.shock_type, ' shock (lvl)'], 'Interpreter', 'Latex');
+plot(param.t, z); xlabel('Quarters'); title([param.shock_type, ' shock (lvl)'], 'Interpreter', 'Latex');
 set(gcf, 'renderer', 'Painters');
 exportgraphics(gcf, './output/transition_dynamics.eps');
 
