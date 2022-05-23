@@ -30,10 +30,16 @@ run_time = tic;
 
 
 %% PARAMETERS
-param = define_parameters('shock_type', 'demand', 'T', 120, 'N', 100, 'shock_theta', log(2), ...
-                          'implicit_g', 1, 'xi', 0, 'rho', 0.08, 'delta', 0.03, ...
+param = define_parameters('shock_type', 'demand', 'T', 60, 'N', 100, 'shock_theta', log(2), ...
+                          'implicit_g', 1, 'xi', 1, 'rho', 0.08, 'delta', 0.03, ...
                           ... % 'Delta_KF', 0.05, 'maxit_KF', 100000, ...
-                          'tau_lab', 0);
+                          'l_dense', [6, 6], 'surplus', [6, 6], ...
+                          'tau_lab', 0, 'psi0', 0, 'psi1', 0.5, 'psi2', 2);
+
+% Stationary Equilibrium:  r = 0.0713   K = 3.3767   N = 0.9720 
+% Markets:  goods=7.0e-08   bonds=-3.1e-09   labor=4.0e-10   capital=1.6e-09   savings=1.5e-09 
+% Stationary Equilibrium:  r = 0.0712   K = 5.2974   N = 0.9080 
+% Markets:  goods=8.8e-08   bonds=-7.0e-14   labor=-1.9e-14   capital=1.9e-13   savings=3.8e-10 
 
 
 %% INITIALIZE GRIDS
@@ -70,7 +76,7 @@ fprintf('\n\n:::::   0-INFLATION STATIONARY EQUILIBRIUM   :::::: \n\n');
 piw = 0;
 
 % Get better guess for value function:
-r0 = 0.80 * param.rho; K0 = 6; N0 = 0.8; X0 = [r0, K0, N0];
+r0 = 0.80 * param.rho; K0 = 9; N0 = 0.8; X0 = [r0, K0, N0];
 [~, G, G_dense, ~] = stationary(X0, piw, G, G_dense, param);
 
 % Solve for steady state prices:

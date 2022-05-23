@@ -3,6 +3,7 @@ function hjb = HJB(V, G, param)
 
 %% VF DERIVATIVES
 num0 = 1e-8; % numerical 0 for upwind scheme
+numK = 1e10;
 
 [VaF, VaB, VkF, VkB] = deal(zeros(G.J, param.discrete_types));
 for j = 1:param.discrete_types
@@ -27,7 +28,7 @@ scF = G.income_a - cF;
 scB = G.income_a - cB;
 
 IF = (scF > num0);
-IB = (scB <-num0) & ~IF; 
+IB = (scB <-num0) & ~IF;
 I0 = ~IF & ~IB;
 
 c = cF.*IF + cB.*IB + c0.*I0;
@@ -35,15 +36,25 @@ sc = scF.*IF + scB.*IB;
 
 
 %% INVESTMENT
-iotaFF = adjcostfn1inv(VkF./VaF-1, G.k, param); iotaFF(G.k == param.kmax, :) = 0;
-iotaFB = adjcostfn1inv(VkB./VaF-1, G.k, param); iotaFB(G.k == param.kmin, :) = 0;
-iotaBF = adjcostfn1inv(VkF./VaB-1, G.k, param); iotaBF(G.k == param.kmax, :) = 0;
-iotaBB = adjcostfn1inv(VkB./VaB-1, G.k, param); iotaBB(G.k == param.kmin, :) = 0;
+iotaFF = (VkF./VaF - 1) .* max(G.k, param.psi3);
+iotaFB = (VkB./VaF - 1) .* max(G.k, param.psi3);
+iotaBF = (VkF./VaB - 1) .* max(G.k, param.psi3);
+iotaBB = (VkB./VaB - 1) .* max(G.k, param.psi3);
 
-siFF = - iotaFF - adjcostfn(iotaFF, G.k, param); siFF(G.a == param.amax, :) = 0;
-siFB = - iotaFB - adjcostfn(iotaFB, G.k, param); siFB(G.a == param.amax, :) = 0;
-siBF = - iotaBF - adjcostfn(iotaBF, G.k, param); siBF(G.a == param.amin, :) = 0;
-siBB = - iotaBB - adjcostfn(iotaBB, G.k, param); siBB(G.a == param.amin, :) = 0;
+iotaFF = min(iotaFF, numK); iotaFF(G.k == param.kmax, :) = 0;
+iotaFB = min(iotaFB, numK); iotaFB(G.k == param.kmin, :) = 0;
+iotaBF = min(iotaBF, numK); iotaBF(G.k == param.kmax, :) = 0;
+iotaBB = min(iotaBB, numK); iotaBB(G.k == param.kmin, :) = 0;
+
+% iotaFF = adjcostfn1inv(VkF./VaF-1, G.k, param); iotaFF(G.k == param.kmax, :) = 0;
+% iotaFB = adjcostfn1inv(VkB./VaF-1, G.k, param); iotaFB(G.k == param.kmin, :) = 0;
+% iotaBF = adjcostfn1inv(VkF./VaB-1, G.k, param); iotaBF(G.k == param.kmax, :) = 0;
+% iotaBB = adjcostfn1inv(VkB./VaB-1, G.k, param); iotaBB(G.k == param.kmin, :) = 0;
+
+siFF = - iotaFF - 0.5 * iotaFF.^2 ./ max(G.k, param.psi3); siFF(G.a == param.amax, :) = 0;
+siFB = - iotaFB - 0.5 * iotaFB.^2 ./ max(G.k, param.psi3); siFB(G.a == param.amax, :) = 0;
+siBF = - iotaBF - 0.5 * iotaBF.^2 ./ max(G.k, param.psi3); siBF(G.a == param.amin, :) = 0;
+siBB = - iotaBB - 0.5 * iotaBB.^2 ./ max(G.k, param.psi3); siBB(G.a == param.amin, :) = 0;
 
 IFF = (siFF > num0) & (iotaFF > num0);
 IFB = (siFB > num0) & (iotaFB <-num0) & ~IFF;
@@ -51,7 +62,7 @@ IBF = (siBF <-num0) & (iotaBF > num0) & ~IFF & ~IFB;
 IBB = (siBB <-num0) & (iotaBB <-num0) & ~IFF & ~IFB & ~IBF;
 
 iota = iotaFF.*IFF + iotaFB.*IFB + iotaBF.*IBF + iotaBB.*IBB;
-si = - iota - adjcostfn(iota, G.k, param);
+si = - iota - 0.5 * iota.^2 ./ max(G.k, param.psi3);
 
 
 %% OUTPUT

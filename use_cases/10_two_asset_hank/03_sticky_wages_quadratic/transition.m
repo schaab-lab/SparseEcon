@@ -26,9 +26,12 @@ for n = param.N:-1:1
        
     % POLICY FUNCTIONS
     ltau  = 15;
-    ltau0 = sim.rk(n) * (param.kmax*0.999)^(1-ltau);
-    sim.xi{n} = param.xi * ltau0 * G.k .^ ltau;
-
+    % ltau0 = sim.rk(n) * (param.kmax*0.999)^(1-ltau);
+    % sim.xi{n} = param.xi * ltau0 * G.k .^ ltau;
+    ltau1 = ss.r  * (param.amax*0.999)^(1-ltau);
+    ltau2 = ss.rk * (param.kmax*0.999)^(1-ltau);
+    sim.xi{n} = param.xi * (ltau1 * G.a .^ ltau + ltau2 * G.k .^ ltau);
+    
     G.income_a = sim.r(n) * G.a + sim.rk(n) * G.k - sim.xi{n} ...
                  + (1-param.tau_lab) * sim.w(n) .* param.zz .* sim.N(n) + sim.tau(n);
     G.income_k = - param.delta * G.k;
@@ -63,14 +66,9 @@ end
 
 
 %% SOLVE KF FORWARDS
-% dgdtA = [Aa1' * g_t{n}(:, 1); Aa2' * g_t{n}(:, 2)] + ...
-%         [Ak1' * g_t{n}(:, 1); Ak2' * g_t{n}(:, 2)] + ...
-%          Az' * [g_t{n}(:, 1); g_t{n}(:, 2)];
-% dgdtA = [dgdtA(1:GDense.J), dgdtA(GDense.J+1:end)];
 Az_dense = [-speye(G_dense.J)*param.la1,  speye(G_dense.J)*param.la1; ...
              speye(G_dense.J)*param.la2, -speye(G_dense.J)*param.la2];
 
-% Birth process:
 for n = 1:param.N
     
     Asc = cell(param.discrete_types, 1); Asi = Asc; Ami = Asc; Amk = Asc;
@@ -137,19 +135,21 @@ for n = 1:param.N
     sim.M1(n) = sum(sum(m_dense .* sim.g{n} .* G_dense.dx));
     sim.M2(n) = sum(sum((mi_dense+mk_dense) .* sim.g{n} .* G_dense.dx));
     sim.IH(n) = sum(sum(iota_dense .* sim.g{n} .* G_dense.dx));
-    sim.Chi(n)= sum(sum(adjcostfn(iota_dense, G_dense.k, param) .* sim.g{n} .* G_dense.dx));
+    sim.Chi(n)= sum(sum( 0.5 * iota_dense.^2 ./ max(G_dense.k, param.psi3) .* sim.g{n} .* G_dense.dx));
     sim.Xi(n) = sum(sum(xi_dense .* sim.g{n} .* G_dense.dx)); 
     sim.MH(n) = sum(sum(u1z_dense .* sim.g{n} .* G_dense.dx));
     
 end
 
-% sim.K2(1) = ss.K; sim.K3(1) = ss.K; sim.B2(1) = ss.B; sim.B3(1) = ss.B;
-% for n = 1:param.N-1
-%     sim.K2(n+1) = sim.K2(n) + param.dt * sim.M(n);
-%     sim.K3(n+1) = sim.K3(n) + param.dt * (sim.M3(n) - param.delta *sim.K3(n));
-%     sim.B2(n+1) = sim.B2(n) + param.dt * sim.S(n);
-%     sim.B3(n+1) = sim.B3(n) + param.dt * sim.S2(n);
-% end
+[sim.K2, sim.K3, sim.K4, sim.B2, sim.B3] = deal(ones(param.N, 1));
+sim.K2(1) = ss.K; sim.K3(1) = ss.K; sim.K4(1) = ss.K; sim.B2(1) = ss.B; sim.B3(1) = ss.B;
+for n = 1:param.N-1
+    sim.K2(n+1) = sim.K2(n) + param.dt * sim.M1(n);
+    sim.K3(n+1) = sim.K3(n) + param.dt * sim.M2(n);
+    sim.K4(n+1) = sim.K4(n) + param.dt * (sim.IH(n) - param.delta *sim.K4(n));
+    sim.B2(n+1) = sim.B2(n) + param.dt * sim.S(n);
+    sim.B3(n+1) = sim.B3(n) + param.dt * sim.S2(n);
+end
 
 
 %% MARKET CLEARING
@@ -168,7 +168,7 @@ sim.diff_markets = [sim.diff_Y, sim.diff_B, sim.diff_M, sim.diff_S, sim.diff_K, 
 if nargin > 7 && any(ismember(query, {'markets'}))
     % sim = sim.(query);
     % Cannot use diff_B or diff_K because at n=0, they are =0 by ss init!
-    sim = [sim.diff_S; sim.diff_I; sim.diff_M];
+    sim = [sim.diff_Y; sim.diff_I; sim.diff_M];
 end
 
 end

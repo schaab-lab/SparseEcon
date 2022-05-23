@@ -16,8 +16,11 @@ I  = param.delta * K;
 tau = param.tau_lab * w * N - param.G - r*param.gov_bond_supply;
 
 ltau  = 15;
-ltau0 = rk * (param.kmax*0.999)^(1-ltau);
-xi    = param.xi * ltau0 * G.k .^ ltau;
+% ltau0 = rk * (param.kmax*0.999)^(1-ltau);
+% xi    = param.xi * ltau0 * G.k .^ ltau;
+ltau1 =  r * (param.amax*0.999)^(1-ltau);
+ltau2 = rk * (param.kmax*0.999)^(1-ltau);
+xi    = param.xi * (ltau1 * G.a .^ ltau + ltau2 * G.k .^ ltau);
 
 
 %% VFI
@@ -73,7 +76,7 @@ M = sum(sum(u1z .* g .* G_dense.dx));
 
 IH  = sum(sum( (G.BH_dense * hjb.iota) .* g .* G_dense.dx));
 KH  = sum(sum( G_dense.k .* g .* G_dense.dx));
-Chi = sum(sum( adjcostfn(G.BH_dense * hjb.iota, G_dense.k, param) .* g .* G_dense.dx));
+Chi = sum(sum( 0.5 * (G.BH_dense * hjb.iota).^2 ./ max(G_dense.k, param.psi3) .* g .* G_dense.dx));
 Xi  = sum(sum( (G.BH_dense * xi) .* g .* G_dense.dx));
 
 excess_bonds   = param.gov_bond_supply - B;

@@ -228,7 +228,8 @@ switch param.shock_type
         % param.shock_theta = log(2);
 
     case 'demand'
-        param.shock_level = 0.25 * param.rho;
+        param.shock_level = 0.05 * param.rho;
+        % param.shock_level = 0.25 * param.rho;
         % param.shock_theta = log(2);
         
     case 'cost-push'
