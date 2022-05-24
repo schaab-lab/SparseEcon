@@ -104,3 +104,70 @@ Net change: 1048 -> 1048 = << 0 >>, blacklisted: 517.
 Algorithm converged. Run-time of: 29.31 seconds.
 
 Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/HJB.m',106,1)">106 </a>assert( max(max(abs( thetaF(G.n == param.nmax, :) - (G.muR-G.r)./(param.gamma*param.sigR2) ))) < num0 );
+thetaF(G.n == param.nmax, :)
+
+ans =
+
+    0.8696    0.8696
+
+(G.muR-G.r)./(param.gamma*param.sigR2)
+
+ans =
+
+    0.8696
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+{Unrecognized field name "sigR".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('HJB', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/HJB.m', 108)" style="font-weight:bold">HJB</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/HJB.m',108,0)">line 108</a>)
+    - min((G.muR-G.r)./(param.gamma*(G.sigR).^2), 1 - param.nmin./G.n(end)) ))) < num0 );
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VFI', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/VFI.m', 13)" style="font-weight:bold">VFI</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/VFI.m',13,0)">line 13</a>)
+hjb = HJB(V, G, param);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stationary', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/stationary.m', 38)" style="font-weight:bold">stationary</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/stationary.m',38,0)">line 38</a>)
+[V, hjb] = VFI(G, [], param);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/main.m', 80)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/main.m',80,0)">line 80</a>)
+    [diff0, G, G_dense, ~] = stationary(X0, G, G_dense, param);
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/HJB.m',107,1)">107 </a>assert( max(max(abs( thetaF(G.n == param.nmax, :) ...
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/HJB.m',107,1)">107 </a>assert( max(max(abs( thetaF(G.n == param.nmax, :) ...
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/04_two_assets_risky/01_idiosyncratic_risk/HJB.m',107,1)">107 </a>assert( max(max(abs( thetaF(G.n == param.nmax, :) ...
+if system_dependent('IsDebugMode')==1, dbquit; end

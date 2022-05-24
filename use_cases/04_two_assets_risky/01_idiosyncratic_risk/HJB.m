@@ -103,7 +103,9 @@ assert(all(all( theta(G.n == param.nmin, :) == 0 )));
 % assert(all(all( theta(G.n == param.nmax, :) == (G.muR-G.r)./(param.gamma*param.sigR2) )));
 
 % No longer exactly 0 because BC is used, so num0 error is introduced:
-assert( max(max(abs( thetaF(G.n == param.nmax, :) - (G.muR-G.r)./(param.gamma*param.sigR2) ))) < num0 );
+% assert( max(max(abs( thetaF(G.n == param.nmax, :) - (G.muR-G.r)./(param.gamma*param.sigR2) ))) < num0 );
+assert( max(max(abs( thetaF(G.n == param.nmax, :) ...
+    - min((G.muR-G.r)./(param.gamma*param.sigR2), 1 - param.nmin./G.n(end)) ))) < num0 );
 
 assert(all(all( theta(G.n>0, :) <= (G.n(G.n>0) - param.nmin) ./ G.n(G.n>0) + num0 )));
 assert(all(all( theta(G.n<0, :) >= (G.n(G.n<0) - param.nmin) ./ G.n(G.n<0) - num0 )));
