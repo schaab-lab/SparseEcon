@@ -8,7 +8,8 @@ L = x(3);
 %% AGGREGATES
 mc = (param.epsilonF - 1) / param.epsilonF;
 
-Y  = K.^param.alpha .* L.^(1-param.alpha);
+Z  = param.Z;
+Y  = Z * K.^param.alpha .* L.^(1-param.alpha);
 U  = (1-param.L);
 H  = L / (1-U);
 rk = mc * param.alpha * Y / K;
@@ -55,10 +56,11 @@ G.Q = Q; G.H = H;
 % end
 
 % Initialize guess V0:
-if ~isfield(G, 'V0'), G.V0 = param.u(G.income_a) / param.rho; end
+if ~isfield(G, 'V0'), G.V0 = (param.u(G.income_a) - param.v(G.H)) / param.rho; end
 
 % Solve VFI:
-[V, hjb] = VFI(G, [], param);
+[V, hjb] = VFI(G, param);
+if isnan(V), diff = NaN(1); return; end
 
 
 %% OUTPUT VF as next guess
@@ -106,10 +108,15 @@ diff = [excess_bonds, excess_capital, excess_labor]';
 
 ss.V = V; ss.g = g; ss.iota = hjb.iota; ss.w = w; ss.A = hjb.A; ss.m = hjb.m; ss.c = hjb.c; ss.s = hjb.s; ss.c0 = hjb.c0;
 ss.mass = mass; ss.excess_goods = excess_goods; ss.excess_bonds = excess_bonds; ss.excess_capital = excess_capital; 
-ss.excess_labor = excess_labor; ss.excess_cap_production = excess_cap_production;
+ss.excess_labor = excess_labor; ss.excess_cap_production = excess_cap_production; ss.excess_saving = excess_saving;
 ss.Y = Y; ss.C = C; ss.K = K; ss.KH = KH; ss.B = B; ss.Xi = Xi; ss.I = I;
 ss.r = r; ss.rk = rk; ss.S = S; ss.L = L; ss.H = H; ss.zBar = zBar; ss.Pi = Pi; ss.Xi=Xi;
 ss.M1 = M1; ss.M2 = M2; ss.tau = tau; ss.Q = Q; ss.Chi = Chi; ss.Pi = Pi; ss.PiQ = PiQ;
+switch param.shock_type
+    case 'TFP',       ss.shock = Z; 
+    case 'demand',    ss.shock = param.rho; 
+    case 'cost-push', ss.shock = param.epsilon; 
+end
 
 end
 

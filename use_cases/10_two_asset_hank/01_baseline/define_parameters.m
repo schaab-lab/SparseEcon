@@ -35,6 +35,11 @@ param.maxit_KF = 100;
 param.crit_KF  = 1e-7;
 
 
+%% JACOBIAN TUNING PARAMETERS
+param.phi_jacobian = 1000;
+param.psi_jacobian = 0;
+
+
 %% TRANSITION DYNAMICS PARAMETERS
 param.shock_type = 'productivity';
 param.time_grid_adjustment = 1;
@@ -48,12 +53,17 @@ param.N = 300;
 param.bfun_type = "nodal"; 
 param.cheb_H = 25;
 param.H(1) = param.N; 
-param.H(2) = 3; % # of time series to guess 
+% param.H(2) = 3; % # of time series to guess 
 
 if param.N <= 6*param.T, param.implicit_g = 1; else param.implicit_g = 0; end
 
 
 %% ECONOMIC PARAMETERS
+
+% Shock:
+param.shock_type = 'TFP';
+param.shock_percent = 0.01;
+param.shock_theta = log(2);
 
 % Households:
 param.rho       = 0.035;%0.012728925130000;%0.05;
@@ -84,10 +94,13 @@ param.cap_adj_model = 'KMV_delta_offset';
 param.ZQmean = 0;
 param.xi = 1;
 
+% TFP:
+param.Z = 1;
+
 % Firms and Inflation:
 param.alpha = 0.38;
 param.epsilonF = 10;
-param.chiF  = 100;
+param.chiF = 100;
 param.kappa = 100;
 param.tau_empl = 0; 
 
@@ -96,8 +109,11 @@ param.wage_rigidity_estimation = 'ACEL';
 param.epsilonW = 21;
 
 % Government:
+param.policy_shock = 0.002;
+param.theta_policy = log(2);
+
 param.lambda_pi = 1.20;
-param.lambda_Y  = 0.02;
+param.lambda_Y  = 0.00;
 
 param.tau_lump = 0;
 param.tau_lab = 0.20;
@@ -118,10 +134,15 @@ end
 parse(p, varargin{:});
 param = p.Results;
 
-% Update parameters
+
+%% UPDATE PARAMETERS
+
+% Grid:
+param.min = [param.amin, param.kmin];
+param.max = [param.amax, param.kmax];
 if param.keep_tol >= param.add_tol, error('keep_tol should be smaller than add_tol\n'); end
 
-% Simulation
+% Transition path:
 param.reso_sim_KF = 7 - floor(param.N / param.T);
 param.t = linspace(0, param.T, param.N)';
 
@@ -210,7 +231,6 @@ switch param.cap_adj_model
                                                     - param.Phi(param.solve_for_iota(Q)).*K;
 end
 
-
 % Labor Unions
 RHS = @(theta, rho) (1-theta) * (1-theta * 1/(1+rho)) / theta;
 chi = @(epsilonW, theta, rho) (epsilonW-1) / RHS(theta, rho);
@@ -221,6 +241,27 @@ switch param.wage_rigidity_estimation
         theta = 0.78;
 end
 param.chi = chi(param.epsilonW, theta, param.rho);
+
+% Shocks:
+switch param.shock_type
+    case 'TFP'
+        param.shock_level = param.shock_percent * param.Z;
+        param.shock_theta = log(2);
+
+    case 'demand'
+        param.shock_level = 0.25 * param.rho;
+        % param.shock_theta = log(2);
+
+    case 'monetary'
+        param.shock_level = 0.01;
+        param.shock_theta = log(2);
+        
+    case 'cost-push'
+        param.shock_level = 0.10 * param.epsilon;
+        % param.shock_theta = log(2);
+        
+end
+
 
 end
 

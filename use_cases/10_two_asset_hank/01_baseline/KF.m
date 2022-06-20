@@ -1,6 +1,6 @@
 function g = KF(sc, si, mi, mk, G, param)
 
-% RECONSTRUCT A MATRIX:
+% Reconstruct A matrix:
 Az = [-speye(G.J)*param.la1,  speye(G.J)*param.la1; ...
        speye(G.J)*param.la2, -speye(G.J)*param.la2];
 
@@ -14,7 +14,7 @@ end
 AT = (blkdiag(Asc{1} + Asi{1} + Ami{1} + Amk{1}, Asc{2} + Asi{2} + Ami{2} + Amk{2}) + Az)';
 
 
-% BIRTH PROCESS:
+% Birth process:
 g = zeros(G.J, 2);
 g(G.k == param.kmin & G.a == param.amin, :) = 1/numel(param.zz) / G.dx;
 
@@ -33,14 +33,25 @@ else
 end
 
 
-% SOLVE KF PDE:
-for n = 1:param.maxit_KF   
+% Solve KF PDE:
+for n = 1:param.maxit_KF  
+    % if param.implicit_g
+    %     % Implicit:
+    %     B = 1/param.Delta_KF * speye(param.discrete_types*G.J) - AT;
+    %     b = g(:) / param.Delta_KF;
+    % 
+    %     g_new = B \ b;
+    % else
+    %     % Explicit:
+    %     g_new = g(:) + param.Delta_KF * AT * g(:);
+    % end
+
     B = (1/param.Delta_KF + param.deathrate) .* speye(2*G.J) - AT;
-    b = [g(:, 1); g(:, 2)] / param.Delta_KF + param.deathrate * [birth_ID(:, 1); birth_ID(:, 2)] / G.dx;
+    b = g(:) / param.Delta_KF + param.deathrate * birth_ID(:) / G.dx;
 
     g_new = B\b;
 
-    diff = max(abs( [g(:, 1); g(:, 2)] - g_new ));
+    diff = max(abs( g(:) - g_new ));
     if diff < param.crit_KF
         break
     end

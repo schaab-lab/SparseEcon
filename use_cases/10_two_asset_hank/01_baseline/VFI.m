@@ -1,18 +1,18 @@
-function [V, hjb] = VFI(G, agg, param)
+function [V, hjb] = VFI(G, param)
 
 V = G.V0;
 
-% Exogenous Operators
+% Exogenous operators:
 Az = [-speye(G.J)*param.la1,  speye(G.J)*param.la1; ...
        speye(G.J)*param.la2, -speye(G.J)*param.la2];
 
 for iter = 1:param.maxit
 
-% COMPUTE POLICY FUNCTIONS
+% Policy functions:
 hjb = HJB(V, G, param);
 if any(any(isnan(hjb.c))), V = NaN(1); return; end
 
-% ASSEMBLE FD OPERATOR MATRIX
+% Finite-difference operators:
 Asc = cell(param.discrete_types, 1); Asi = Asc; Ami = Asc; Amk = Asc;
 for j = 1:param.discrete_types
     Asc{j} = FD_operator(G, hjb.sc(:, j),   zeros(G.J, 1), 1, num2str(j));
@@ -24,14 +24,14 @@ end
 A = blkdiag(Asc{1} + Asi{1} + Ami{1} + Amk{1}, Asc{2} + Asi{2} + Ami{2} + Amk{2}) + Az;
 
 B = (1/param.Delta + param.rho + param.deathrate)*speye(2*G.J) - A;
-b = [hjb.u(:, 1); hjb.u(:, 2)] + [V(:, 1); V(:, 2)] / param.Delta;
+b = hjb.u(:) + V(:) / param.Delta;
 
-% SOLVE LINEAR SYSTEM
-V_new = B\b;
-% [V_new, flag] = gmres(B, b, [], param.crit/10, 200, [], [], [V(:, 1); V(:, 2)]);
+% Solve linear system:
+V_new = B \ b;
+% [V_new, flag] = gmres(B, b, [], param.crit/10, 200, [], [], V(:));
 
-% UPDATE
-V_change = V_new - [V(:, 1); V(:, 2)];
+% Update:
+V_change = V_new - V(:);
 V = [V_new(1:G.J), V_new(1+G.J:end)];
 
 dist = max(max(abs(V_change)));
