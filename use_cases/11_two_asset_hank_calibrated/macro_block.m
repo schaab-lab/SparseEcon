@@ -50,21 +50,24 @@ sim.pi = (sim.i - sim.eps - ss.r - param.lambda_Y * (sim.Y-ss.Y)/ss.Y) / param.l
 sim.r  = sim.i - sim.pi;
 
 % NKPC: (no need to guess ik when assuming i is discount rate of firms)
-sim.P   = ones(param.N, 1);
-sim.dY  = zeros(param.N, 1);
-sim.dpi = zeros(param.N, 1);
+% sim.P   = ones(param.N, 1);
+% sim.dY  = zeros(param.N, 1);
+% sim.dpi = zeros(param.N, 1);
+% for n = 1:param.N-1
+%     sim.P(n+1) = sim.P(n) .* (1+param.dt(n)*sim.pi(n));
+%     sim.dY(n)  = (sim.Y(n+1) - sim.Y(n)) / param.dt(n);
+%     sim.dpi(n) = (sim.pi(n+1) - sim.pi(n)) / param.dt(n);
+% end
+sim.mc = zeros(param.N, 1);
 for n = 1:param.N-1
-    sim.P(n+1) = sim.P(n) .* (1+param.dt(n)*sim.pi(n));
-    sim.dY(n)  = (sim.Y(n+1) - sim.Y(n)) / param.dt(n);
-    sim.dpi(n) = (sim.pi(n+1) - sim.pi(n)) / param.dt(n);
+    sim.mc(n) = (param.epsilonF-1)/param.epsilonF + param.chiF/param.epsilonF ...
+                 * (param.rho * sim.pi(n) - (sim.pi(n+1) - sim.pi(n)) / param.dt(n)) * sim.Y(n);
 end
-
-sim.mc = (param.epsilonF-1)/param.epsilonF * (1 + param.chiF/(param.epsilonF-1) ...
-         .* (sim.pi.*(sim.i - sim.pi - sim.dY./sim.Y) - sim.dpi));
+sim.mc(param.N) = (param.epsilonF-1)/param.epsilonF; % encodes terminal condition: pi(N) = 0
 
 % Factor prices:
 sim.rk = param.alpha * sim.mc .* sim.Y ./ sim.K;
-sim.ik = sim.rk .* sim.P;
+% sim.ik = sim.rk .* sim.P;
 sim.w  = 1/(1-param.tau_empl) * ( sim.Z .* sim.mc * (param.alpha^param.alpha * (1-param.alpha)^(1-param.alpha)) ...
          .* (sim.rk).^(-param.alpha) ).^(1./(1-param.alpha));
 

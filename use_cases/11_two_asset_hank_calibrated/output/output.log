@@ -28,3 +28,295 @@ Solver converged.
 Algorithm converged. Run-time of: 70.57 seconds.
 
 Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0325   K = 4.1946   L = 0.7685   Q = 1.0000 
+Markets:  goods=2.0e-07   bonds=-3.9e-14   labor=5.6e-13   capital=2.6e-11   savings=1.0e-08 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  150 quarters,  180 time steps,  using 30 cheb BFs
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vertcat')" style="font-weight:bold">vertcat</a>
+Dimensions of arrays being concatenated are not consistent.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('transition', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/transition.m', 221)" style="font-weight:bold">transition</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/transition.m',221,0)">line 221</a>)
+    sim = [interp1(param.t, sim.diff_S, param.nodes)'; ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/main.m', 151)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/main.m',151,0)">line 151</a>)
+diff0 = transition(x0, z, ss, G, G_dense, param, 'markets');
+} 
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0325   K = 4.1946   L = 0.7685   Q = 1.0000 
+Markets:  goods=2.0e-07   bonds=-3.9e-14   labor=5.6e-13   capital=2.6e-11   savings=1.0e-08 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  150 quarters,  180 time steps,  using 30 cheb BFs
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vertcat')" style="font-weight:bold">vertcat</a>
+Dimensions of arrays being concatenated are not consistent.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('transition', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/transition.m', 221)" style="font-weight:bold">transition</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/transition.m',221,0)">line 221</a>)
+    sim = [interp1(param.t, sim.diff_S, param.nodes)'; ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/main.m', 151)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/main.m',151,0)">line 151</a>)
+diff0 = transition(x0, z, ss, G, G_dense, param, 'markets');
+} 
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/transition.m',221,0)
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0325   K = 4.1946   L = 0.7685   Q = 1.0000 
+Markets:  goods=2.0e-07   bonds=-3.9e-14   labor=5.6e-13   capital=2.6e-11   savings=1.0e-08 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  150 quarters,  180 time steps,  using 30 cheb BFs
+
+sim.mc .* sim.Y ./ sim.K
+
+ans =
+
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+diff0 = transition(x0, z, ss, G, G_dense, param, 'markets');
+<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/macro_block.m',114,1)">114 </a>end
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0325   K = 4.1946   L = 0.7685   Q = 1.0000 
+Markets:  goods=2.0e-07   bonds=-3.9e-14   labor=5.6e-13   capital=2.6e-11   savings=1.0e-08 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  150 quarters,  180 time steps,  using 30 cheb BFs
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 43.45 seconds.
+Iteration 001, fCount 91:  Objective = 0.0007806,  stepSize =      0.25,  norm(dx) = 0.0009741.
+Iteration 002, fCount 92:  Objective = 0.0003906,  stepSize =       0.5,  norm(dx) = 0.0014672.
+Iteration 003, fCount 93:  Objective = 2.7302e-06,  stepSize =         1,  norm(dx) = 0.0014758.
+Iteration 004, fCount 95:  Objective = 8.8861e-08,  stepSize =         1,  norm(dx) = 2.3565e-05.
+Iteration 005, fCount 97:  Objective = 1.0936e-09,  stepSize =         1,  norm(dx) = 7.2307e-07.
+Iteration 006, fCount 99:  Objective = 2.4708e-11,  stepSize =         1,  norm(dx) = 1.8164e-08.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 76.83 seconds.
+
+Plotting Figures...
