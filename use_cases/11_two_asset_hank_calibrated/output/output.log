@@ -1,0 +1,30 @@
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0325   K = 4.1946   L = 0.7685   Q = 1.0000 
+Markets:  goods=2.0e-07   bonds=-3.9e-14   labor=5.6e-13   capital=2.6e-11   savings=1.0e-08 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  150 quarters,  180 time steps,  using 30 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 47.55 seconds.
+Iteration 001, fCount 91:  Objective = 0.00054557,  stepSize =      0.25,  norm(dx) = 0.0008582.
+Iteration 002, fCount 92:  Objective = 0.00027291,  stepSize =       0.5,  norm(dx) = 0.0012894.
+Iteration 003, fCount 93:  Objective = 1.4327e-06,  stepSize =         1,  norm(dx) = 0.0012972.
+Iteration 004, fCount 95:  Objective = 3.3064e-08,  stepSize =         1,  norm(dx) = 1.1227e-05.
+Iteration 005, fCount 97:  Objective = 7.4356e-10,  stepSize =         1,  norm(dx) = 2.2363e-07.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 70.57 seconds.
+
+Plotting Figures...
