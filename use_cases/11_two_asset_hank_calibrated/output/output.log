@@ -320,3 +320,284 @@ Solver converged.
 Algorithm converged. Run-time of: 76.83 seconds.
 
 Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0327   K = 5.7998   L = 0.7303   Q = 1.0000 
+Markets:  goods=1.9e-06   bonds=-3.1e-11   labor=1.4e-12   capital=1.1e-11   savings=3.3e-09 
+
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  150 quarters,  180 time steps,  using 30 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 44.33 seconds.
+Iteration 001, fCount 91:  Objective = 0.00079214,  stepSize =      0.25,  norm(dx) = 0.00096679.
+Iteration 002, fCount 92:  Objective = 0.00039748,  stepSize =       0.5,  norm(dx) = 0.0014696.
+Iteration 003, fCount 93:  Objective = 2.5096e-06,  stepSize =         1,  norm(dx) = 0.0016175.
+Iteration 004, fCount 94:  Objective = 2.4545e-06,  stepSize =         2,  norm(dx) = 0.00019566.
+Iteration 005, fCount 96:  Objective = 8.2274e-09,  stepSize =         1,  norm(dx) = 9.9693e-05.
+Iteration 006, fCount 98:  Objective = 1.4215e-09,  stepSize =         1,  norm(dx) = 2.6262e-07.
+Iteration 007, fCount 100:  Objective = 9.5628e-11,  stepSize =         1,  norm(dx) = 4.0164e-08.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 72.15 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0256   K = 6.9990   L = 0.8009   Q = 1.0000 
+Markets:  goods=5.1e-01   bonds=1.3e+00   labor=1.5e-01   capital=-7.0e+00   savings=-6.9e-10   investment=1.4e-01 
+
+{Unrecognized field name "P".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('moments', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/moments.m', 4)" style="font-weight:bold">moments</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/moments.m',4,0)">line 4</a>)
+mm.KY = ss.Q * ss.K / sum(ss.Y .* ss.P);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/main.m', 117)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_two_asset_hank_calibrated/main.m',117,0)">line 117</a>)
+mm = moments(ss, G, G_dense, param);
+} 
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0256   K = 6.9990   L = 0.8009   Q = 1.0000 
+Markets:  goods=5.1e-01   bonds=1.3e+00   labor=1.5e-01   capital=-7.0e+00   savings=-6.9e-10   investment=1.4e-01 
+
+TARGETED 
+KMV/Bayer illiquid assets to GDP 2.92/2.86: 3.83 
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0585   K = 3.4748   L = 0.7842   Q = 1.0000 
+Markets:  goods=3.1e-07   bonds=-1.2e-13   labor=6.4e-15   capital=9.6e-14   savings=2.4e-11   investment=6.9e-02 
+
+TARGETED 
+KMV/Bayer illiquid assets to GDP 2.92/2.86: 2.52 
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0585   K = 3.4748   L = 0.7842   Q = 1.0000 
+Markets:  goods=3.1e-07   bonds=-4.6e-12   labor=-8.2e-12   capital=1.7e-11   savings=2.4e-11   investment=6.9e-02 
+
+TARGETED 
+KMV/Bayer illiquid assets to GDP 2.92/2.86: 2.52 
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  150 quarters,  180 time steps,  using 30 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 40.20 seconds.
+Iteration 001, fCount 91:  Objective = 0.00072805,  stepSize =      0.25,  norm(dx) = 0.0012765.
+Iteration 002, fCount 92:  Objective = 0.00036512,  stepSize =       0.5,  norm(dx) = 0.0019355.
+Iteration 003, fCount 93:  Objective = 2.0985e-06,  stepSize =         1,  norm(dx) = 0.0019967.
+Iteration 004, fCount 94:  Objective = 2.0834e-06,  stepSize =         2,  norm(dx) = 3.1191e-05.
+Iteration 005, fCount 96:  Objective = 1.7317e-09,  stepSize =         1,  norm(dx) = 1.6337e-05.
+Iteration 006, fCount 98:  Objective = 9.5425e-11,  stepSize =         1,  norm(dx) = 3.5109e-08.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 67.48 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0584   K = 2.8216   L = 0.8119   Q = 1.0000 
+Markets:  goods=2.2e-07   bonds=-1.3e-11   labor=1.5e-11   capital=2.0e-09   savings=1.2e-08   investment=-2.1e-07 
+
+TARGETED 
+KMV/Bayer illiquid assets to GDP 2.92/2.86: 2.16 
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  150 quarters,  180 time steps,  using 30 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 41.68 seconds.
+Iteration 001, fCount 91:  Objective = 0.00072773,  stepSize =      0.25,  norm(dx) = 0.00098118.
+Iteration 002, fCount 92:  Objective = 0.00036431,  stepSize =       0.5,  norm(dx) = 0.0014344.
+Iteration 003, fCount 93:  Objective = 2.6244e-06,  stepSize =         1,  norm(dx) = 0.0014354.
+Iteration 004, fCount 95:  Objective = 8.2026e-08,  stepSize =         1,  norm(dx) = 1.8095e-05.
+Iteration 005, fCount 97:  Objective = 1.4595e-09,  stepSize =         1,  norm(dx) = 5.3463e-07.
+Iteration 006, fCount 99:  Objective = 4.4518e-10,  stepSize =         1,  norm(dx) = 5.438e-08.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 67.74 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0584   K = 2.8216   L = 0.8119   Q = 1.0000 
+Markets:  goods=2.2e-07   bonds=-1.3e-11   labor=1.5e-11   capital=2.0e-09   savings=1.2e-08   investment=-2.1e-07 
+
+TARGETED 
+KMV/Bayer illiquid assets to GDP 2.92/2.86: 2.16 
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  150 quarters,  180 time steps,  using 22 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 28.71 seconds.
+Iteration 001, fCount 67:  Objective = 0.00085225,  stepSize =      0.25,  norm(dx) = 0.0009856.
+Iteration 002, fCount 68:  Objective = 0.00042666,  stepSize =       0.5,  norm(dx) =  0.001436.
+Iteration 003, fCount 69:  Objective = 3.0549e-06,  stepSize =         1,  norm(dx) = 0.0014349.
+Iteration 004, fCount 71:  Objective = 7.9817e-08,  stepSize =         1,  norm(dx) = 2.0187e-05.
+Iteration 005, fCount 72:  Objective = 7.7921e-08,  stepSize =         2,  norm(dx) = 1.0549e-06.
+Iteration 006, fCount 74:  Objective = 2.3411e-10,  stepSize =         1,  norm(dx) = 4.9774e-07.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 52.36 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0584   K = 2.8216   L = 0.8119   Q = 1.0000 
+Markets:  goods=2.2e-07   bonds=-1.3e-11   labor=1.5e-11   capital=2.0e-09   savings=1.2e-08   investment=-2.1e-07 
+
+TARGETED 
+KMV/Bayer illiquid assets to GDP 2.92/2.86: 2.16 
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  200 quarters,  250 time steps,  using 25 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 44.73 seconds.
+Iteration 001, fCount 76:  Objective = 0.00077142,  stepSize =      0.25,  norm(dx) = 0.0009395.
+Iteration 002, fCount 77:  Objective = 0.00038642,  stepSize =       0.5,  norm(dx) = 0.0013699.
+Iteration 003, fCount 78:  Objective = 2.932e-06,  stepSize =         1,  norm(dx) = 0.0013675.
+Iteration 004, fCount 80:  Objective = 6.6708e-08,  stepSize =         1,  norm(dx) = 1.7664e-05.
+Iteration 005, fCount 81:  Objective = 6.4049e-08,  stepSize =         2,  norm(dx) = 1.4783e-06.
+Iteration 006, fCount 83:  Objective = 1.9557e-10,  stepSize =         1,  norm(dx) = 7.333e-07.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 75.88 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0584   K = 2.8216   L = 0.8119   Q = 1.0000 
+Markets:  goods=2.2e-07   bonds=-1.3e-11   labor=1.5e-11   capital=2.0e-09   savings=1.2e-08   investment=-2.1e-07 
+
+Targeted moments: 
+KMV/Bayer illiquid assets to GDP 2.92/2.86: 2.16 
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  200 quarters,  250 time steps,  using 30 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 53.12 seconds.
+Iteration 001, fCount 91:  Objective = 0.00070368,  stepSize =      0.25,  norm(dx) = 0.00093124.
+Iteration 002, fCount 92:  Objective = 0.00035247,  stepSize =       0.5,  norm(dx) = 0.0013592.
+Iteration 003, fCount 93:  Objective = 2.6818e-06,  stepSize =         1,  norm(dx) = 0.0013578.
+Iteration 004, fCount 95:  Objective = 7.6673e-08,  stepSize =         1,  norm(dx) = 1.7184e-05.
+Iteration 005, fCount 97:  Objective = 1.4632e-09,  stepSize =         1,  norm(dx) = 5.2317e-07.
+Iteration 006, fCount 99:  Objective = 3.1989e-10,  stepSize =         1,  norm(dx) = 5.3666e-08.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 86.15 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::::::::   STATIONARY EQUILIBRIUM   ::::::::::: 
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium:  r = 0.0584   K = 2.8216   L = 0.8119   Q = 1.0000 
+Markets:  goods=2.2e-07   bonds=-1.3e-11   labor=1.5e-11   capital=2.0e-09   savings=1.2e-08   investment=-2.1e-07 
+
+
+
+:::::::::::   INTERNAL CALIBRATION   ::::::::::: 
+
+Targeted moments: 
+KMV/Bayer illiquid assets to GDP 2.92/2.86: 2.16 
+
+
+:::::::::::   TRANSITION DYNAMICS   ::::::::::: 
+
+Impulse response paths:  200 quarters,  250 time steps,  using 30 cheb BFs
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 53.31 seconds.
+Iteration 001, fCount 91:  Objective = 0.00070368,  stepSize =      0.25,  norm(dx) = 0.00093124.
+Iteration 002, fCount 92:  Objective = 0.00035247,  stepSize =       0.5,  norm(dx) = 0.0013592.
+Iteration 003, fCount 93:  Objective = 2.6818e-06,  stepSize =         1,  norm(dx) = 0.0013578.
+Iteration 004, fCount 95:  Objective = 7.6673e-08,  stepSize =         1,  norm(dx) = 1.7184e-05.
+Iteration 005, fCount 97:  Objective = 1.4632e-09,  stepSize =         1,  norm(dx) = 5.2317e-07.
+Iteration 006, fCount 99:  Objective = 3.1989e-10,  stepSize =         1,  norm(dx) = 5.3666e-08.
+Solver converged.
+
+
+
+Algorithm converged. Run-time of: 86.60 seconds.
+
+Plotting Figures...

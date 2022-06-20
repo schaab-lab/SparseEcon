@@ -31,8 +31,9 @@ run_time = tic;
 
 %% PARAMETERS
 
-param = define_parameters('add_tol', 5e-5, 'keep_tol', 1e-5, 'max_adapt_iter', 1, 'kappa', 60, ...
-                          'shock_type', 'monetary', 'implicit_g', 1, 'T', 150, 'N', 180, 'bfun_type', "cheb", 'cheb_H', 30);
+param = define_parameters('add_tol', 5e-5, 'keep_tol', 1e-5, 'max_adapt_iter', 1, ...
+                          'rho', 0.06, 'delta', 0.02, 'kappa', 60, ...
+                          'shock_type', 'monetary', 'implicit_g', 1, 'T', 200, 'N', 250, 'bfun_type', "cheb", 'cheb_H', 30);
 
 
 %% INITIALIZE GRIDS
@@ -70,7 +71,7 @@ for adapt_iter = 1:param.max_adapt_iter
     fprintf('\n\n -------  GRID ADAPTATION ITERATION %i  ------- \n\n', adapt_iter);
     
     %% SOLVE STATIONARY EQUILIBRIUM
-    r0 = 0.02; K0 = 7; L0 = 0.8; if exist('ss', 'var'), r0 = ss.r; K0 = ss.K; L0 = ss.L; end
+    r0 = 0.05; K0 = 4; L0 = 0.8; if exist('ss', 'var'), r0 = ss.r; K0 = ss.K; L0 = ss.L; end
     X0 = [r0, K0, L0]; J0 = [];
     
     % Get better guess for value function:
@@ -86,8 +87,8 @@ for adapt_iter = 1:param.max_adapt_iter
     [~, G, G_dense, ss] = stationary(X, G, G_dense, param);
     
     fprintf('Stationary Equilibrium:  r = %.4f   K = %.4f   L = %.4f   Q = %.4f \n', ss.r, ss.K, ss.L, ss.Q);
-    fprintf('Markets:  goods=%.1d   bonds=%.1d   labor=%.1d   capital=%.1d   savings=%.1d \n\n', ...
-        ss.excess_goods, ss.excess_bonds, ss.excess_labor, ss.excess_capital, ss.excess_saving);
+    fprintf('Markets:  goods=%.1d   bonds=%.1d   labor=%.1d   capital=%.1d   savings=%.1d   investment=%.1d \n\n', ...
+        ss.excess_goods, ss.excess_bonds, ss.excess_labor, ss.excess_capital, ss.excess_saving, ss.excess_cap_production);
 
     V_adapt{adapt_iter} = ss.V; G_adapt{adapt_iter} = G;
     
@@ -109,6 +110,12 @@ for adapt_iter = 1:param.max_adapt_iter
         G = gen_FD(G, BC, num2str(j));
     end
 end
+
+
+%% CALIBRATION OUTPUT
+fprintf('\n\n:::::::::::   INTERNAL CALIBRATION   ::::::::::: \n\n');
+
+mm = moments(ss, G, G_dense, param);
 
 
 %% TRANSITION DYNAMICS

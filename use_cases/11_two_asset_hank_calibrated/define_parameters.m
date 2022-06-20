@@ -195,7 +195,6 @@ switch param.cap_adj_model
         param.cap_investment_prime        = @(Q, ZQ) (exp(ZQ)).^2 / param.kappa .* Q;
         param.cap_investment_double_prime = @(Q, ZQ) (exp(ZQ)).^2 / param.kappa;
 
-
         param.gross_total_capital_accumulation   = @(Q, K, ZQ) param.Phi(param.cap_investment(Q, ZQ), ZQ);
         param.gross_total_investment_expenditure = @(Q, K, ZQ) param.cap_investment(Q, ZQ);
         param.PiQ = @(Q, K, ZQ) Q .* param.Phi(param.cap_investment(Q, ZQ), ZQ) - param.cap_investment(Q, ZQ);
