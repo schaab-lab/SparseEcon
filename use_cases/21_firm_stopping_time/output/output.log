@@ -1,0 +1,1539 @@
+Running algorithm:
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 4).
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium: r = 0.0089,  markets(B = -1.82e-11,  S = 2.46e-11,  Y-C = 2.45e-11) 
+
+Evaluating 33 points to refine on ...
+Mean level of abs(aH): 1.761. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 32, parents added: 0, 
+Net change: 33 -> 65 = << 32 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: r = 0.0099,  markets(B = -1.43e-09,  S = 2.63e-11,  Y-C = 4.03e-11) 
+
+Evaluating 65 points to refine on ...
+Mean level of abs(aH): 0.894022. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 64, parents added: 0, 
+Net change: 65 -> 129 = << 64 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Stationary Equilibrium: r = 0.0106,  markets(B = -3.03e-10,  S = 2.80e-11,  Y-C = 3.11e-11) 
+
+Evaluating 129 points to refine on ...
+Mean level of abs(aH): 0.450475. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 128, parents added: 0, 
+Net change: 129 -> 257 = << 128 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Stationary Equilibrium: r = 0.0111,  markets(B = -2.72e-10,  S = 2.95e-11,  Y-C = 3.24e-11) 
+
+Evaluating 160 points to refine on ...
+Mean level of abs(aH): 0.226122. Maximum level of grid: 9. 
+Nodes coarsened: 0, children added: 62, parents added: 0, 
+Net change: 257 -> 319 = << 62 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: r = 0.0113,  markets(B = 4.93e-11,  S = 3.03e-11,  Y-C = 2.95e-11) 
+
+Evaluating 173 points to refine on ...
+Mean level of abs(aH): 0.182164. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 26, parents added: 0, 
+Net change: 319 -> 345 = << 26 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: r = 0.0115,  markets(B = -3.26e-10,  S = 3.16e-11,  Y-C = 3.52e-11) 
+
+Evaluating 178 points to refine on ...
+Mean level of abs(aH): 0.168465. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 10, parents added: 0, 
+Net change: 345 -> 355 = << 10 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: r = 0.0116,  markets(B = 1.02e-08,  S = 3.22e-11,  Y-C = -8.65e-11) 
+
+Evaluating 179 points to refine on ...
+Mean level of abs(aH): 0.163728. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 2, parents added: 0, 
+Net change: 355 -> 357 = << 2 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: r = 0.0116,  markets(B = 6.10e-08,  S = 3.22e-11,  Y-C = -6.76e-10) 
+
+Evaluating 179 points to refine on ...
+Mean level of abs(aH): 0.162812. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 357 -> 357 = << 0 >>, blacklisted: 0. 
+
+
+Algorithm converged. Run-time of: 28.41 seconds.
+
+Plotting Figures...
+Running algorithm:
+{Unrecognized field name "da".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m', 31)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m',31,0)">line 31</a>)
+GDense.dx = GDense.da;
+} 
+main
+Running algorithm:
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+if system_dependent('IsDebugMode')==1, dbcont; end
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+{Unrecognized field name "theta_x".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m', 63)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m',63,0)">line 63</a>)
+    [Ax, const_x] = FDoperator(G, param.theta_x*ones(G.J,1), param.sig_x*G.x, 1);
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+{Unrecognized field name "mu_x".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m', 60)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m',60,0)">line 60</a>)
+    mu  = param.mu_x  * ones(G.J,1);
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('FDoperator', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/fd/FDoperator.m', 48)" style="font-weight:bold">FDoperator</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/lib/fd/FDoperator.m',48,0)">line 48</a>)
+Error: Nonzero SIGMA detected in dimension 1. dxx operator in dimension 1 must be enabled. See "dxx_dims" optional input in
+setup_grid().
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m', 60)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m',60,0)">line 60</a>)
+    [Ax, const_x] = FDoperator(G, param.theta_x*ones(G.J,1), param.sig_x*G.x, 1);
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e-01, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.0, mu = 4e-05
+iter =  5, psi = 6e-03, r = 0.6, mu = 4e-05
+iter =  6, psi = 4e-04, r = 1.0, mu = 8e-06
+iter =  7, psi = 2e-07, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-15, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 1.76e-07 
+{Unrecognized function or variable 'S'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m', 76)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m',76,0)">line 76</a>)
+    V = z + S;
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e-01, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.0, mu = 4e-05
+iter =  5, psi = 6e-03, r = 0.6, mu = 4e-05
+iter =  6, psi = 4e-04, r = 1.0, mu = 8e-06
+iter =  7, psi = 2e-07, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-15, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 1.76e-07 
+figure; scatter(G.x, V)
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e-01, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.0, mu = 4e-05
+iter =  5, psi = 6e-03, r = 0.6, mu = 4e-05
+iter =  6, psi = 4e-04, r = 1.0, mu = 8e-06
+iter =  7, psi = 2e-07, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-15, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 1.76e-07 
+Evaluating 33 points to refine on ...
+Mean level of abs(aH): 1.50352. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 32, parents added: 0, 
+Net change: 33 -> 65 = << 32 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+iter =  1, psi = 4e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 1e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e+00, r = 0.8, mu = 2e-04
+iter =  4, psi = 1e-01, r = 1.0, mu = 4e-05
+iter =  5, psi = 3e-02, r = 0.7, mu = 4e-05
+iter =  6, psi = 4e-03, r = 0.9, mu = 8e-06
+iter =  7, psi = 4e-06, r = 1.0, mu = 0e+00
+iter =  8, psi = 5e-13, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.47e-06 
+Evaluating 64 points to refine on ...
+Mean level of abs(aH): 0.76862. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 62, parents added: 0, 
+Net change: 65 -> 127 = << 62 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+iter =  1, psi = 8e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 2e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e+01, r = 0.4, mu = 1e-03
+iter =  4, psi = 4e-01, r = 1.0, mu = 2e-04
+iter =  5, psi = 1e-01, r = 0.8, mu = 2e-04
+iter =  6, psi = 1e-02, r = 0.9, mu = 4e-05
+iter =  7, psi = 1e-04, r = 1.0, mu = 8e-06
+iter =  8, psi = 3e-07, r = 1.0, mu = 0e+00
+iter =  9, psi = 6e-15, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.92e-07 
+Evaluating 120 points to refine on ...
+Mean level of abs(aH): 0.394968. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 112, parents added: 0, 
+Net change: 127 -> 239 = << 112 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+01, r = 0.6, mu = 1e-03
+iter =  4, psi = 8e-01, r = 1.0, mu = 2e-04
+iter =  5, psi = 2e-01, r = 0.8, mu = 2e-04
+iter =  6, psi = 2e-02, r = 0.9, mu = 4e-05
+iter =  7, psi = 4e-04, r = 1.0, mu = 8e-06
+iter =  8, psi = 3e-06, r = 1.1, mu = 0e+00
+iter =  9, psi = 6e-13, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.99e-06 
+Evaluating 154 points to refine on ...
+Mean level of abs(aH): 0.210344. Maximum level of grid: 9. 
+Nodes coarsened: 0, children added: 68, parents added: 0, 
+Net change: 239 -> 307 = << 68 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.0, mu = 8e-06
+iter =  6, psi = 4e-05, r = 1.1, mu = 0e+00
+iter =  7, psi = 1e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 1e-21, r = 1.0, mu = 0e+00
+Evaluating 182 points to refine on ...
+Mean level of abs(aH): 0.163923. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 56, parents added: 0, 
+Net change: 307 -> 363 = << 56 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 188 points to refine on ...
+Mean level of abs(aH): 0.138701. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 12, parents added: 0, 
+Net change: 363 -> 375 = << 12 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 191 points to refine on ...
+Mean level of abs(aH): 0.134278. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 6, parents added: 0, 
+Net change: 375 -> 381 = << 6 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 192 points to refine on ...
+Mean level of abs(aH): 0.132173. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 2, parents added: 0, 
+Net change: 381 -> 383 = << 2 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 192 points to refine on ...
+Mean level of abs(aH): 0.131482. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 383 -> 383 = << 0 >>, blacklisted: 0. 
+
+
+Algorithm converged. Run-time of: 2.18 seconds.
+
+Plotting Figures...
+{Unrecognized field name "a".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m', 104)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/ASG/schaabzhang/use_cases/08_optimal_stopping/01_exercising_option/main.m',104,0)">line 104</a>)
+    l1=scatter(G_adapt{n}.a, V_adapt{n}(:,1));
+} 
+figure; scatter(G.x, V)
+runTime = toc(runTime); fprintf('\n\nAlgorithm converged. Run-time of: %.2f seconds.\n',runTime);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('toc')" style="font-weight:bold">toc</a>
+Argument to TOC must be a uint64 scalar.
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e-01, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.0, mu = 4e-05
+iter =  5, psi = 6e-03, r = 0.6, mu = 4e-05
+iter =  6, psi = 4e-04, r = 1.0, mu = 8e-06
+iter =  7, psi = 2e-07, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-15, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 1.76e-07 
+Evaluating 33 points to refine on ...
+Mean level of abs(aH): 1.50352. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 32, parents added: 0, 
+Net change: 33 -> 65 = << 32 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+iter =  1, psi = 4e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 1e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e+00, r = 0.8, mu = 2e-04
+iter =  4, psi = 1e-01, r = 1.0, mu = 4e-05
+iter =  5, psi = 3e-02, r = 0.7, mu = 4e-05
+iter =  6, psi = 4e-03, r = 0.9, mu = 8e-06
+iter =  7, psi = 4e-06, r = 1.0, mu = 0e+00
+iter =  8, psi = 5e-13, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.47e-06 
+Evaluating 64 points to refine on ...
+Mean level of abs(aH): 0.76862. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 62, parents added: 0, 
+Net change: 65 -> 127 = << 62 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+iter =  1, psi = 8e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 2e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e+01, r = 0.4, mu = 1e-03
+iter =  4, psi = 4e-01, r = 1.0, mu = 2e-04
+iter =  5, psi = 1e-01, r = 0.8, mu = 2e-04
+iter =  6, psi = 1e-02, r = 0.9, mu = 4e-05
+iter =  7, psi = 1e-04, r = 1.0, mu = 8e-06
+iter =  8, psi = 3e-07, r = 1.0, mu = 0e+00
+iter =  9, psi = 6e-15, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.92e-07 
+Evaluating 120 points to refine on ...
+Mean level of abs(aH): 0.394968. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 112, parents added: 0, 
+Net change: 127 -> 239 = << 112 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+01, r = 0.6, mu = 1e-03
+iter =  4, psi = 8e-01, r = 1.0, mu = 2e-04
+iter =  5, psi = 2e-01, r = 0.8, mu = 2e-04
+iter =  6, psi = 2e-02, r = 0.9, mu = 4e-05
+iter =  7, psi = 4e-04, r = 1.0, mu = 8e-06
+iter =  8, psi = 3e-06, r = 1.1, mu = 0e+00
+iter =  9, psi = 6e-13, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.99e-06 
+Evaluating 154 points to refine on ...
+Mean level of abs(aH): 0.210344. Maximum level of grid: 9. 
+Nodes coarsened: 0, children added: 68, parents added: 0, 
+Net change: 239 -> 307 = << 68 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.0, mu = 8e-06
+iter =  6, psi = 4e-05, r = 1.1, mu = 0e+00
+iter =  7, psi = 1e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 1e-21, r = 1.0, mu = 0e+00
+Evaluating 182 points to refine on ...
+Mean level of abs(aH): 0.163923. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 56, parents added: 0, 
+Net change: 307 -> 363 = << 56 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 188 points to refine on ...
+Mean level of abs(aH): 0.138701. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 12, parents added: 0, 
+Net change: 363 -> 375 = << 12 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 191 points to refine on ...
+Mean level of abs(aH): 0.134278. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 6, parents added: 0, 
+Net change: 375 -> 381 = << 6 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 192 points to refine on ...
+Mean level of abs(aH): 0.132173. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 2, parents added: 0, 
+Net change: 381 -> 383 = << 2 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 192 points to refine on ...
+Mean level of abs(aH): 0.131482. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 383 -> 383 = << 0 >>, blacklisted: 0. 
+
+
+Algorithm converged. Run-time of: 1.53 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e-01, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.0, mu = 4e-05
+iter =  5, psi = 6e-03, r = 0.6, mu = 4e-05
+iter =  6, psi = 4e-04, r = 1.0, mu = 8e-06
+iter =  7, psi = 2e-07, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-15, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 1.76e-07 
+Evaluating 33 points to refine on ...
+Mean level of abs(aH): 1.50352. Maximum level of grid: 6. 
+Nodes coarsened: 0, children added: 32, parents added: 0, 
+Net change: 33 -> 65 = << 32 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+iter =  1, psi = 4e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 1e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e+00, r = 0.8, mu = 2e-04
+iter =  4, psi = 1e-01, r = 1.0, mu = 4e-05
+iter =  5, psi = 3e-02, r = 0.7, mu = 4e-05
+iter =  6, psi = 4e-03, r = 0.9, mu = 8e-06
+iter =  7, psi = 4e-06, r = 1.0, mu = 0e+00
+iter =  8, psi = 5e-13, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.47e-06 
+Evaluating 64 points to refine on ...
+Mean level of abs(aH): 0.76862. Maximum level of grid: 7. 
+Nodes coarsened: 0, children added: 62, parents added: 0, 
+Net change: 65 -> 127 = << 62 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+iter =  1, psi = 8e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 2e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e+01, r = 0.4, mu = 1e-03
+iter =  4, psi = 4e-01, r = 1.0, mu = 2e-04
+iter =  5, psi = 1e-01, r = 0.8, mu = 2e-04
+iter =  6, psi = 1e-02, r = 0.9, mu = 4e-05
+iter =  7, psi = 1e-04, r = 1.0, mu = 8e-06
+iter =  8, psi = 3e-07, r = 1.0, mu = 0e+00
+iter =  9, psi = 6e-15, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.92e-07 
+Evaluating 120 points to refine on ...
+Mean level of abs(aH): 0.394968. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 112, parents added: 0, 
+Net change: 127 -> 239 = << 112 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+01, r = 0.6, mu = 1e-03
+iter =  4, psi = 8e-01, r = 1.0, mu = 2e-04
+iter =  5, psi = 2e-01, r = 0.8, mu = 2e-04
+iter =  6, psi = 2e-02, r = 0.9, mu = 4e-05
+iter =  7, psi = 4e-04, r = 1.0, mu = 8e-06
+iter =  8, psi = 3e-06, r = 1.1, mu = 0e+00
+iter =  9, psi = 6e-13, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.99e-06 
+Evaluating 154 points to refine on ...
+Mean level of abs(aH): 0.210344. Maximum level of grid: 9. 
+Nodes coarsened: 0, children added: 68, parents added: 0, 
+Net change: 239 -> 307 = << 68 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.0, mu = 8e-06
+iter =  6, psi = 4e-05, r = 1.1, mu = 0e+00
+iter =  7, psi = 1e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 1e-21, r = 1.0, mu = 0e+00
+Evaluating 182 points to refine on ...
+Mean level of abs(aH): 0.163923. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 56, parents added: 0, 
+Net change: 307 -> 363 = << 56 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 188 points to refine on ...
+Mean level of abs(aH): 0.138701. Maximum level of grid: 11. 
+Nodes coarsened: 0, children added: 12, parents added: 0, 
+Net change: 363 -> 375 = << 12 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 191 points to refine on ...
+Mean level of abs(aH): 0.134278. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 6, parents added: 0, 
+Net change: 375 -> 381 = << 6 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 192 points to refine on ...
+Mean level of abs(aH): 0.132173. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 2, parents added: 0, 
+Net change: 381 -> 383 = << 2 >>, blacklisted: 0. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+iter =  1, psi = 2e+02, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+01, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e+00, r = 1.1, mu = 2e-04
+iter =  4, psi = 2e-02, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-03, r = 1.1, mu = 8e-06
+iter =  6, psi = 7e-05, r = 1.2, mu = 0e+00
+iter =  7, psi = 5e-10, r = 1.0, mu = 0e+00
+iter =  8, psi = 2e-20, r = 1.0, mu = 0e+00
+Evaluating 192 points to refine on ...
+Mean level of abs(aH): 0.131482. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 383 -> 383 = << 0 >>, blacklisted: 0. 
+
+
+Algorithm converged. Run-time of: 2.26 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e-01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 3e-05, r = 1.0, mu = 4e-05
+iter =  5, psi = 4e-09, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-14, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 1.87e-07 
+Evaluating 30 points to refine on ...
+Mean level of abs(aH): 0.666248. Maximum level of grid: 6. 
+Nodes coarsened: 3, children added: 28, parents added: 0, 
+Net change: 33 -> 58 = << 25 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+iter =  1, psi = 3e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 8e-01, r = 0.8, mu = 1e-03
+iter =  3, psi = 3e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 7e-05, r = 1.0, mu = 4e-05
+iter =  5, psi = 1e-07, r = 1.0, mu = 8e-06
+iter =  6, psi = 1e-10, r = 1.0, mu = 0e+00
+iter =  7, psi = 3e-16, r = 1.0, mu = 0e+00
+Evaluating 55 points to refine on ...
+Mean level of abs(aH): 0.379971. Maximum level of grid: 7. 
+Nodes coarsened: 1, children added: 50, parents added: 0, 
+Net change: 58 -> 107 = << 49 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+iter =  1, psi = 6e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 1e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 5e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 1e-04, r = 1.0, mu = 4e-05
+iter =  5, psi = 6e-08, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-11, r = 1.0, mu = 0e+00
+iter =  7, psi = 2e-17, r = 1.0, mu = 0e+00
+Evaluating 98 points to refine on ...
+Mean level of abs(aH): 0.206286. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 86, parents added: 0, 
+Net change: 107 -> 193 = << 86 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+iter =  1, psi = 1e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 3e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 9e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 4e-04, r = 1.1, mu = 4e-05
+iter =  5, psi = 1e-07, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-11, r = 1.0, mu = 0e+00
+iter =  7, psi = 5e-17, r = 1.0, mu = 0e+00
+Evaluating 141 points to refine on ...
+Mean level of abs(aH): 0.11447. Maximum level of grid: 9. 
+Nodes coarsened: 1, children added: 86, parents added: 0, 
+Net change: 193 -> 278 = << 85 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+iter =  1, psi = 1e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 3e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-01, r = 1.1, mu = 2e-04
+iter =  4, psi = 4e-04, r = 1.1, mu = 4e-05
+iter =  5, psi = 8e-08, r = 1.0, mu = 8e-06
+iter =  6, psi = 5e-12, r = 1.0, mu = 0e+00
+iter =  7, psi = 9e-18, r = 1.0, mu = 0e+00
+Evaluating 174 points to refine on ...
+Mean level of abs(aH): 0.079513. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 68, parents added: 0, 
+Net change: 278 -> 346 = << 68 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+iter =  1, psi = 1e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-01, r = 1.1, mu = 2e-04
+iter =  4, psi = 5e-04, r = 1.1, mu = 4e-05
+iter =  5, psi = 1e-07, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-12, r = 1.0, mu = 0e+00
+iter =  7, psi = 1e-17, r = 1.0, mu = 0e+00
+Evaluating 181 points to refine on ...
+Mean level of abs(aH): 0.0639039. Maximum level of grid: 11. 
+Nodes coarsened: 1, children added: 14, parents added: 0, 
+Net change: 346 -> 359 = << 13 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+iter =  1, psi = 2e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e-01, r = 1.1, mu = 2e-04
+iter =  4, psi = 8e-04, r = 1.1, mu = 4e-05
+iter =  5, psi = 2e-07, r = 1.0, mu = 8e-06
+iter =  6, psi = 3e-12, r = 1.0, mu = 0e+00
+iter =  7, psi = 2e-17, r = 1.0, mu = 0e+00
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0615975. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 12, parents added: 0, 
+Net change: 359 -> 371 = << 12 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+iter =  1, psi = 2e+01, r = 0.7, mu = 1e-03
+iter =  2, psi = 5e+00, r = 0.8, mu = 1e-03
+iter =  3, psi = 2e-01, r = 1.1, mu = 2e-04
+iter =  4, psi = 1e-03, r = 1.1, mu = 4e-05
+iter =  5, psi = 3e-07, r = 1.0, mu = 8e-06
+iter =  6, psi = 4e-12, r = 1.0, mu = 0e+00
+iter =  7, psi = 2e-17, r = 1.0, mu = 0e+00
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0596094. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 371 -> 371 = << 0 >>, blacklisted: 6. 
+
+
+Algorithm converged. Run-time of: 1.44 seconds.
+
+Plotting Figures...
+Running algorithm:
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup_grid', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/setup_grid.m', 26)" style="font-weight:bold">setup_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/setup_grid.m',26,0)">line 26</a>)
+The value of 'NamedDims' is invalid. It must satisfy the function: iscell.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_firm_stopping_time/main.m', 37)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_firm_stopping_time/main.m',37,0)">line 37</a>)
+G = setup_grid(param.l, 0, param.min, param.max, 'NamedDims', 1, 'Names', {'x'}, 'DxxDims', 1);
+} 
+main
+Running algorithm:
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cell/ismember', '/Applications/MATLAB_R2021a.app/toolbox/matlab/ops/@cell/ismember.m', 34)" style="font-weight:bold">cell/ismember</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2021a.app/toolbox/matlab/ops/@cell/ismember.m',34,0)">line 34</a>)
+Input A of class double and input B of class cell must be cell arrays of character vectors, unless one is a character vector.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_FD_interior', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/gen_FD_interior.m', 43)" style="font-weight:bold">gen_FD_interior</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/gen_FD_interior.m',43,0)">line 43</a>)
+        if ismember(k, G.dxx_dims)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gen_derived_fields', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/gen_derived_fields.m', 23)" style="font-weight:bold">gen_derived_fields</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/gen_derived_fields.m',23,0)">line 23</a>)
+    G = gen_FD_interior(G);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup_grid', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/setup_grid.m', 52)" style="font-weight:bold">setup_grid</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/lib/grid/setup_grid.m',52,0)">line 52</a>)
+    G = gen_derived_fields(G);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_firm_stopping_time/main.m', 37)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_firm_stopping_time/main.m',37,0)">line 37</a>)
+G = setup_grid(param.l, 0, param.min, param.max, 'NamedDims', {1}, 'Names', {'x'}, 'DxxDims', {1});
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+{Unrecognized function or variable 'FDoperator'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_firm_stopping_time/main.m', 56)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_firm_stopping_time/main.m',56,0)">line 56</a>)
+    [Ax, const_x] = FDoperator(G, param.theta_x*ones(G.J, 1), param.sig_x*G.x, 1);
+} 
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_firm_stopping_time/main.m',56,0)
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e-01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 3e-05, r = 1.0, mu = 4e-05
+iter =  5, psi = 4e-09, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-14, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 1.87e-07 
+Evaluating 30 points to refine on ...
+Mean level of abs(aH): 0.666248. Maximum level of grid: 6. 
+Nodes coarsened: 3, children added: 28, parents added: 0, 
+Net change: 33 -> 58 = << 25 >>, blacklisted: 3. 
+{Unrecognized field name "V0".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_firm_stopping_time/main.m', 82)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/11_firm_stopping_time/main.m',82,0)">line 82</a>)
+    G.V0 = BH_adapt * G.V0;
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e-01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 3e-05, r = 1.0, mu = 4e-05
+iter =  5, psi = 4e-09, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-14, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 1.87e-07 
+Evaluating 30 points to refine on ...
+Mean level of abs(aH): 0.666248. Maximum level of grid: 6. 
+Nodes coarsened: 3, children added: 28, parents added: 0, 
+Net change: 33 -> 58 = << 25 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 4e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 4.87e-07 
+Evaluating 55 points to refine on ...
+Mean level of abs(aH): 0.379971. Maximum level of grid: 7. 
+Nodes coarsened: 1, children added: 50, parents added: 0, 
+Net change: 58 -> 107 = << 49 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 2e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 2e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 4.61e-07 
+Evaluating 98 points to refine on ...
+Mean level of abs(aH): 0.206286. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 86, parents added: 0, 
+Net change: 107 -> 193 = << 86 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+iter =  1, psi = 6e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 1e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 3e-16, r = 1.0, mu = 0e+00
+Evaluating 141 points to refine on ...
+Mean level of abs(aH): 0.11447. Maximum level of grid: 9. 
+Nodes coarsened: 1, children added: 86, parents added: 0, 
+Net change: 193 -> 278 = << 85 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-08, r = 1.0, mu = 4e-05
+iter =  3, psi = 8e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 4e-14, r = 1.0, mu = 0e+00
+Evaluating 174 points to refine on ...
+Mean level of abs(aH): 0.079513. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 68, parents added: 0, 
+Net change: 278 -> 346 = << 68 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+iter =  1, psi = 3e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-06, r = 0.6, mu = 2e-04
+iter =  3, psi = 7e-10, r = 1.0, mu = 4e-05
+iter =  4, psi = 8e-12, r = 1.0, mu = 8e-06
+iter =  5, psi = 8e-15, r = 1.0, mu = 0e+00
+Evaluating 181 points to refine on ...
+Mean level of abs(aH): 0.0639039. Maximum level of grid: 11. 
+Nodes coarsened: 1, children added: 14, parents added: 0, 
+Net change: 346 -> 359 = << 13 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+iter =  1, psi = 7e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-12, r = 1.0, mu = 4e-05
+iter =  3, psi = 3e-16, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 2.07e-08 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0615975. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 12, parents added: 0, 
+Net change: 359 -> 371 = << 12 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-13, r = 1.0, mu = 4e-05
+LCP was not solved. Remaining error: 1.25e-06 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0596094. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 371 -> 371 = << 0 >>, blacklisted: 6. 
+
+
+Algorithm converged. Run-time of: 1.98 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e-01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 3e-05, r = 1.0, mu = 4e-05
+iter =  5, psi = 4e-09, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-14, r = 1.0, mu = 0e+00
+B*z + q
+
+ans =
+
+    0.1838
+    0.1421
+    0.1047
+    0.0706
+    0.0390
+    0.0093
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+   -0.0000
+
+z'*(B*z + q)
+
+ans =
+
+  -2.8843e-06
+
+max(abs(z.*(B*z + q)))
+
+ans =
+
+   1.8711e-07
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e-01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 3e-05, r = 1.0, mu = 4e-05
+iter =  5, psi = 4e-09, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-14, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.88e-06 
+Evaluating 30 points to refine on ...
+Mean level of abs(aH): 0.666248. Maximum level of grid: 6. 
+Nodes coarsened: 3, children added: 28, parents added: 0, 
+Net change: 33 -> 58 = << 25 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 4e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.53e-05 
+Evaluating 55 points to refine on ...
+Mean level of abs(aH): 0.379971. Maximum level of grid: 7. 
+Nodes coarsened: 1, children added: 50, parents added: 0, 
+Net change: 58 -> 107 = << 49 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 2e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 2e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.43e-05 
+Evaluating 98 points to refine on ...
+Mean level of abs(aH): 0.206286. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 86, parents added: 0, 
+Net change: 107 -> 193 = << 86 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+iter =  1, psi = 6e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 1e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 3e-16, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.72e-08 
+Evaluating 141 points to refine on ...
+Mean level of abs(aH): 0.11447. Maximum level of grid: 9. 
+Nodes coarsened: 1, children added: 86, parents added: 0, 
+Net change: 193 -> 278 = << 85 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-08, r = 1.0, mu = 4e-05
+iter =  3, psi = 8e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 4e-14, r = 1.0, mu = 0e+00
+Evaluating 174 points to refine on ...
+Mean level of abs(aH): 0.079513. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 68, parents added: 0, 
+Net change: 278 -> 346 = << 68 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+iter =  1, psi = 3e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-06, r = 0.6, mu = 2e-04
+iter =  3, psi = 7e-10, r = 1.0, mu = 4e-05
+iter =  4, psi = 8e-12, r = 1.0, mu = 8e-06
+iter =  5, psi = 8e-15, r = 1.0, mu = 0e+00
+Evaluating 181 points to refine on ...
+Mean level of abs(aH): 0.0639039. Maximum level of grid: 11. 
+Nodes coarsened: 1, children added: 14, parents added: 0, 
+Net change: 346 -> 359 = << 13 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+iter =  1, psi = 7e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-12, r = 1.0, mu = 4e-05
+iter =  3, psi = 3e-16, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.19e-06 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0615975. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 12, parents added: 0, 
+Net change: 359 -> 371 = << 12 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-13, r = 1.0, mu = 4e-05
+LCP was not solved. Remaining error: 5.80e-05 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0596094. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 371 -> 371 = << 0 >>, blacklisted: 6. 
+
+
+Algorithm converged. Run-time of: 1.33 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e-01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 3e-05, r = 1.0, mu = 4e-05
+iter =  5, psi = 4e-09, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-14, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.88e-06 
+Evaluating 30 points to refine on ...
+Mean level of abs(aH): 0.666248. Maximum level of grid: 6. 
+Nodes coarsened: 3, children added: 28, parents added: 0, 
+Net change: 33 -> 58 = << 25 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 4e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.53e-05 
+Evaluating 55 points to refine on ...
+Mean level of abs(aH): 0.379971. Maximum level of grid: 7. 
+Nodes coarsened: 1, children added: 50, parents added: 0, 
+Net change: 58 -> 107 = << 49 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 2e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 2e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.43e-05 
+Evaluating 98 points to refine on ...
+Mean level of abs(aH): 0.206286. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 86, parents added: 0, 
+Net change: 107 -> 193 = << 86 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+iter =  1, psi = 6e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 1e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 3e-16, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.72e-08 
+Evaluating 141 points to refine on ...
+Mean level of abs(aH): 0.11447. Maximum level of grid: 9. 
+Nodes coarsened: 1, children added: 86, parents added: 0, 
+Net change: 193 -> 278 = << 85 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-08, r = 1.0, mu = 4e-05
+iter =  3, psi = 8e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 4e-14, r = 1.0, mu = 0e+00
+Evaluating 174 points to refine on ...
+Mean level of abs(aH): 0.079513. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 68, parents added: 0, 
+Net change: 278 -> 346 = << 68 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+iter =  1, psi = 3e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-06, r = 0.6, mu = 2e-04
+iter =  3, psi = 7e-10, r = 1.0, mu = 4e-05
+iter =  4, psi = 8e-12, r = 1.0, mu = 8e-06
+iter =  5, psi = 8e-15, r = 1.0, mu = 0e+00
+Evaluating 181 points to refine on ...
+Mean level of abs(aH): 0.0639039. Maximum level of grid: 11. 
+Nodes coarsened: 1, children added: 14, parents added: 0, 
+Net change: 346 -> 359 = << 13 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+iter =  1, psi = 7e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-12, r = 1.0, mu = 4e-05
+iter =  3, psi = 3e-16, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.19e-06 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0615975. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 12, parents added: 0, 
+Net change: 359 -> 371 = << 12 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-13, r = 1.0, mu = 4e-05
+LCP was not solved. Remaining error: 5.80e-05 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0596094. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 371 -> 371 = << 0 >>, blacklisted: 6. 
+
+
+Algorithm converged. Run-time of: 1.43 seconds.
+
+Plotting Figures...
+{Unrecognized function or variable 'figure_format'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/21_firm_stopping_time/main.m', 25)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/21_firm_stopping_time/main.m',25,0)">line 25</a>)
+figure_format;
+} 
+main
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e-01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 3e-05, r = 1.0, mu = 4e-05
+iter =  5, psi = 4e-09, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-14, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.88e-06 
+Evaluating 30 points to refine on ...
+Mean level of abs(aH): 0.666248. Maximum level of grid: 6. 
+Nodes coarsened: 3, children added: 28, parents added: 0, 
+Net change: 33 -> 58 = << 25 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 4e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.53e-05 
+Evaluating 55 points to refine on ...
+Mean level of abs(aH): 0.379971. Maximum level of grid: 7. 
+Nodes coarsened: 1, children added: 50, parents added: 0, 
+Net change: 58 -> 107 = << 49 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 2e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 2e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.43e-05 
+Evaluating 98 points to refine on ...
+Mean level of abs(aH): 0.206286. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 86, parents added: 0, 
+Net change: 107 -> 193 = << 86 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+iter =  1, psi = 6e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 1e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 3e-16, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.72e-08 
+Evaluating 141 points to refine on ...
+Mean level of abs(aH): 0.11447. Maximum level of grid: 9. 
+Nodes coarsened: 1, children added: 86, parents added: 0, 
+Net change: 193 -> 278 = << 85 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-08, r = 1.0, mu = 4e-05
+iter =  3, psi = 8e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 4e-14, r = 1.0, mu = 0e+00
+Evaluating 174 points to refine on ...
+Mean level of abs(aH): 0.079513. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 68, parents added: 0, 
+Net change: 278 -> 346 = << 68 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+iter =  1, psi = 3e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-06, r = 0.6, mu = 2e-04
+iter =  3, psi = 7e-10, r = 1.0, mu = 4e-05
+iter =  4, psi = 8e-12, r = 1.0, mu = 8e-06
+iter =  5, psi = 8e-15, r = 1.0, mu = 0e+00
+Evaluating 181 points to refine on ...
+Mean level of abs(aH): 0.0639039. Maximum level of grid: 11. 
+Nodes coarsened: 1, children added: 14, parents added: 0, 
+Net change: 346 -> 359 = << 13 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+iter =  1, psi = 7e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-12, r = 1.0, mu = 4e-05
+iter =  3, psi = 3e-16, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.19e-06 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0615975. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 12, parents added: 0, 
+Net change: 359 -> 371 = << 12 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-13, r = 1.0, mu = 4e-05
+LCP was not solved. Remaining error: 5.80e-05 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0596094. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 371 -> 371 = << 0 >>, blacklisted: 6. 
+
+
+Algorithm converged. Run-time of: 5.12 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e-01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 3e-05, r = 1.0, mu = 4e-05
+iter =  5, psi = 4e-09, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-14, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.88e-06 
+Evaluating 30 points to refine on ...
+Mean level of abs(aH): 0.666248. Maximum level of grid: 6. 
+Nodes coarsened: 3, children added: 28, parents added: 0, 
+Net change: 33 -> 58 = << 25 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 4e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.53e-05 
+Evaluating 55 points to refine on ...
+Mean level of abs(aH): 0.379971. Maximum level of grid: 7. 
+Nodes coarsened: 1, children added: 50, parents added: 0, 
+Net change: 58 -> 107 = << 49 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 2e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 2e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.43e-05 
+Evaluating 98 points to refine on ...
+Mean level of abs(aH): 0.206286. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 86, parents added: 0, 
+Net change: 107 -> 193 = << 86 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+iter =  1, psi = 6e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 1e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 3e-16, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.72e-08 
+Evaluating 141 points to refine on ...
+Mean level of abs(aH): 0.11447. Maximum level of grid: 9. 
+Nodes coarsened: 1, children added: 86, parents added: 0, 
+Net change: 193 -> 278 = << 85 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-08, r = 1.0, mu = 4e-05
+iter =  3, psi = 8e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 4e-14, r = 1.0, mu = 0e+00
+Evaluating 174 points to refine on ...
+Mean level of abs(aH): 0.079513. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 68, parents added: 0, 
+Net change: 278 -> 346 = << 68 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+iter =  1, psi = 3e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-06, r = 0.6, mu = 2e-04
+iter =  3, psi = 7e-10, r = 1.0, mu = 4e-05
+iter =  4, psi = 8e-12, r = 1.0, mu = 8e-06
+iter =  5, psi = 8e-15, r = 1.0, mu = 0e+00
+Evaluating 181 points to refine on ...
+Mean level of abs(aH): 0.0639039. Maximum level of grid: 11. 
+Nodes coarsened: 1, children added: 14, parents added: 0, 
+Net change: 346 -> 359 = << 13 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+iter =  1, psi = 7e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-12, r = 1.0, mu = 4e-05
+iter =  3, psi = 3e-16, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.19e-06 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0615975. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 12, parents added: 0, 
+Net change: 359 -> 371 = << 12 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-13, r = 1.0, mu = 4e-05
+LCP was not solved. Remaining error: 5.80e-05 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0596094. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 371 -> 371 = << 0 >>, blacklisted: 6. 
+
+
+Algorithm converged. Run-time of: 1.13 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+iter =  1, psi = 2e+00, r = 0.7, mu = 1e-03
+iter =  2, psi = 4e-01, r = 0.8, mu = 1e-03
+iter =  3, psi = 1e-02, r = 1.1, mu = 2e-04
+iter =  4, psi = 3e-05, r = 1.0, mu = 4e-05
+iter =  5, psi = 4e-09, r = 1.0, mu = 8e-06
+iter =  6, psi = 2e-14, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.88e-06 
+Evaluating 30 points to refine on ...
+Mean level of abs(aH): 0.666248. Maximum level of grid: 6. 
+Nodes coarsened: 3, children added: 28, parents added: 0, 
+Net change: 33 -> 58 = << 25 >>, blacklisted: 3. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 4e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.53e-05 
+Evaluating 55 points to refine on ...
+Mean level of abs(aH): 0.379971. Maximum level of grid: 7. 
+Nodes coarsened: 1, children added: 50, parents added: 0, 
+Net change: 58 -> 107 = << 49 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 2e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 2e-13, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.43e-05 
+Evaluating 98 points to refine on ...
+Mean level of abs(aH): 0.206286. Maximum level of grid: 8. 
+Nodes coarsened: 0, children added: 86, parents added: 0, 
+Net change: 107 -> 193 = << 86 >>, blacklisted: 4. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+iter =  1, psi = 6e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-09, r = 1.0, mu = 4e-05
+iter =  3, psi = 1e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 3e-16, r = 1.0, mu = 0e+00
+LCP was not solved. Remaining error: 2.72e-08 
+Evaluating 141 points to refine on ...
+Mean level of abs(aH): 0.11447. Maximum level of grid: 9. 
+Nodes coarsened: 1, children added: 86, parents added: 0, 
+Net change: 193 -> 278 = << 85 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+iter =  1, psi = 1e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-08, r = 1.0, mu = 4e-05
+iter =  3, psi = 8e-11, r = 1.0, mu = 8e-06
+iter =  4, psi = 4e-14, r = 1.0, mu = 0e+00
+Evaluating 174 points to refine on ...
+Mean level of abs(aH): 0.079513. Maximum level of grid: 10. 
+Nodes coarsened: 0, children added: 68, parents added: 0, 
+Net change: 278 -> 346 = << 68 >>, blacklisted: 5. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+iter =  1, psi = 3e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-06, r = 0.6, mu = 2e-04
+iter =  3, psi = 7e-10, r = 1.0, mu = 4e-05
+iter =  4, psi = 8e-12, r = 1.0, mu = 8e-06
+iter =  5, psi = 8e-15, r = 1.0, mu = 0e+00
+Evaluating 181 points to refine on ...
+Mean level of abs(aH): 0.0639039. Maximum level of grid: 11. 
+Nodes coarsened: 1, children added: 14, parents added: 0, 
+Net change: 346 -> 359 = << 13 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+iter =  1, psi = 7e-07, r = 1.0, mu = 2e-04
+iter =  2, psi = 1e-12, r = 1.0, mu = 4e-05
+iter =  3, psi = 3e-16, r = 1.0, mu = 8e-06
+LCP was not solved. Remaining error: 1.19e-06 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0615975. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 12, parents added: 0, 
+Net change: 359 -> 371 = << 12 >>, blacklisted: 6. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+iter =  1, psi = 2e-06, r = 1.0, mu = 2e-04
+iter =  2, psi = 4e-13, r = 1.0, mu = 4e-05
+LCP was not solved. Remaining error: 5.80e-05 
+Evaluating 187 points to refine on ...
+Mean level of abs(aH): 0.0596094. Maximum level of grid: 12. 
+Nodes coarsened: 0, children added: 0, parents added: 0, 
+Net change: 371 -> 371 = << 0 >>, blacklisted: 6. 
+
+
+Algorithm converged. Run-time of: 1.00 seconds.
+
+Plotting Figures...
