@@ -21,7 +21,7 @@ clc
 diary ./output/output.log
 diary on
 
-addpath(genpath('../../../lib/'))
+addpath(genpath('../../lib/'))
 figure_format;
 
 fprintf('Running algorithm:\n')
