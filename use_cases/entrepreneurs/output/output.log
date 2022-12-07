@@ -1,0 +1,146 @@
+Running algorithm:
+
+
+ -------  GRID ADAPTATION ITERATION 1  ------- 
+
+Stationary Equilibrium: (r = 0.0474, w = 1.8914),  markets(K = 8.03,  S = -5.23e-17,  Y - δK - C = -4.79e-13) 
+
+Evaluating 271 points to refine on ...
+Mean level of abs(aH): 0.0289031. Maximum level of grid: 7. 
+Nodes coarsened: 135, children added: 250, parents added: 8, 
+Net change: 593 -> 716 = << 123 >>, blacklisted: 135. 
+
+
+ -------  GRID ADAPTATION ITERATION 2  ------- 
+
+Stationary Equilibrium: (r = 0.0469, w = 1.8982),  markets(K = 7.56,  S = -9.91e-17,  Y - δK - C = 5.46e-10) 
+
+Evaluating 362 points to refine on ...
+Mean level of abs(aH): 0.0244385. Maximum level of grid: 8. 
+Nodes coarsened: 19, children added: 240, parents added: 18, 
+Net change: 716 -> 955 = << 239 >>, blacklisted: 150. 
+
+
+ -------  GRID ADAPTATION ITERATION 3  ------- 
+
+Stationary Equilibrium: (r = 0.0472, w = 1.8949),  markets(K = 7.50,  S = -9.89e-17,  Y - δK - C = -8.92e-13) 
+
+Evaluating 452 points to refine on ...
+Mean level of abs(aH): 0.0189529. Maximum level of grid: 8. 
+Nodes coarsened: 25, children added: 247, parents added: 21, 
+Net change: 955 -> 1198 = << 243 >>, blacklisted: 170. 
+
+
+ -------  GRID ADAPTATION ITERATION 4  ------- 
+
+Stationary Equilibrium: (r = 0.0470, w = 1.8966),  markets(K = 7.43,  S = -3.12e-17,  Y - δK - C = -2.12e-12) 
+
+Evaluating 520 points to refine on ...
+Mean level of abs(aH): 0.0153277. Maximum level of grid: 8. 
+Nodes coarsened: 43, children added: 183, parents added: 57, 
+Net change: 1198 -> 1395 = << 197 >>, blacklisted: 208. 
+
+
+ -------  GRID ADAPTATION ITERATION 5  ------- 
+
+Stationary Equilibrium: (r = 0.0469, w = 1.8978),  markets(K = 7.41,  S = 9.41e-17,  Y - δK - C = -1.80e-09) 
+
+Evaluating 559 points to refine on ...
+Mean level of abs(aH): 0.0132515. Maximum level of grid: 9. 
+Nodes coarsened: 35, children added: 104, parents added: 36, 
+Net change: 1395 -> 1500 = << 105 >>, blacklisted: 230. 
+
+
+ -------  GRID ADAPTATION ITERATION 6  ------- 
+
+Stationary Equilibrium: (r = 0.0469, w = 1.8988),  markets(K = 7.39,  S = -5.79e-17,  Y - δK - C = -2.14e-12) 
+
+Evaluating 577 points to refine on ...
+Mean level of abs(aH): 0.0123289. Maximum level of grid: 10. 
+Nodes coarsened: 42, children added: 63, parents added: 56, 
+Net change: 1500 -> 1577 = << 77 >>, blacklisted: 255. 
+
+
+ -------  GRID ADAPTATION ITERATION 7  ------- 
+
+Stationary Equilibrium: (r = 0.0468, w = 1.8991),  markets(K = 7.39,  S = -1.41e-17,  Y - δK - C = -3.44e-09) 
+
+Evaluating 583 points to refine on ...
+Mean level of abs(aH): 0.0117314. Maximum level of grid: 11. 
+Nodes coarsened: 45, children added: 29, parents added: 48, 
+Net change: 1577 -> 1609 = << 32 >>, blacklisted: 273. 
+
+
+ -------  GRID ADAPTATION ITERATION 8  ------- 
+
+Stationary Equilibrium: (r = 0.0469, w = 1.8990),  markets(K = 7.39,  S = -5.10e-17,  Y - δK - C = 2.00e-12) 
+
+Evaluating 589 points to refine on ...
+Mean level of abs(aH): 0.0115123. Maximum level of grid: 11. 
+Nodes coarsened: 47, children added: 6, parents added: 45, 
+Net change: 1609 -> 1613 = << 4 >>, blacklisted: 288. 
+
+
+ -------  GRID ADAPTATION ITERATION 9  ------- 
+
+Stationary Equilibrium: (r = 0.0468, w = 1.8991),  markets(K = 7.39,  S = -5.14e-17,  Y - δK - C = 6.30e-12) 
+
+Evaluating 591 points to refine on ...
+Mean level of abs(aH): 0.0114827. Maximum level of grid: 11. 
+Nodes coarsened: 47, children added: 4, parents added: 46, 
+Net change: 1613 -> 1616 = << 3 >>, blacklisted: 293. 
+
+
+ -------  GRID ADAPTATION ITERATION 10  ------- 
+
+Stationary Equilibrium: (r = 0.0469, w = 1.8990),  markets(K = 7.39,  S = -3.60e-17,  Y - δK - C = -1.38e-12) 
+
+Evaluating 592 points to refine on ...
+Mean level of abs(aH): 0.0114638. Maximum level of grid: 11. 
+Nodes coarsened: 50, children added: 10, parents added: 50, 
+Net change: 1616 -> 1626 = << 10 >>, blacklisted: 297. 
+
+
+ -------  GRID ADAPTATION ITERATION 11  ------- 
+
+Stationary Equilibrium: (r = 0.0469, w = 1.8990),  markets(K = 7.39,  S = 5.85e-18,  Y - δK - C = -5.99e-09) 
+
+Evaluating 590 points to refine on ...
+Mean level of abs(aH): 0.0113942. Maximum level of grid: 11. 
+Nodes coarsened: 52, children added: 0, parents added: 48, 
+Net change: 1626 -> 1622 = << -4 >>, blacklisted: 301. 
+
+
+ -------  GRID ADAPTATION ITERATION 12  ------- 
+
+Stationary Equilibrium: (r = 0.0469, w = 1.8989),  markets(K = 7.39,  S = -6.74e-17,  Y - δK - C = -5.18e-13) 
+
+Evaluating 593 points to refine on ...
+Mean level of abs(aH): 0.0114249. Maximum level of grid: 11. 
+Nodes coarsened: 47, children added: 3, parents added: 47, 
+Net change: 1622 -> 1625 = << 3 >>, blacklisted: 301. 
+
+
+ -------  GRID ADAPTATION ITERATION 13  ------- 
+
+Stationary Equilibrium: (r = 0.0469, w = 1.8989),  markets(K = 7.39,  S = 8.65e-17,  Y - δK - C = 7.65e-12) 
+
+Evaluating 592 points to refine on ...
+Mean level of abs(aH): 0.0114047. Maximum level of grid: 11. 
+Nodes coarsened: 48, children added: 0, parents added: 47, 
+Net change: 1625 -> 1624 = << -1 >>, blacklisted: 302. 
+
+
+ -------  GRID ADAPTATION ITERATION 14  ------- 
+
+Stationary Equilibrium: (r = 0.0469, w = 1.8989),  markets(K = 7.39,  S = 1.02e-17,  Y - δK - C = -2.49e-10) 
+
+Evaluating 592 points to refine on ...
+Mean level of abs(aH): 0.0114118. Maximum level of grid: 11. 
+Nodes coarsened: 47, children added: 0, parents added: 47, 
+Net change: 1624 -> 1624 = << 0 >>, blacklisted: 302. 
+
+
+Algorithm converged. Run-time of: 22.88 seconds.
+
+Plotting Figures...
