@@ -11,7 +11,7 @@ hz = param.phi_jacobian * sqrt(eps) * max(abs(z0(:)), 1);
 
 N = param.N; K = numel(x0); J = param.discrete_types * G.J; dt = param.dt;
 
-policies = {'s', 'c', 'u', 'm', 'V'};
+policies = {'s', 'c'};
 
 assert(numel(z0) == N);
 assert(numel(x0) == K);
@@ -27,7 +27,7 @@ for h = 1:K/N
     sim_xp{h} = f(xp, z0);
 end
 
-% POLICIES: c, s, u, V
+% POLICIES: c, s
 for j = 1:numel(policies)
     for n = 1:N
         for k = 1:N
@@ -58,58 +58,31 @@ end
 
 %% JACOBIANS: DISTRIBUTION
 ssAT = (speye(J) + dt * ss.AT);
-ssATP = cell(1+N, 1);
-for n = 1:1+N
-    ssATP{n} = ssAT^(n-1);
-end
 
 [p.g_z, p.g_x] = deal(cell(N, 1));
 for k = 1:N
     p.g_z{1}(:, k) = zeros(J, 1);
-    p.g_z{2}(:, k) = dt * ss.Da' * (p.s_z{1}(:, k) .* ss.g(:));
 end
 for k = 1:K
     p.g_x{1}(:, k) = zeros(J, 1);
-    p.g_x{2}(:, k) = dt * ss.Da' * (p.s_x{1}(:, k) .* ss.g(:));
 end
 
-ATP_gz = cell(N+1, N);
-for i = 1:N+1
-    for j = 1:N
-        ATP_gz{i, j} = ssATP{i} * p.g_z{2}(:, j);
-    end
-end
-for n = 3:N
-    for k = 1:N
-        p.g_z{n}(:, k) = zeros(J, 1);
-        for r = 1:min(n-1, k)
-            % p.g_z{n}(:, k) = p.g_z{n}(:, k) + ssATP{n-1-r + 1} * p.g_z{2}(:, k-(r-1));
-            p.g_z{n}(:, k) = p.g_z{n}(:, k) + ATP_gz{n-1-r + 1, k-(r-1)};
-        end
+for k = 1:N
+    for n = 2:N
+        p.g_z{n}(:, k) = ssAT * p.g_z{n-1}(:, k) ...
+            + dt * ss.Da' * (p.s_z{n-1}(:, k) .* ss.g(:));
     end
 end
 
-ATP_gx = cell(N+1, K);
-for i = 1:N+1
-    for j = 1:K
-        ATP_gx{i, j} = ssATP{i} * p.g_x{2}(:, j);
-    end
-end
-for h = 1:K/N
-    for n = 3:N
-        for k = 1:N
-            p.g_x{n}(:, N*(h-1) + k) = zeros(J, 1);
-            for r = 1:min(n-1, k)
-                % p.g_x{n}(:, N*(h-1) + k) = p.g_x{n}(:, N*(h-1) + k) + ssATP{n-1-r + 1} * p.g_x{2}(:, N*(h-1) + k-(r-1));
-                p.g_x{n}(:, N*(h-1) + k) = p.g_x{n}(:, N*(h-1) + k) + ATP_gx{n-1-r + 1, N*(h-1) + k-(r-1)};
-            end
-        end
+for k = 1:K
+    for n = 2:N
+        p.g_x{n}(:, k) = ssAT * p.g_x{n-1}(:, k) ...
+            + dt * ss.Da' * (p.s_x{n-1}(:, k) .* ss.g(:));
     end
 end
 
 
 %% JACOBIANS: MARKET CLEARING
-
 % diff_L = X(N+1:end) - sum(sum(param.zz .* param.u1(c_dense) .* sim.g{n} .* G_dense.dx));
 ss.u1z = param.zz .* param.u1(ss.c);
 ss.u2z = param.zz .* param.u2(ss.c);
@@ -133,7 +106,6 @@ for n = 1:N
         end
     end
 end
-
 
 end
 

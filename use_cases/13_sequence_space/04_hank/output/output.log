@@ -1310,3 +1310,234 @@ Max difference in H_x : 7.60e-06
 Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/main.m', 178)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/main.m',178,0)">line 178</a>)
 N_t = get_jacobians_prices(x, t, z, f, X_t, [], [], [], param, 'N', 1);
 } 
+Running algorithm:
+
+
+:::::   STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          3        0.904579                           304               1
+     1          6        0.113028      0.0246449           45.7               1
+     2          9      0.00542832     0.00249922           6.15               1
+     3         12     2.53938e-05    0.000931663          0.365               1
+     4         15     7.06677e-10    7.42514e-05         0.0019               1
+     5         18     5.98172e-19    3.97299e-07       5.54e-08               1
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','5.541259e-08','1.000000e-06','5.981718e-19','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Stationary Equilibrium: [r = 0.0098, N = 0.98],  markets[S=-5.55e-17,  Y-C=-7.57e-12, B=7.73e-10, Union=-3.31e-11] 
+
+
+
+::::::     TRANSITION DYNAMICS: GLOBAL     :::::: 
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 11.02 seconds.
+Iteration 001, fCount 301:  Objective = 3.9118e-05,  stepSize =      0.25,  norm(dx) = 0.0044168.
+Iteration 002, fCount 302:  Objective = 1.955e-05,  stepSize =       0.5,  norm(dx) = 0.0066239.
+Iteration 003, fCount 303:  Objective = 1.1108e-08,  stepSize =         1,  norm(dx) = 0.0066192.
+Iteration 004, fCount 305:  Objective = 6.5433e-12,  stepSize =         1,  norm(dx) = 2.9286e-06.
+Solver converged.
+
+
+
+::::::     TRANSITION DYNAMICS: DIRECT     :::::: 
+
+Computing H_x  ... finished in 5.80 seconds
+Computing H_z  ... finished in 3.11 seconds
+
+
+::::::     TRANSITION DYNAMICS: FAKE NEWS     :::::: 
+
+Max difference in H_z : 1.24e-07
+Max difference in H_x : 7.60e-06
+
+
+Algorithm converged. Run-time of: 38.54 seconds.
+
+Plotting Figures...
+Running algorithm:
+
+
+:::::   STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          3        0.904579                           304               1
+     1          6        0.113028      0.0246449           45.7               1
+     2          9      0.00542832     0.00249922           6.15               1
+     3         12     2.53938e-05    0.000931663          0.365               1
+     4         15     7.06677e-10    7.42514e-05         0.0019               1
+     5         18     5.98172e-19    3.97299e-07       5.54e-08               1
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','5.541259e-08','1.000000e-06','5.981718e-19','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Stationary Equilibrium: [r = 0.0098, N = 0.98],  markets[S=-5.55e-17,  Y-C=-7.57e-12, B=7.73e-10, Union=-3.31e-11] 
+
+
+
+::::::     TRANSITION DYNAMICS: GLOBAL     :::::: 
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 6.72 seconds.
+Iteration 001, fCount 301:  Objective = 3.9118e-05,  stepSize =      0.25,  norm(dx) = 0.0044168.
+Iteration 002, fCount 302:  Objective = 1.955e-05,  stepSize =       0.5,  norm(dx) = 0.0066239.
+Iteration 003, fCount 303:  Objective = 1.1108e-08,  stepSize =         1,  norm(dx) = 0.0066192.
+Iteration 004, fCount 305:  Objective = 6.5433e-12,  stepSize =         1,  norm(dx) = 2.9286e-06.
+Solver converged.
+
+
+
+::::::     TRANSITION DYNAMICS: DIRECT     :::::: 
+
+Computing H_x  ... finished in 5.92 seconds
+Computing H_z  ... finished in 3.05 seconds
+
+
+::::::     TRANSITION DYNAMICS: FAKE NEWS     :::::: 
+
+{Unrecognized function or variable 'ssAT'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fake_news', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/fake_news.m', 70)" style="font-weight:bold">fake_news</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/fake_news.m',70,0)">line 70</a>)
+        p.g_z{n}(:, k) = ssAT * p.g_z{n-1}(:, k) ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/main.m', 145)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/main.m',145,0)">line 145</a>)
+[H, p] = fake_news(x0, z0, ss, G, G_dense, param);
+} 
+main
+Running algorithm:
+
+
+:::::   STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          3        0.904579                           304               1
+     1          6        0.113028      0.0246449           45.7               1
+     2          9      0.00542832     0.00249922           6.15               1
+     3         12     2.53938e-05    0.000931663          0.365               1
+     4         15     7.06677e-10    7.42514e-05         0.0019               1
+     5         18     5.98172e-19    3.97299e-07       5.54e-08               1
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','5.541259e-08','1.000000e-06','5.981718e-19','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Stationary Equilibrium: [r = 0.0098, N = 0.98],  markets[S=-5.55e-17,  Y-C=-7.57e-12, B=7.73e-10, Union=-3.31e-11] 
+
+
+
+::::::     TRANSITION DYNAMICS: GLOBAL     :::::: 
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 5.89 seconds.
+Iteration 001, fCount 301:  Objective = 3.9118e-05,  stepSize =      0.25,  norm(dx) = 0.0044168.
+Iteration 002, fCount 302:  Objective = 1.955e-05,  stepSize =       0.5,  norm(dx) = 0.0066239.
+Iteration 003, fCount 303:  Objective = 1.1108e-08,  stepSize =         1,  norm(dx) = 0.0066192.
+Iteration 004, fCount 305:  Objective = 6.5433e-12,  stepSize =         1,  norm(dx) = 2.9286e-06.
+Solver converged.
+
+
+
+::::::     TRANSITION DYNAMICS: DIRECT     :::::: 
+
+Computing H_x  ... finished in 5.67 seconds
+Computing H_z  ... finished in 2.97 seconds
+
+
+::::::     TRANSITION DYNAMICS: FAKE NEWS     :::::: 
+
+{Unrecognized field name "u1z".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fake_news', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/fake_news.m', 92)" style="font-weight:bold">fake_news</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/fake_news.m',92,0)">line 92</a>)
+        H.H_z(N+n, k) = - (ss.u1z(:)' * p.g_z{n}(:, k) + ss.g(:)' * (ss.u2z(:) .* p.c_z{n}(:, k))) * G_dense.dx;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/main.m', 145)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/main.m',145,0)">line 145</a>)
+[H, p] = fake_news(x0, z0, ss, G, G_dense, param);
+} 
+if usejava('jvm'), com.mathworks.mde.profiler.ProfilerRunner.initInstance(); end
+opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/fake_news.m',92,0)
+[H, p] = fake_news(x0, z0, ss, G, G_dense, param);
+main
+Running algorithm:
+
+
+:::::   STATIONARY EQUILIBRIUM   :::::: 
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          3        0.904579                           304               1
+     1          6        0.113028      0.0246449           45.7               1
+     2          9      0.00542832     0.00249922           6.15               1
+     3         12     2.53938e-05    0.000931663          0.365               1
+     4         15     7.06677e-10    7.42514e-05         0.0019               1
+     5         18     5.98172e-19    3.97299e-07       5.54e-08               1
+
+<a href = "matlab: helpview('optim','eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview('optim','appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit1basic','fsolve'},{'optim:fsolve:Exit1detailed','5.541259e-08','1.000000e-06','5.981718e-19','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Stationary Equilibrium: [r = 0.0098, N = 0.98],  markets[S=-5.55e-17,  Y-C=-7.57e-12, B=7.73e-10, Union=-3.31e-11] 
+
+
+
+::::::     TRANSITION DYNAMICS: GLOBAL     :::::: 
+
+Initializing Newton solver. Obj tolerance: 1e-09, dx tolerance: 1e-09, maxit: 100.
+Time to compute initial Jacobian matrix: 6.11 seconds.
+Iteration 001, fCount 301:  Objective = 3.9118e-05,  stepSize =      0.25,  norm(dx) = 0.0044168.
+Iteration 002, fCount 302:  Objective = 1.955e-05,  stepSize =       0.5,  norm(dx) = 0.0066239.
+Iteration 003, fCount 303:  Objective = 1.1108e-08,  stepSize =         1,  norm(dx) = 0.0066192.
+Iteration 004, fCount 305:  Objective = 6.5433e-12,  stepSize =         1,  norm(dx) = 2.9286e-06.
+Solver converged.
+
+
+
+::::::     TRANSITION DYNAMICS: DIRECT     :::::: 
+
+Computing H_x  ... finished in 5.73 seconds
+Computing H_z  ... finished in 2.85 seconds
+
+
+::::::     TRANSITION DYNAMICS: FAKE NEWS     :::::: 
+
+Fake-news algorithm run-time: 4.25e+00 sec
+Max difference in H_z : 1.24e-07
+Max difference in H_x : 7.60e-06
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('toc')" style="font-weight:bold">toc</a>
+Argument to TOC must be a uint64 scalar.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', '/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/main.m', 190)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/Users/andreasschaab/Dropbox/Schaab-Lab/SparseEcon/use_cases/13_sequence_space/04_hank/main.m',190,0)">line 190</a>)
+run_time = toc(run_time); fprintf('\n\nAlgorithm converged. Run-time of: %.2f seconds.\n', run_time);
+} 
+if usejava('jvm'), com.mathworks.mde.profiler.ProfilerRunner.initInstance(); end
+run_time = tic;
+% [H, p] = fake_news_testing(x0, z0, ss, G, G_dense, param);
+[H, p] = fake_news(x0, z0, ss, G, G_dense, param);
+run_time = toc(run_time); fprintf('Fake-news algorithm run-time: %.2f seconds\n', run_time);
+Fake-news algorithm run-time: 4.52 seconds
+fprintf('Max difference in H_z : %.2d\n', max(max(abs(H.H_z - H_direct.H_z))));
+Max difference in H_z : 1.24e-07
+fprintf('Max difference in H_x : %.2d\n', max(max(abs(H.H_x - H_direct.H_x))));
+Max difference in H_x : 7.60e-06

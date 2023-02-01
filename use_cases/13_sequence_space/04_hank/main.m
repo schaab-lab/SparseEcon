@@ -141,7 +141,10 @@ fprintf('\n\n::::::     TRANSITION DYNAMICS: FAKE NEWS     :::::: \n\n');
 
 H_direct = H; clear H;
 
+run_time = tic;
+% [H, p] = fake_news_testing(x0, z0, ss, G, G_dense, param);
 [H, p] = fake_news(x0, z0, ss, G, G_dense, param);
+run_time = toc(run_time); fprintf('Fake-news algorithm run-time: %.2f seconds\n', run_time);
 
 fprintf('Max difference in H_z : %.2d\n', max(max(abs(H.H_z - H_direct.H_z))));
 fprintf('Max difference in H_x : %.2d\n', max(max(abs(H.H_x - H_direct.H_x))));
@@ -152,35 +155,6 @@ x = x0 + dx;
 sim{3} = transition(x, z, ss, G, G_dense, param, 'all');
 
 run_irfs(sim, ss, param);
-
-% [diff_x, diff_z] = deal(0);
-% for n = 1:N
-%     diff_x = max(diff_x, max(max(abs( u.c_x{n} - p.u_x{n} ))));
-%     diff_z = max(diff_z, max(max(abs( u.c_z{n} - p.u_z{n} ))));
-% end
-% fprintf('Max error in policy Jacobians: %.2d\n', max([diff_t, diff_x, diff_z]));
-
-% [diff_x, diff_z] = deal(0);
-% for n = 1:N
-%     for k = 1:numel(t0)
-%         diff_x = max(diff_x, max(abs( g.c_x{n}(:, k) - p.g_x{n}(:, k) )));
-%         diff_z = max(diff_z, max(abs( g.c_z{n}(:, k) - p.g_z{n}(:, k) )));
-%     end
-% end
-% fprintf('Max error in distribution Jacobians: %.2d\n', max([diff_x, diff_z]));
-
-% Prices / macro: 
-% f   = @(x, z, q) transition(x, z, ss, G, G_dense, param, q);
-% N_t = get_jacobians_prices(x, z, f, X_t, [], [], [], param, 'N', 1);
-% i_t = get_jacobians_prices(x, z, f, X_t, [], [], [], param, 'i', 1);
-% piw_t = get_jacobians_prices(x, z, f, X_t, [], [], [], param, 'piw', 1);
-
-% Policies / micro:
-% f   = @(x, t, z, q) transition(x, z, ss, G, G_dense, param, q);
-% c_t = get_jacobians_policies(x, z, f, X_t, [], [], [], param, 'c', 1);
-% V_t = get_jacobians_policies(x, z, f, X_t, [], [], [], param, 'V', 1);
-% g_t = get_jacobians_policies(x, z, f, X_t, [], [], [], param, 'g', 1);
-% s_t = get_jacobians_policies(x, z, f, X_t, [], [], [], param, 's', 1);
 
 
 %% OUTPUT
