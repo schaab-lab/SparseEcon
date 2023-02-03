@@ -83,34 +83,6 @@ for k = 1:K
 end
 
 
-%% JACOBIANS: MARKET CLEARING
-% diff_L = X(N+1:end) - sum(sum(param.zz .* param.u1(c_dense) .* sim.g{n} .* G_dense.dx));
-ss.u1z = param.zz .* param.u1(ss.c);
-ss.u2z = param.zz .* param.u2(ss.c);
-
-H.H_z = zeros(K, N);
-for n = 1:N
-    for k = 1:N
-        H.H_z(n, k) = (ss.s(:)' * p.g_z{n}(:, k) + ss.g(:)' * p.s_z{n}(:, k)) * G_dense.dx;
-        H.H_z(N+n, k) = - (ss.u1z(:)' * p.g_z{n}(:, k) + ss.g(:)' * (ss.u2z(:) .* p.c_z{n}(:, k))) * G_dense.dx;
-    end
-end
-
-H.H_x = zeros(K, K);
-for n = 1:N
-    for k = 1:K
-        H.H_x(n, k) = (ss.s(:)' * p.g_x{n}(:, k) + ss.g(:)' * p.s_x{n}(:, k)) * G_dense.dx;
-        if n == k-N
-            H.H_x(N+n, k) = 1 - (ss.u1z(:)' * p.g_x{n}(:, k) + ss.g(:)' * (ss.u2z(:) .* p.c_x{n}(:, k))) * G_dense.dx;
-        else
-            H.H_x(N+n, k) = - (ss.u1z(:)' * p.g_x{n}(:, k) + ss.g(:)' * (ss.u2z(:) .* p.c_x{n}(:, k))) * G_dense.dx;
-        end
-    end
-end
-
-H2 = H;
-
-
 %% EQUILIBRIUM MAP
 f = @(x, c, z) equilibrium_map(x, c, z, ss, aggregates, param);
 obj0 = f(x0, c0, z0);
@@ -177,10 +149,6 @@ end
 % Total derivative:
 H.H_x = Jx + Jc * C_x;
 H.H_z = Jz + Jc * C_z;
-
-% Compare:
-fprintf('Max difference in H_z using equilibrium_map : %.2d\n', max(max(abs(H.H_z - H2.H_z))));
-fprintf('Max difference in H_x using equilibrium_map : %.2d\n\n', max(max(abs(H.H_x - H2.H_x))));
 
 
 end

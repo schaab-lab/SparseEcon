@@ -141,30 +141,38 @@ fprintf('\n\n::::::     TRANSITION DYNAMICS: FAKE NEWS     :::::: \n\n');
 
 H_direct = H; clear H;
 
-S0 = ss.S * ones(param.N, 1); M0 = ss.M * ones(param.N, 1);
-c0 = [S0; M0];
-
+% Manual market clearing derivatives:
 run_time = tic;
 % [H, p] = fake_news_testing(x0, z0, ss, G, G_dense, param);
+H_manual = fake_news_manual(x0, z0, ss, G, G_dense, param);
+run_time = toc(run_time); fprintf('Fake-news manual algorithm run-time: %.2f seconds\n', run_time);
+
+% General market clearing derivatives:
+S0 = ss.S * ones(param.N, 1); M0 = ss.M * ones(param.N, 1);
+c0 = [S0; M0];
+run_time = tic;
 [H, p] = fake_news(x0, c0, z0, ss, G, G_dense, param);
-run_time = toc(run_time); fprintf('Fake-news algorithm run-time: %.2f seconds\n', run_time);
+run_time = toc(run_time); fprintf('Fake-news general algorithm run-time: %.2f seconds\n\n', run_time);
 
-fprintf('Max difference in H_z : %.2d\n', max(max(abs(H.H_z - H_direct.H_z))));
-fprintf('Max difference in H_x : %.2d\n\n', max(max(abs(H.H_x - H_direct.H_x))));
-
+% Transition dynamics:
 dx = - inv(H.H_x) * H.H_z * dz;
-
 x = x0 + dx;
 sim{3} = transition(x, z, ss, G, G_dense, param, 'all');
+
+% Testing:
+fprintf('Max difference in H_z v. direct : %.2d\n', max(max(abs(H.H_z - H_direct.H_z))));
+fprintf('Max difference in H_x v. direct : %.2d\n', max(max(abs(H.H_x - H_direct.H_x))));
+fprintf('Max difference in H_z v. manual : %.2d\n', max(max(abs(H.H_z - H_manual.H_z))));
+fprintf('Max difference in H_x v. manual : %.2d\n\n', max(max(abs(H.H_x - H_manual.H_x))));
 
 fprintf('Max difference in sim.Y : %.2d\n', ...
     max( max(max(abs(sim{3}.Y - sim{2}.Y))), max(max(abs(sim{3}.Y - sim{1}.Y))) ));
 fprintf('Max difference in sim.r : %.2d\n\n', ...
     max( max(max(abs(sim{3}.r - sim{2}.r))), max(max(abs(sim{3}.r - sim{1}.r))) ));
 
-c = [sim{3}.B; sim{3}.C; sim{3}.S; sim{3}.M];
+c = [sim{3}.S; sim{3}.M];
 fprintf('Max difference in equilibrium map: %.2d \n\n', ...
-    max(abs( equilibrium_map(x, c, z, ss, G, G_dense, param, 'markets') ...
+    max(abs( equilibrium_map(x, c, z, ss, {'S', 'M'}, param) ...
     - transition(x, z, ss, G, G_dense, param, 'markets'))) );
 
 run_irfs(sim, ss, param);
@@ -175,9 +183,5 @@ print('./output/sim_fake_news.eps', '-depsc', '-r200');
 % run_time = toc(run_time); fprintf('\n\nAlgorithm converged. Run-time of: %.2f seconds.\n', run_time);
 
 diary off
-
-
-
-
 
 
