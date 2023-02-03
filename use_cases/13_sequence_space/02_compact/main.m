@@ -16,7 +16,7 @@ addpath(genpath('/Users/andreasschaab/Dropbox/numericalMethods/lib/export_fig'))
 figure_format;
 
 fprintf('Running algorithm:\n')
-run_time = tic;
+% run_time = tic;
 
 
 %% PARAMETERS
@@ -42,8 +42,6 @@ G.zz = [repmat(param.zz(1), [G.J, 1]), repmat(param.zz(2), [G.J, 1])];
 
 %% STATIONARY EQUILIBRIUM
 fprintf('\n\n:::::   STATIONARY EQUILIBRIUM   :::::: \n\n');
-
-piw = 0;
 
 % Get better guess for value function:
 r0 = 0.80 * param.rho; N0 = 1; X0 = [r0, N0];
@@ -118,7 +116,8 @@ f = @(x, y) transition(x, z, ss, y{1}, y{2}, param, 'markets'); y0{1} = G; y0{2}
 x = fsolve_newton(f, reshape(x0, [numel(x0), 1]), diff0, y0, 0, 5, 2);
 sim{1} = transition(x, z, ss, G, G_dense, param, 'all');
 
-% run_irfs(sim, ss, param);
+run_irfs(sim, ss, param);
+print('./output/sim_global.eps', '-depsc', '-r200');
 
 
 %% TRANSITION DYNAMICS: DIRECT
@@ -134,6 +133,7 @@ x = x0 + dx;
 sim{2} = transition(x, z, ss, G, G_dense, param, 'all');
 
 run_irfs(sim, ss, param);
+print('./output/sim_direct.eps', '-depsc', '-r200');
 
 
 %% TRANSITION DYNAMICS: FAKE NEWS
@@ -147,21 +147,29 @@ run_time = tic;
 run_time = toc(run_time); fprintf('Fake-news algorithm run-time: %.2f seconds\n', run_time);
 
 fprintf('Max difference in H_z : %.2d\n', max(max(abs(H.H_z - H_direct.H_z))));
-fprintf('Max difference in H_x : %.2d\n', max(max(abs(H.H_x - H_direct.H_x))));
+fprintf('Max difference in H_x : %.2d\n\n', max(max(abs(H.H_x - H_direct.H_x))));
 
 dx = - inv(H.H_x) * H.H_z * dz;
 
 x = x0 + dx;
 sim{3} = transition(x, z, ss, G, G_dense, param, 'all');
 
+fprintf('Max difference in sim.Y : %.2d\n', ...
+    max( max(max(abs(sim{3}.Y - sim{2}.Y))), max(max(abs(sim{3}.Y - sim{1}.Y))) ));
+fprintf('Max difference in sim.r : %.2d\n\n', ...
+    max( max(max(abs(sim{3}.r - sim{2}.r))), max(max(abs(sim{3}.r - sim{1}.r))) ));
+
+c = [sim{3}.B; sim{3}.C; sim{3}.S; sim{3}.M];
+fprintf('Max difference in equilibrium map: %.2d \n\n', ...
+    max(abs( equilibrium_map(x, c, z, ss, G, G_dense, param, 'markets') ...
+    - transition(x, z, ss, G, G_dense, param, 'markets'))) );
+
 run_irfs(sim, ss, param);
+print('./output/sim_fake_news.eps', '-depsc', '-r200');
 
 
 %% OUTPUT
-run_time = toc(run_time); fprintf('\n\nAlgorithm converged. Run-time of: %.2f seconds.\n', run_time);
-
-% Optimal Policy IRF:
-fprintf('\nPlotting Figures...\n');
+% run_time = toc(run_time); fprintf('\n\nAlgorithm converged. Run-time of: %.2f seconds.\n', run_time);
 
 diary off
 

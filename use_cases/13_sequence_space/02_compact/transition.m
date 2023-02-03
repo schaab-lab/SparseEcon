@@ -1,8 +1,8 @@
 function [sim, G, G_dense] = transition(x, z, ss, G, G_dense, param, query)
 
 
-%% AGGREGATE TRANSITION PATH
-sim = macro_block(x, z, ss, param);
+%% MACRO BLOCK: PRE
+sim = macro_block_pre(x, z, ss, param);
 
 if nargin > 6 && ~any(ismember(query, {'u', 'c', 's', 'm', 'V', 'g', 'adjoint', 'fake_news', 'markets', 'all'}))
     sim = sim.(query);
@@ -12,7 +12,7 @@ end
 
 %% PREALLOCATE
 [sim.V, sim.A, sim.g, sim.c, sim.s, sim.m] = deal(cell(param.N, 1));
-[sim.C, sim.B, sim.S, sim.MH] = deal(zeros(param.N, 1));
+[sim.C, sim.B, sim.S, sim.M] = deal(zeros(param.N, 1));
 
 
 %% SOLVE VFI BACKWARDS
@@ -122,9 +122,8 @@ if nargin > 6 && ~any(ismember(query, {'markets', 'all'}))
 end
 
 
-%% AGGREGATION & MARKET CLEARING
-for n = 1:param.N    
-    
+%% AGGREGATION
+for n = 1:param.N
     c_dense = G.BH_dense * sim.c{n};
     s_dense = G.BH_dense * sim.s{n};
     m_dense = G.BH_dense * sim.m{n};
@@ -135,26 +134,30 @@ for n = 1:param.N
     sim.C(n) = sum(sum(c_dense .* sim.g{n} .* G_dense.dx));
     sim.S(n) = sum(sum(s_dense .* sim.g{n} .* G_dense.dx));
     
-    sim.MH(n) = sum(sum(m_dense .* sim.g{n} .* G_dense.dx));
+    sim.M(n) = sum(sum(m_dense .* sim.g{n} .* G_dense.dx));
+    % for j = 1:numel(aggregates)
+    %     sim.([aggregates{j}])(n) = ...
+    %         sum(sum(eval([lower(aggregates{j}), '_dense']) .* sim.g{n} .* G_dense.dx));
+    % end
 end
 
+
+%% MACRO BLOCK: POST
+c = [sim.B; sim.C; sim.S; sim.M];
+aggregates = {'B', 'C', 'S', 'M'};
+sim = macro_block_post(x, c, z, sim, ss, param, aggregates);
+
+
+%% OUTPUT
 sim.excess_bonds = sim.B;
 sim.excess_goods = sim.Y - sim.C;
-sim.excess_union = sim.M - sim.MH;
+sim.excess_union = sim.MX - sim.M;
 sim.excess_saving = sim.S;
 
-
-%% COLLOCATION POINTS
-
-sim.diff_Y = sim.excess_goods;
-sim.diff_B = sim.excess_bonds;
-sim.diff_M = sim.excess_union;
-sim.diff_S = sim.excess_saving;
-
-sim.diff_markets = [sim.diff_Y, sim.diff_B, sim.diff_M, sim.diff_S];
+sim.diff_markets = [sim.excess_goods, sim.excess_bonds, sim.excess_union, sim.excess_saving];
 
 if nargin > 6 && ~any(ismember(query, {'all'}))
-    sim = [sim.diff_S; sim.diff_M];
+    sim = [sim.excess_saving; sim.excess_union];
 end
 
 
