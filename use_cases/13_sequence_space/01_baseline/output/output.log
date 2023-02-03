@@ -1541,3 +1541,9 @@ fprintf('Max difference in H_z : %.2d\n', max(max(abs(H.H_z - H_direct.H_z))));
 Max difference in H_z : 1.24e-07
 fprintf('Max difference in H_x : %.2d\n', max(max(abs(H.H_x - H_direct.H_x))));
 Max difference in H_x : 7.60e-06
+dx = - inv(H.H_x) * H.H_z * dz;
+
+x = x0 + dx;
+sim{3} = transition(x, z, ss, G, G_dense, param, 'all');
+
+run_irfs(sim, ss, param);
