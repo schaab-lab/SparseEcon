@@ -141,9 +141,12 @@ fprintf('\n\n::::::     TRANSITION DYNAMICS: FAKE NEWS     :::::: \n\n');
 
 H_direct = H; clear H;
 
+S0 = ss.S * ones(param.N, 1); M0 = ss.M * ones(param.N, 1);
+c0 = [S0; M0];
+
 run_time = tic;
 % [H, p] = fake_news_testing(x0, z0, ss, G, G_dense, param);
-[H, p] = fake_news(x0, z0, ss, G, G_dense, param);
+[H, p] = fake_news(x0, c0, z0, ss, G, G_dense, param);
 run_time = toc(run_time); fprintf('Fake-news algorithm run-time: %.2f seconds\n', run_time);
 
 fprintf('Max difference in H_z : %.2d\n', max(max(abs(H.H_z - H_direct.H_z))));
